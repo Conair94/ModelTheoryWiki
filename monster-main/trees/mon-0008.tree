@@ -1,0 +1,6 @@
+\title{Alternation Lemma}
+\date{2024-02-02}
+\taxon{lemma}
+\author{adam-melrod}
+
+\p{A formula #{\varphi(x;y)} is NIP if and only if #{\operatorname{alt}(\varphi(x;y)) < \infty}.}

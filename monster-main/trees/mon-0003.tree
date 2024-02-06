@@ -1,0 +1,19 @@
+\title{NIP Theories}
+\date{2024-02-02}
+\author{adam-melrod}
+\taxon{section}
+
+\p{\strong{NIP theories} are a class of theories generalizing stable
+theories, but allowing for an ordering. Aside from stable theories,
+important examples are real closed fields, ACVF, #{p}-adically closed
+fields, and o-minimal theories}
+
+\p{Fix a complete theory #{T} with monster model #{\mathbb{M}}.
+Also fix a formula #{\varphi(x;y)} with a fixed partitioning into
+the two tuples #{x} and #{y}.}
+
+\transclude{mon-0004}
+
+\transclude{mon-0005}
+
+\transclude{mon-0002}

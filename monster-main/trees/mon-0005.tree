@@ -1,0 +1,7 @@
+\title{definition of NIP}
+\date{2024-02-02}
+\author{adam-melrod}
+\taxon{definition}
+
+\p{The formula #{\varphi(x;y)} is said to be \em{NIP} if it does not have
+the [independence property](mon-0004).}

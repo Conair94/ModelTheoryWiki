@@ -1,0 +1,22 @@
+\title{characterizations of NIP for a formula}
+\date{2024-02-02}
+\author{adam-melrod}
+\taxon{theorem}
+
+\p{The following conditions are equivalent:
+\ol{
+  \li{ The formula #{\varphi(x;y)} has the independence property.}
+  \li{ The formula #{\varphi^{\vee}(y;x)} has the independence property,
+	where #{\varphi^{\vee}(y;x)} is the formula #{\varphi(x;y)} with the
+	opposite partition.}
+	\li{ For any two finite sets #{U} and #{V}, and any subset #{R \subseteq U \times V}, there are #{(a_i : i \in U)} and #{(b_j : j \in U)} such that #{\mathbb \models \varphi(a_i;b_j) \Longleftrightarrow (i,j) \in R}.}
+	\li{ There is an indiscernible sequence #{(a_i : i \in \omega)}
+	and some #{b} such that #{\mathbb M \models \varphi(a_i;b) \Longleftrightarrow i}
+	is even.}
+}}
+
+\p{We are also interested in the following characterization, which is more amenable to computations.}
+
+\transclude{mon-0007}
+
+\transclude{mon-0008}
