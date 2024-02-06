@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{NIP Theories}
+
+\date{February 2, 2024}
+
+\author{Adam Melrod}
+
+\begin{document}
+\maketitle
+\par{\textbf{NIP theories} are a class of theories generalizing stable
+theories, but allowing for an ordering. Aside from stable theories,
+important examples are real closed fields, ACVF, \(p\)-adically closed
+fields, and o-minimal theories}\par{Fix a complete theory \(T\) with monster model \(\mathbb {M}\).
+Also fix a formula \(\varphi (x;y)\) with a fixed partitioning into
+the two tuples \(x\) and \(y\).}
+\begin{tree}{title={Definition of the independence property}, taxon={definition}, slug={mon-0004}}
+The formula \(\varphi (x;y)\) has the \emph{independence property} if there
+are sequences of tuples \((a_i : i  \in   \omega )\) and
+\((b_S : S  \subseteq   \omega )\) such that for every subset \(S  \subseteq   \omega\)
+\[i  \in  S  \Longleftrightarrow   \mathbb {M}  \models   \varphi (a_i; b_S).\]
+\end{tree}
+
+\begin{tree}{title={Definition of NIP}, taxon={definition}, slug={mon-0005}}
+The formula \(\varphi (x;y)\) is said to be \emph{NIP} if it does not have
+the \ForesterRef{mon-0004}{independence property}.
+\end{tree}
+
+\begin{tree}{title={Characterizations of NIP for a formula}, taxon={theorem}, slug={mon-0002}}
+The following conditions are equivalent:
+\begin{enumerate}
+\item{ The formula \(\varphi (x;y)\) has the independence property.}
+  \item{ The formula \(\varphi ^{ \vee }(y;x)\) has the independence property,
+	where \(\varphi ^{ \vee }(y;x)\) is the formula \(\varphi (x;y)\) with the
+	opposite partition.}
+	\item{ For any two finite sets \(U\) and \(V\), and any subset \(R  \subseteq  U  \times  V\), there are \((a_i : i  \in  U)\) and \((b_j : j  \in  U)\) such that \(\mathbb   \models   \varphi (a_i;b_j)  \Longleftrightarrow  (i,j)  \in  R\).}
+	\item{ There is an indiscernible sequence \((a_i : i  \in   \omega )\)
+	and some \(b\) such that \(\mathbb  M  \models   \varphi (a_i;b)  \Longleftrightarrow  i\)
+	is even.}
+\end{enumerate}\par{We are also interested in the following characterization, which is more amenable to computations.}
+\begin{tree}{title={Alternation Number}, taxon={definition}, slug={mon-0007}}
+The \emph{alternation number} of a formula \(\varphi (x;y)\), denoted \(\operatorname {alt}( \varphi (x;y))\) is the maximal number \(n  \in   \omega\) (if it exists) such that there is an indiscernible sequence \((a_i : i  \in   \omega )\), some \(b\), and indices \(i_0 <  \dots  < i_n\) with \(\mathbb  M  \models   \varphi (a_i,b)  \Longleftrightarrow  i  \text { is even}\). If no such maximum exists, we let \(\operatorname {alt}( \varphi (x;y)) =  \infty\).
+\end{tree}
+
+\begin{tree}{title={Alternation Lemma}, taxon={lemma}, slug={mon-0008}}
+A formula \(\varphi (x;y)\) is NIP if and only if \(\operatorname {alt}( \varphi (x;y)) <  \infty\).
+\end{tree}
+
+\end{tree}
+
+\printbibliography
+\end{document}
