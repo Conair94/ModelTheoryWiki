@@ -12,8 +12,8 @@ fields, and o-minimal theories}
 Also fix a formula #{\varphi(x;y)} with a fixed partitioning into
 the two tuples #{x} and #{y}.}
 
-\transclude{mon-0004}
+\transclude{mon-d004}
 
-\transclude{mon-0005}
+\transclude{mon-d005}
 
 \transclude{mon-0002}
