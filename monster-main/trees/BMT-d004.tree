@@ -1,0 +1,9 @@
+\title{Definition of an embedding of #{L}-structures}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given two structures in a language #{\mathcal{L}} #{\mathcal{A}} and #{\mathcal{B}}, an \em{embedding} #{\varphi: \mathcal{A} \rightarrow \mathcal{B}}
+is a [homomorphism](BMT-d003) such that:}
+\p{For every n-ary relation #{R\in \mathcal{L}}, for all #{a_1,\dots, a_n \in A}, #{\varphi(R^{\mathcal{A}}(a_1,\dots, a_n)) \text{ holds } \Leftrightarrow R^{\mathcal{B}}(\varphi(a_1), \dots, \varphi(a_n))} holds}
+\p{This is stronger than a homomorphism because we now require a two way implication in the above property.}
