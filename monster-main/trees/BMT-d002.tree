@@ -3,7 +3,7 @@
 \author{mbryant}
 \taxon{definition}
 
-\p{Given a language #{\mathcal{L}}, an #{\mathcal{L}}-structure #{\mathcal{M}} in this language has a universe #{M} (often, the structure and its universe 
+\p{Given a [language](BMT-d001) #{\mathcal{L}}, an #{\mathcal{L}}-structure #{\mathcal{M}} in this language has a universe #{M} (often, the structure and its universe 
 are written the same, by abuse of notation). The structure #{\mathcal{M}} "interprets" the symbols of #{\mathcal{L}} as follows:}
 \p{For a constant symbol #{c\in \mathcal{L}}, the interpretation of #{c} in #{\mathcal{M}}, denoted #{c^{\mathcal{M}}} represents a fixed 
 element of #{M}}
@@ -13,4 +13,4 @@ is a function from #{M^n} to #{M}}
 is a subset #{M^n}}
 \p{Often, we are interested in the cardinality of a structure, denoted #{|\mathcal{M}|}, which is defined to be the cardinality of its universe.}
 
-\transclude{BMT-d001}
+
