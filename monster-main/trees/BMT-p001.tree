@@ -4,3 +4,4 @@
 \taxon{part}
 
 \p{We give the common definitions and theorems for basic/introductory model theory}
+\transclude{BMT-s001}
