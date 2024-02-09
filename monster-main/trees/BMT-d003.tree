@@ -6,5 +6,5 @@
 \p{Given two [structures](BMT-d002) in a [language](BMT-d001) #{\mathcal{L}} #{\mathcal{A}} and #{\mathcal{B}}, a \em{homomorphism} #{\varphi: \mathcal{A} \rightarrow \mathcal{B}}
 is a function between the universes #{A} and #{B} of #{\mathcal{A}} and #{\mathcal{B}} respectively such that:}
 \p{ For every n-ary function #{f\in \mathcal{L}}, for all #{a_1,\dots, a_n\in A}, #{\varphi(f^{\mathcal{A}}(a_1,\dots, a_n)) = f^{\mathcal{B}}(\varphi(a_1),\dots, \varphi(a_n)}}
-\p{For every n-ary relation #{R\in \mathcal{L}}, for all #{a_1,\dots, a_n \in A}, #{\varphi(R^{\mathcal{A}}(a_1,\dots, a_n)) \Rightarrow R^{\mathcal{B}}(\varphi(a_1), \dots, \varphi(a_n))}}
+\p{For every n-ary relation #{R\in \mathcal{L}}, for all #{a_1,\dots, a_n \in A}, #{\varphi(R^{\mathcal{A}}(a_1,\dots, a_n)) \text{ holds } \Rightarrow R^{\mathcal{B}}(\varphi(a_1), \dots, \varphi(a_n))} holds}
 \p{For every constant symbol #{c \in \mathcal{L}}, #{\varphi(c^{\mathcal{A}}) =c^{\mathcal{B}}}}
