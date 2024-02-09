@@ -1,0 +1,16 @@
+\title{Definition of a Structure}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a language #{\mathcal{L}}, a structure #{\mathcal{M}} in this language has a universe #{M} (often, the structure and its universe 
+are written the same, by abuse of notation). The structure #{\mathcal{M}} "interprets" the symbols of #{\mathcal{L}} as follows:}
+\p{For a constant symbol #{c\in \mathcal{L}}, the interpretation of #{c} in #{\mathcal{M}}, denoted #{c^{\mathcal{M}}} represents a fixed 
+element of #{M}}
+\p{For an #{n}-ary function symbol #{f\in \mathcal{L}}, the interpretation of #{f} in #{\mathcal{M}}, denoted #{f^{\mathcal{M}}},
+is a function from #{M^n} to #{M}}
+\p{For an #{n}-ary relation symbol #{R\in \mathcal{L}}, the interpretation of #{R} in #{\mathcal{M}}, denoted #{R^{\mathcal{M}}},
+is a subset #{M^n}}
+\p{Often, we are interested in the cardinality of a structure, denoted #{|\mathcal{M}|}, which is defined to be the cardinality of its universe.}
+
+\transclude{BMT-d001}
