@@ -1,0 +1,11 @@
+\title{Definition of a Substructure}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a #{\mathcal{L}}-structure #{\mathcal{A}}, a subset #{B \subseteq A} is called a \em{substructure} of #{\mathcal{A}} if:}
+\p{For every constant #{c\in \mathcal{L}}, #{c^{\mathcal{A}} \in B\}}
+\p{For every n-ary function #{f\in \mathcal{L}}, for any #{b_1,\dots, b_n \in B}, #\{f^{\mathcal{A}}(b_1,\dots,b_n) \in B}}
+\p{For every n-ary relation, #{R\in \mathcal{L}}, for any #{b_1,\dots, b_n \in B}, we write #{R^B = R^{\mathcal{A}}\cap \mathcal{P}(B^n)} and require that
+#{R^{B}(b_1,\dots, b_n)} holds (i.e., #{(b_1,\dots, b_n) \in R^{B}})  if and only if #{R^{\mathcal{A}}(b_1,\dots, b_n)} holds (i.e., #{(b_1,\dots, b_n) \in R^{\mathcal{A}}}) \\
+Note that this condition is vacuously true, so only the first two conditions need to be checked when verifying a substructure.}
