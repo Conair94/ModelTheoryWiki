@@ -6,6 +6,6 @@
 \p{In this structure we give the basic notions and theorems for structures, isomorphisms, and substructures}
 
 \transclude{BMT-d001}
-
 \transclude{BMT-d002}
 \transclude{BMT-d003}
+\transclude{BMT-d004}
