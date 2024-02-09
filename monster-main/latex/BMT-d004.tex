@@ -1,0 +1,19 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of an embedding of \(L\)-structures}
+
+\date{February 8, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{Given two structures in a language \(\mathcal {L}\) \(\mathcal {A}\) and \(\mathcal {B}\), an \emph{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
+is a \ForesterRef{BMT-d003}{homomorphism} such that:}\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Leftrightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{This is stronger than a homomorphism because we now require a two way implication in the above property.}
+\printbibliography
+\end{document}
