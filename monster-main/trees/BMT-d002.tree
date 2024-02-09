@@ -3,7 +3,7 @@
 \author{mbryant}
 \taxon{definition}
 
-\p{Given a language #{\mathcal{L}}, a structure #{\mathcal{M}} in this language has a universe #{M} (often, the structure and its universe 
+\p{Given a language #{\mathcal{L}}, an #{\mathcal{L}}-structure #{\mathcal{M}} in this language has a universe #{M} (often, the structure and its universe 
 are written the same, by abuse of notation). The structure #{\mathcal{M}} "interprets" the symbols of #{\mathcal{L}} as follows:}
 \p{For a constant symbol #{c\in \mathcal{L}}, the interpretation of #{c} in #{\mathcal{M}}, denoted #{c^{\mathcal{M}}} represents a fixed 
 element of #{M}}
