@@ -20,3 +20,7 @@
   \put\transclude/expanded{false}
   \transclude{inf-0001}
 }
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-p001}
+}
