@@ -1,11 +1,22 @@
-\title{The Monster}
+\title{The Model Companion}
 \author{adam-melrod}
 \author{connor-lockhart}
+\author{mbryant}
 
 \p{This is the potential start of a new online resource on model theory, replacing the (now defunct) model theory wiki.}
 
 \p{This website is made with the software Forester (http://www.jonmsterling.com/jms-005P.xml). Forester allows you to explore the site in many interesting ways, we have provided a structured starting off points as in below but you may search for any page using Command K}
 
-\p{The following is a sample of how this resource may function.}
+\p{The site is nonlinear in its arrangement of information. At the high level, the website is broken into parts which are comprised of sections. Currently parts correspond to large themes or subjects in model theory and the sections subdivide these themes further. These parts and sections may not be disjoint but the nature of forester is well suited to navigating these overlaps since definitions and theorems can be transcluded easily. }
 
-\transclude{mon-0006}
+\p{In the future it would be nice to have parts which organize the material as one would encounter it as a course or set of lecture notes intended for self study but for now, we intend to set up the backbone as a wikipedia or stacks project reference document and then reassemble the information after a critical mass has been achieved. }
+
+\strong{Here are the parts which currently exist or are being worked on}
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{mon-0006}
+}
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{inf-0001}
+}
