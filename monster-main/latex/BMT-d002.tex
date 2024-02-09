@@ -1,0 +1,22 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of a Structure}
+
+\date{February 8, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{Given a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), an \(\mathcal {L}\)-structure \(\mathcal {M}\) in this language has a universe \(M\) (often, the structure and its universe 
+are written the same, by abuse of notation). The structure \(\mathcal {M}\) "interprets" the symbols of \(\mathcal {L}\) as follows:}\par{For a constant symbol \(c \in   \mathcal {L}\), the interpretation of \(c\) in \(\mathcal {M}\), denoted \(c^{ \mathcal {M}}\) represents a fixed 
+element of \(M\)}\par{For an \(n\)-ary function symbol \(f \in   \mathcal {L}\), the interpretation of \(f\) in \(\mathcal {M}\), denoted \(f^{ \mathcal {M}}\),
+is a function from \(M^n\) to \(M\)}\par{For an \(n\)-ary relation symbol \(R \in   \mathcal {L}\), the interpretation of \(R\) in \(\mathcal {M}\), denoted \(R^{ \mathcal {M}}\),
+is a subset \(M^n\)}\par{Often, we are interested in the cardinality of a structure, denoted \(| \mathcal {M}|\), which is defined to be the cardinality of its universe.}
+\printbibliography
+\end{document}

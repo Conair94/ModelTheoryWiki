@@ -1,0 +1,19 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of a Homomorphism}
+
+\date{February 8, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{Given two \ForesterRef{BMT-d002}{structures} in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\) \(\mathcal {A}\) and \(\mathcal {B}\), a \emph{homomorphism} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
+is a function between the universes \(A\) and \(B\) of \(\mathcal {A}\) and \(\mathcal {B}\) respectively such that:}\par{ For every n-ary function \(f \in   \mathcal {L}\), for all \(a_1, \dots , a_n \in  A\), \(\varphi (f^{ \mathcal {A}}(a_1, \dots , a_n)) = f^{ \mathcal {B}}( \varphi (a_1), \dots ,  \varphi (a_n))\)}\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Rightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{For every constant symbol \(c  \in   \mathcal {L}\), \(\varphi (c^{ \mathcal {A}}) =c^{ \mathcal {B}}\)}
+\printbibliography
+\end{document}

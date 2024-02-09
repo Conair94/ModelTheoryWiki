@@ -1,0 +1,9 @@
+\title{Basic Model Theory}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{part}
+
+\p{We give the common definitions and theorems for basic/introductory model theory}
+\transclude{BMT-s001}
+\transclude{BMT-s002}
+\transclude{BMT-s003}
