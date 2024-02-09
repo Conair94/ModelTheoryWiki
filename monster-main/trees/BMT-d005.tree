@@ -1,0 +1,6 @@
+\title{Definition of an isomorphism}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{definition}
+
+\p{An [embedding](BMT-d004) #{\varphi: \mathcal{A} \rightarrow \mathcal{B}} between #{\mathcal{L}}-structures is a \em{isomorphism} if it is surjective.} 
