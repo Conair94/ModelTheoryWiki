@@ -3,7 +3,7 @@
 \author{mbryant}
 \taxon{section}
 
-\p{In this structure we give the basic notions and theorems for structures, isomorphisms, and substructures}
+\p{In this section we give the basic notions and theorems for structures, isomorphisms, and substructures}
 
 \transclude{BMT-d001}
 \transclude{BMT-d002}
