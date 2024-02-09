@@ -14,13 +14,14 @@
 \strong{Here are the parts which currently exist or are being worked on}
 \scope{
   \put\transclude/expanded{false}
+  \transclude{BMT-p001}
+}
+\scope{
+  \put\transclude/expanded{false}
   \transclude{mon-0006}
 }
 \scope{
   \put\transclude/expanded{false}
   \transclude{inf-0001}
 }
-\scope{
-  \put\transclude/expanded{false}
-  \transclude{BMT-p001}
-}
+
