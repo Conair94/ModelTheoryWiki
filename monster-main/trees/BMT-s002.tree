@@ -4,3 +4,6 @@
 \taxon{section}
 
 \p{In this section we define formulas, elementary equivalence, elementary substructures, theories, and models}
+\transclude{BMT-d007}
+\transclude{BMT-d008}
+\transclude{BMT-d009}
