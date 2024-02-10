@@ -1,0 +1,8 @@
+\title{Definition of an atomic formula}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a language #{\mathcal{L}}, an \em{atomic formula} is defined as follows:}
+\p{If #{R\in \mathcal{L}} is an n-ary relation symbol, and #{t_1,\dots, t_n} are [terms](BMT-d007), then #{R(t_1,\dots, t_n)} is an atomic formula.}
+\p{If #{t_1} and #{t_2} are #{\mathcal{L}}-terms, then #{t_1 = t_2} is an atomic formula. 
