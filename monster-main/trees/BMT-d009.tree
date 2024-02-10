@@ -1,0 +1,9 @@
+\title{Definition of an #{\mathcal{L}}-formula}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a language #{\mathcal{L}}, an #{\mathcal{L}}-formula is defined inductively as follows:}
+\p{If #{\phi} is an #{\mathcal{L}}-[atomic formula](BMT-d008) then #{\phi} is a formula}
+\p{If #{\phi} and #{\psi} are both formulas, then #{\neg\phi}, #{\phi \land \psi}, and #{\phi\lor\phi} are formulas, where #{\lor,\neg,\land} are the usual [logical connectives](BMT-d010)}
+\p{If #{\phi} is a formula, then #{\exists x \phi} and #{\forall x \phi} are formulas, where #{\exists} and #{\forall} are [quantifiers](BMT-d011)}
