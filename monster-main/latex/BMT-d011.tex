@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of a Quantifiers}
+
+\date{February 9, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{We use \emph{quantifiers} to bound variables in a formula in first order logic.}\par{If \(\phi (x)\) is a \ForesterRef{BMT-d009}{formula}, then \(\exists  x ( \phi (x))\) should be translated as "there is an interpretation of \(x\) such that \(\phi (x)\) holds.}\par{If \(\phi (x)\) is a \ForesterRef{BMT-d009}{formula}, then \(\forall  x ( \phi (x))\) should be translated as "for all interpretations of \(x\), \(\phi (x)\) holds.}
+\printbibliography
+\end{document}
