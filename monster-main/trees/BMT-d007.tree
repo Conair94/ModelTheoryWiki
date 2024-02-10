@@ -1,0 +1,9 @@
+\title{Definition of a term}
+\date{2024-02-08}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a language #{\mathcal{L}}, we define a \em{term} to be any of the following:}
+\p{If #{c\in \mathcal{L}} is a constant symbol, then #{c} is a term}
+\p{If #{x} is a variable symbol, then #{x} is a term. We generally assume we have countably infinitely many variable symbols\}
+\p{If #{t_1,\dots, t_n} are terms, and #{f\in \mathcal{L}} is an #{n}-ary function, then #{f(t_1,\dots, t_n)} is a term.}
