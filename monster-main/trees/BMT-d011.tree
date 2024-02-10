@@ -1,0 +1,8 @@
+\title{Definition of a Quantifiers}
+\date{2024-02-09}
+\author{mbryant}
+\taxon{definition}
+
+\p{We use \em{quantifiers} to bound variables in a formula in first order logic.}
+\p{If #{\phi(x)} is a [formula](BMT-d009), then #{\exists x (\phi(x))} should be translated as "there is an interpretation of #{x} such that #{\phi(x)} holds.}
+\p{If #{\phi(x)} is a [formula](BMT-d009), then #{\forall x (\phi(x))} should be translated as "for all interpretations of #{x}, #{\phi(x)} holds.}
