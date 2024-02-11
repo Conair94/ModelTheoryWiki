@@ -1,0 +1,4 @@
+For some reason Forester needs a /theme directory to build correctly on Linux,
+but this project in its current state doesn't have any themes. Git only tracks
+files, so there's no way to add an empty directory to a git repository. Hence
+the need for this .dummyfile.
