@@ -18,10 +18,10 @@
 }
 \scope{
   \put\transclude/expanded{false}
-  \transclude{mon-0006}
+  \transclude{mon-p001}
 }
 \scope{
   \put\transclude/expanded{false}
-  \transclude{inf-0001}
+  \transclude{inf-p001}
 }
 
