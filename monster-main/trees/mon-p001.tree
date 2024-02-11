@@ -7,8 +7,8 @@
 \scope{
     \put\transclude/expanded{false}
     \transclude{inf-s002}
-    }
+}
 \scope{
     \put\transclude\expanded{false}
     \transclude{inf-s001}
-    }
+}
