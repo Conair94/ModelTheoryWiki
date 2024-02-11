@@ -7,9 +7,9 @@
 
 \scope{
   \put\transclude/expanded{false}
-  \transclude{inf-s002}
+  \transclude{mon-s002}
 }
 \scope{
     \put\transclude/expanded{false}
-    \transclude{inf-s001}
+    \transclude{mon-s001}
 }
