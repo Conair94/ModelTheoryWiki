@@ -17,3 +17,19 @@
   \put\transclude/expanded{false}
   \transclude{BMT-s003}
 }
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-s004}
+}
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-s005}
+}
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-s006}
+}
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-s007}
+}
