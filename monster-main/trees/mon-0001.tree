@@ -24,4 +24,7 @@
   \put\transclude/expanded{false}
   \transclude{inf-p001}
 }
-
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{moe-p001}
+}

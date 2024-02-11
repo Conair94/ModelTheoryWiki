@@ -4,3 +4,8 @@
 \taxon{part}
 
 \p{Model Theory of Monadic Expansions}
+
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{moe-s001}
+}
