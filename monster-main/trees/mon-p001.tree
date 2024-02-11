@@ -4,9 +4,10 @@
 \taxon{part}
 
 \p{Dividing lines play a fundamental role in model theory. They form the basis of Shelah's approach to classification theory and have been a central influence on model theory since their conception. Here is an interactive (though not complete) map of the [model theoretic universe](https://forkinganddividing.com), maintained by Gabriel Conant. Important examples of dividing lines include stability, NIP, and o-minimality.}
+
 \scope{
-    \put\transclude/expanded{false}
-    \transclude{inf-s002}
+  \put\transclude/expanded{false}
+  \transclude{inf-s002}
 }
 \scope{
     \put\transclude\expanded{false}
