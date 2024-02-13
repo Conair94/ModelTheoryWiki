@@ -1,0 +1,7 @@
+\title{Definition of a class}
+\date{2024-02-13}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a language #{\mathcal{L}}, a class #{K} is defined to be a set of #{\mathcal{L}}-structures}
+\p{Often, we want there to be a relation #{\leq} acting on the structures in #{K}, and when we do, we write the class and relation as a pair #{(K, \leq)}}
