@@ -1,0 +1,6 @@
+\title{Properties of a Fraisse Limit}
+\date{2024-02-13}
+\author{mbryant}
+\taxon{theorem}
+
+\p{If #{M} is the [Fraisse Limit](Fra-t001) of a class #{(K, \leq)}, then #{Th(M)} has quantifier elimination and is #{\omega}-categorical}
