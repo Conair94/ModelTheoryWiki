@@ -5,5 +5,8 @@
 
 \p{If #{\mathcal{L}} is countable, and #{(K,\subset)} a class of finitely generated structures has the [amalgamation property](Fra-d003), the [joint embedding property](Fra-d004), and the [hereditary property](Fra-d005), 
 Then there is a unique, countable structure #{\mathcal{M}} whose [age](Fra-d002) is #{K} with the property that any isomorphism #{f:A\rightarrow B} with #{A,B\subseteq \mathcal{M}} and #{A,B\in K} extends to
-an automorphism of #{\mathcal{M}}}
+an automorphism of #{\mathcal{M}}.}
 \p{The structure #{\mathcal{M}} is the \em{Fraisse limit} of #{K}.}
+\p{We call a class #{(K,\subseteq)} satisfying AP, HP, and JEP a Fraisse class} 
+\p{When a structure has the above isomorphism extension property, we say it is \em{ultrahomogeneous} (or \em{homogeneous}). 
+The converse of Fraisse's Theorem is also true in the sense that if we have a structure which is ultrahomogeneous with respect to its age, then its age is a Fraisse class.}
