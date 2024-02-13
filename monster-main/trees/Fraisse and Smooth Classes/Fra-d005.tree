@@ -1,0 +1,6 @@
+\title{Definition of Hereditary Property (HP)}
+\date{2024-02-13}
+\author{mbryant}
+\taxon{definition}
+
+\p{A class #{(K,\leq)} has the hereditary property if for every #{A\in K}, and any #{B\subseteq A} finitely generated, then there is some #{C\in K} such that #{C\cong B}}
