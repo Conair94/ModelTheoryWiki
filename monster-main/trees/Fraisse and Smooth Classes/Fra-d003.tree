@@ -1,0 +1,8 @@
+\title{Definition of a Amalgamation Property}
+\date{2024-02-13}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a class and relation #{(K,\leq)}, we say that #{K} has the \em{Amalgamation Property} if for every #{A,B,C \in K}, if there 
+exists an embedding #{f:A\rightarrow B} such that #{f(A) \leq B} and and embedding #{g:A\rightarrow C} such that #{A\leq B}, then there exists a structure #{D} 
+and embeddings #{h_1:C\rightarrow D} and #{h_2:B\rightarrow D} such that #{h_1(C)\leq D} and #{h_2(B) \leq D} and #{h_2(f(A)) = h_1(g(A))}}
