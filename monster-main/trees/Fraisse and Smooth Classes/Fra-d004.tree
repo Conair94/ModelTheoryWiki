@@ -1,0 +1,8 @@
+\title{Definition of Joint Embedding Property (JEP)}
+\date{2024-02-13}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a class and relation #{(K,\leq)}, we say that #{K} has the \em{Amalgamation Property} if for every #{A,B \in K}, there exists a structure #{D} 
+and embeddings #{h_1:C\rightarrow D} and #{h_2:B\rightarrow D} such that #{h_1(C)\leq D} and #{h_2(B) \leq D}}
+\p{[Amalgamation Property](Fra-d003) does NOT necessarily imply JEP, unless the empty set #{\emptyset} is in #{K} and for all #{A\in K}, we have that #{\emptyset \leq A}}
