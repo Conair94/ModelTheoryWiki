@@ -1,0 +1,8 @@
+\title{Fraisse's Theorem}
+\date{2024-02-13}
+\author{mbryant}
+\taxon{theorem}
+
+\p{If #{\mathcal{L}} is countable, and #{(K,\subset)} a class of finitely generated structures has the [amalgamation property](Fra-d003), the [joint embedding property](Fra-d004), and the [hereditary property](Fra-d005), 
+Then there is a unique, countable structure #{\mathcal{M}} whose [age](Fra-d002) is #{K} with the property that any isomorphism #{f:A\rightarrow B} with #{A,B\subseteq \mathcal{M}} and #{A,B\in K} extends to
+an automorphism of #{\mathcal{M}}}
