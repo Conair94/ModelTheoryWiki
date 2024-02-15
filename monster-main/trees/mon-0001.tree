@@ -18,6 +18,10 @@
 }
 \scope{
   \put\transclude/expanded{false}
+  \transclude{Fra-p001}
+}
+\scope{
+  \put\transclude/expanded{false}
   \transclude{mon-p001}
 }
 \scope{
