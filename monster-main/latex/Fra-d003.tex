@@ -1,0 +1,20 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of Amalgamation Property (AP)}
+
+\date{February 13, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Amalgamation Property} if for every \(A,B,C  \in  K\), if there 
+exists an embedding \(f:A \rightarrow  B\) such that \(f(A)  \leq  B\) and and embedding \(g:A \rightarrow  C\) such that \(A \leq  B\), then there exists a structure \(D\) 
+and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\) and \(h_2(f(A)) = h_1(g(A))\)}
+\printbibliography
+\end{document}
