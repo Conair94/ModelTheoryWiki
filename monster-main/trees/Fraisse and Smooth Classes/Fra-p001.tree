@@ -4,3 +4,7 @@
 \taxon{part}
 
 \p{We present Fraisse Classes, Smooth classes, and related results and variants.}
+
+\transclude{Fra-s001}
+\transclude{Fra-s002}
+\transclude{Fra-s003}
