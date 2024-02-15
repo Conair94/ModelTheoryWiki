@@ -3,7 +3,7 @@
 \author{mbryant}
 \taxon{section}
 
-\p{We define Fraisse constructions and their properties. Most of the concepts can be referred to in [Wilfred Hodges' Model Theory](Ref-0001)}}
+\p{We define Fraisse constructions and their properties. Most of the concepts can be referred to in [Wilfred Hodges' Model Theory](Ref-0001)}
 
 \transclude{Fra-d001}
 \transclude{Fra-d002}
