@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Fraisse Classes}
+
+\date{February 13, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{We define Fraisse constructions and their properties. Most of the concepts can be referred to in Wilfred Hodges' Model Theory~\cite{Ref-0001}}
+\begin{tree}{title={Definition of a class}, taxon={definition}, slug={Fra-d001}}
+Given a language \(\mathcal {L}\), a class \(K\) is defined to be a set of \(\mathcal {L}\)-structures\par{Often, we want there to be a relation \(\leq\) acting on the structures in \(K\), and when we do, we write the class and relation as a pair \((K,  \leq )\)}
+\end{tree}
+
+\begin{tree}{title={Definition of an Age}, taxon={definition}, slug={Fra-d002}}
+Given a structure \(A\) in a language \(\mathcal {L}\), the \emph{Age} (pronounced ah-zh) of \(A\) is \[B \subseteq  A: B  \text { is finitely generated }\]\par{The age of a structure is itself a class, often under the relation of substructure}
+\end{tree}
+
+\begin{tree}{title={Definition of Amalgamation Property (AP)}, taxon={definition}, slug={Fra-d003}}
+Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Amalgamation Property} if for every \(A,B,C  \in  K\), if there 
+exists an embedding \(f:A \rightarrow  B\) such that \(f(A)  \leq  B\) and and embedding \(g:A \rightarrow  C\) such that \(A \leq  B\), then there exists a structure \(D\) 
+and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\) and \(h_2(f(A)) = h_1(g(A))\)
+\end{tree}
+
+\begin{tree}{title={Definition of Joint Embedding Property (JEP)}, taxon={definition}, slug={Fra-d004}}
+Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Amalgamation Property} if for every \(A,B  \in  K\), there exists a structure \(D\) 
+and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\)\par{\ForesterRef{Fra-d003}{Amalgamation Property} does NOT necessarily imply JEP, unless the empty set \(\emptyset\) is in \(K\) and for all \(A \in  K\), we have that \(\emptyset   \leq  A\)}
+\end{tree}
+
+\begin{tree}{title={Definition of Hereditary Property (HP)}, taxon={definition}, slug={Fra-d005}}
+A class \((K, \leq )\) has the hereditary property if for every \(A \in  K\), and any \(B \subseteq  A\) finitely generated, then there is some \(C \in  K\) such that \(C \cong  B\)
+\end{tree}
+
+\begin{tree}{title={Fraisse's Theorem}, taxon={theorem}, slug={Fra-t001}}
+If \(\mathcal {L}\) is countable, and \((K, \subset )\) a class of finitely generated structures has the \ForesterRef{Fra-d003}{amalgamation property}, the \ForesterRef{Fra-d004}{joint embedding property}, and the \ForesterRef{Fra-d005}{hereditary property}, 
+Then there is a unique, countable structure \(\mathcal {M}\) whose \ForesterRef{Fra-d002}{age} is \(K\) with the property that any isomorphism \(f:A \rightarrow  B\) with \(A,B \subseteq   \mathcal {M}\) and \(A,B \in  K\) extends to
+an automorphism of \(\mathcal {M}\).\par{The structure \(\mathcal {M}\) is the \emph{Fraisse limit} of \(K\).}\par{We call a class \((K, \subseteq )\) satisfying AP, HP, and JEP a Fraisse class}\par{When a structure has the above isomorphism extension property, we say it is \emph{ultrahomogeneous} (or \emph{homogeneous}). 
+The converse of Fraisse's Theorem is also true in the sense that if we have a structure which is ultrahomogeneous with respect to its age, then its age is a Fraisse class.}
+\end{tree}
+
+\begin{tree}{title={Properties of a Fraisse Limit}, taxon={theorem}, slug={Fra-t002}}
+If \(M\) is the \ForesterRef{Fra-t001}{Fraisse Limit} of a class \((K,  \leq )\), then \(Th(M)\) has quantifier elimination and is \(\omega\)-categorical
+\end{tree}
+
+\begin{tree}{title={Ex: The Random Graph}, taxon={Example}, slug={Fra-e001}}
+Rado's famous random graph is indeed the Fraisse Limit of the class of finite graphs in the language \(\mathcal {L} =  \{ E \}\) where \(E\) is a binary relation representing "there is an edge" between two points.\par{More precisely, a graph is an \(\mathcal {L}-structure\) for which \(E\) is anti-reflexive and symmetric.}
+\end{tree}
+
+\begin{tree}{title={Ex: \(( \mathbb {Q},  \leq )\)}, taxon={Example}, slug={Fra-e002}}
+The Dense Linear Order \(( \mathbb {Q},  \leq )\) is the Fraisse Limit of the class of all finite linear orders
+\end{tree}
+
+\printbibliography
+\end{document}
