@@ -1,0 +1,16 @@
+\title{Fraisse Classes}
+\date{2024-02-13}
+\author{mbryant}
+\taxon{section}
+
+\p{We define Fraisse constructions and their properties. Most of the concepts can be referred to in [Wilfred Hodges' Model Theory](Ref-0001)}
+
+\transclude{Fra-d001}
+\transclude{Fra-d002}
+\transclude{Fra-d003}
+\transclude{Fra-d004}
+\transclude{Fra-d005}
+\transclude{Fra-t001}
+\transclude{Fra-t002}
+\transclude{Fra-e001}
+\transclude{Fra-e002}
