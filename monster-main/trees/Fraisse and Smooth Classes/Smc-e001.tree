@@ -1,0 +1,8 @@
+\title{Ex: Initial Segments}
+\date{2024-02-17}
+\author{mbryant}
+\taxon{example}
+
+\p{ Let #{(K,\leq_*)} be the class of be finite, initial segements of the linear order #{(\omega,\leq)}, where #{A\leq_* B} is "#{A} is an initial segment of #{B}".}
+\p{It is clear that #{\leq} fits into the definition of a smooth class, simply by the universal formula #{\Phi_A(y_1,\dots, y_n) = \forall x(( x=y_1\lor\dots\lor x=y_n) \lor \bigwedge_i^n x\geq y_i)}}
+\p{This class has [AP](Fra-d003) and [JEP](Fra-d004), but not [HP](Fra-d005) or [dAP](Fra-d006)}
