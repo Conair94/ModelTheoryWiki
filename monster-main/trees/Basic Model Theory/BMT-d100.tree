@@ -1,0 +1,10 @@
+\title{Definition of Sequent}
+\date{2024-02-16}
+\author{oscarc}
+\taxon{definition}
+
+\p{
+    Given a [language](BMT-d001) #{\mathcal{L}}, a \em{sequent} in #{\mathcal{L}} is an ordered pair #{(\Gamma, A)},
+    where #{\Gamma} is a set of [#{\mathcal{L}}-sentences](BMT-d013) and #{A} is an [#{\mathcal{L}}-formula](BMT-d009).
+    This is usually written #{\Gamma\vdash A}.
+}

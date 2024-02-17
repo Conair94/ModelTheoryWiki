@@ -1,0 +1,8 @@
+\title{Definition of Sentences}
+\date{2024-02-16}
+\author{oscarc}
+\taxon{definition}
+
+\p{
+    An [#{\mathcal L}-formula](BMT-d009) is a \em{sentence} when its [set of free variables](BMT-d012) is empty.
+}

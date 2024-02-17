@@ -1,0 +1,31 @@
+\title{Definition of Free and Bound Variables}
+\date{2024-02-16}
+\author{oscarc}
+\taxon{definition}
+
+\p{
+    The set of \em{free variables} of an [#{\mathcal L}-formula](BMT-d009) is defined inductively as follows.
+    \ol{
+        \li{
+            The set of free variables of an atomic formula is the set of all variables appearing in the formula.
+        }
+        \li{
+            #{\mathrm{var}(\neg A) = \mathrm{var}(A)}, where #{A} is a formula.
+        }
+        \li{
+            #{\mathrm{var}(A\lor B) = \mathrm{var}(A)\cup\mathrm{var}(B)}, where #{A} and #{B} are formulas.
+        }
+        \li{
+            #{\mathrm{var}(A\land B) = \mathrm{var}(A)\cup\mathrm{var}(B)}, where #{A} and #{B} are formulas.
+        }
+        \li{
+            #{\mathrm{var}(\exists v\,A) = \mathrm{var}(A)\setminus\set v}, where #{A} is a formula and #{v} is a variable.
+        }
+        \li{
+            #{\mathrm{var}(\forall v\,A) = \mathrm{var}(A)\setminus\set v}, where #{A} is a formula and #{v} is a variable.
+        }
+    }
+}
+\p{
+    If a variable appears in a formula but is not free, then it is called \em{bound}.
+}
