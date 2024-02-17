@@ -1,0 +1,18 @@
+\title{Definition of a Smooth Class}
+\taxon{definition}
+\author{mbryant}
+\date{2024-02-17}
+
+\p{A class #{(K,\leq)} of finite #{\mathcal{L}}-structures (closed under isomorphism) is called \em{a smooth class} if #{\leq} is transitive, #{A\leq B \Rightarrow A\subsetq B}, and for each #{A\in K}, there is a set of universal formulas #{\Phi_A} such that:
+##{A\leq B \Leftrightarrow B\models \Phi_A(A)}
+and we require that #{A\cong A' \Leftrightarrow \Phi_A = \Phi_{A'}} }
+
+\p{An alternative definition, or characterization, from [Baldwin and Shi](Ref-0003), is a class that satisfies the following:}
+\p{If #{A\in K}, #{A\leq A}}
+\p{If #{A\leq B}, then #{A\subseteq B}}
+\p{#{\leq} is transitive}
+\p{If #{A\leq C}, and #{A\subseteq B\subseteq C}, then #{A\leq B} for #{A,B,C \in K}}
+\p{#{\emptyset\in K} and #{\emptyset \leq A} for all #{A\in K}}
+\p{The only difference between these two characterizations is that in the first definition, we essentially stipulate that #{\leq} is definable/determined by a 
+set of universal formulas. This turns out to be an advantage in working with these classes. Certainly, classes satisfying the first definition will satisfy Baldwin-Shi's. In this way,
+it is perhaps wiser to regard the second definition as a characterization as opposed to an actual definition.}
