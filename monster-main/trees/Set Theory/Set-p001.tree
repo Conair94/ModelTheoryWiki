@@ -4,3 +4,4 @@
 \taxon{part}
 
 \p{In this part, we give some of the basic notions of set theory that are necessary to studying model theory. Topics include definitions of ZFC, set theory axioms, cardinals and ordinals, partial/linear orders,....}
+\transclude{Set-s001}
