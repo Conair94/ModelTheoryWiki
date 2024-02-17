@@ -3,6 +3,7 @@
 \author{mbryant}
 \date{2024-02-17}
 
+\p{We assume the language #{\mathcal{L}} is countable and only relational.}
 \p{A class #{(K,\leq)} of finite #{\mathcal{L}}-structures (closed under isomorphism) is called \em{a smooth class} if #{\leq} is transitive, #{A\leq B \Rightarrow A\subsetq B}, and for each #{A\in K}, there is a set of universal formulas #{\Phi_A} such that:
 ##{A\leq B \Leftrightarrow B\models \Phi_A(A)}
 and we require that #{A\cong A' \Leftrightarrow \Phi_A = \Phi_{A'}} }
