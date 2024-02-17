@@ -4,4 +4,4 @@
 \taxon{Example}
 
 \p{Rado's famous random graph is indeed the Fraisse Limit of the class of finite graphs in the language #{\mathcal{L} = \{E\}} where #{E} is a binary relation representing "there is an edge" between two points.}
-\p{More precisely, a graph is an #{\mathcal{L}-structure} for which #{E} is anti-reflexive and symmetric.}
+\p{More precisely, a graph is an #{\mathcal{L}-}structure for which #{E} is anti-reflexive and symmetric.}
