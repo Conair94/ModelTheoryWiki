@@ -6,9 +6,9 @@
 \p{A class #{(K,\leq)} of finite #{\mathcal{L}}-structures (closed under isomorphism) is called \em{a smooth class} if #{\leq} is transitive, #{A\leq B \Rightarrow A\subsetq B}, and for each #{A\in K}, there is a set of universal formulas #{\Phi_A} such that:
 ##{A\leq B \Leftrightarrow B\models \Phi_A(A)}
 and we require that #{A\cong A' \Leftrightarrow \Phi_A = \Phi_{A'}} }
-\p{This definition comes from [On Generic structures](Sm-r001) }
+\p{This definition comes from [On Generic structures](Smc-r001) }
 
-\p{An alternative definition, or characterization, from [Baldwin and Shi](Sm-r002), is a class that satisfies the following:}
+\p{An alternative definition, or characterization, from [Baldwin and Shi](Smc-r002), is a class that satisfies the following:}
 \p{If #{A\in K}, #{A\leq A}}
 \p{If #{A\leq B}, then #{A\subseteq B}}
 \p{#{\leq} is transitive}
