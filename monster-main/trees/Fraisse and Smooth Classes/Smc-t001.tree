@@ -1,0 +1,17 @@
+\title{Smooth Extension of Fraisse's Theorem}
+\date{2024-02-17}
+\author{mbryant}
+\taxon{theorem}
+
+\p{If #{\mathcal{L}} is countable, and #{(K,\leq)} is a smooth class of finite structures has the [amalgamation property](Fra-d003) and the [joint embedding property](Fra-d004), 
+then there is a unique, countable structure #{\mathcal{M}}  with the following properties:
+\p{1. Any isomorphism #{f:A\rightarrow B} with #{A,B\leq \mathcal{M}} and #{A,B\in K} extends to
+an automorphism of #{\mathcal{M}}.}
+\p{2. #{\mathcal{M} = \bigcup^\omega_n A_n} where #{A_n \leq A_{n+1}} and for all #{n}, #{A_n\in K}}
+\p{3. #{For every #{A\in K}, there is an embedding #{f:A\rightarrow M} of #{A} into #{M} such that #{f(A) \leq M}}
+
+\p{The structure #{\mathcal{M}} is the \em{generic}, or sometimes, the \em{limit} of #{K}.}
+
+\p{An equivalent characterization of a generic is properties 2 and 3 and the following property:}
+p{4. If #{A\leq M} and #{A\leq B} for #{B\in K}, then there is an isomorphism #{f: B\rightarrow M} extending the identity map #{id: A\rightarrow M} 
+such that #{f(B) \leq M}}
