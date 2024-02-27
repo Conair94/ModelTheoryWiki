@@ -1,0 +1,24 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of a Deduction Rule}
+
+\date{February 16, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    A \emph{deduction rule} has the form \(\frac { \Gamma _1 \vdash  A_1 \quad \cdots \quad \Gamma _n \vdash  A_n}{ \Gamma \vdash  A}\),
+    where each \(\Gamma _i \vdash  A_i\) and \(\Gamma \vdash  A\) is a sequent.
+    The sequents above the line are called \emph{antecedents}, and the sequent below the line is the \emph{consequent}.
+}\par{\emph{Applying} a deduction rule involves having a collection of sequents which match the antecedents,
+    and \emph{deducing} the sequent which matches the consequent.
+}
+\printbibliography
+\end{document}

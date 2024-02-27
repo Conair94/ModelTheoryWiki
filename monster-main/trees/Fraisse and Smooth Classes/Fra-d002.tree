@@ -3,5 +3,5 @@
 \author{mbryant}
 \taxon{definition}
 
-\p{Given a structure #{A} in a language #{\mathcal{L}}, the \em{Age} (pronounced ah-zh) of #{A} is ##{\{B\subseteq A: B \text{ is finitely generated }\}}
+\p{Given a structure #{A} in a language #{\mathcal{L}}, the \em{Age} (pronounced ah-zh) of #{A} is ##{\{B\subseteq A: B \text{ is finitely generated }\}}}
 \p{The age of a structure is itself a class, often under the relation of substructure}

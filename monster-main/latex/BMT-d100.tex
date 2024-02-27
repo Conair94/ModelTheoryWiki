@@ -1,0 +1,22 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of Sequent}
+
+\date{February 16, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    Given a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), a \emph{sequent} in \(\mathcal {L}\) is an ordered pair \(( \Gamma , A)\),
+    where \(\Gamma\) is a set of \ForesterRef{BMT-d013}{\(\mathcal {L}\)-sentences} and \(A\) is an \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formula}.
+    This is usually written \(\Gamma \vdash  A\).
+}
+\printbibliography
+\end{document}

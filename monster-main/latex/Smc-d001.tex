@@ -1,0 +1,22 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of a Smooth Class}
+
+\date{February 17, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{We assume the language \(\mathcal {L}\) is countable and only relational.}\par{A class \((K, \leq )\) of finite \(\mathcal {L}\)-structures (closed under isomorphism) is called \emph{a smooth class} if \(\leq\) is transitive, \(A \leq  B  \Rightarrow  A \subsetq  B\), and for each \(A \in  K\), there is a set of universal formulas \(\Phi _A\) such that:
+\[A \leq  B  \Leftrightarrow  B \models   \Phi _A(A)\]
+and we require that \(A \cong  A'  \Leftrightarrow   \Phi _A =  \Phi _{A'}\)}\par{This definition comes from On Generic structures~\cite{Smc-r001}}\par{An alternative definition, or characterization, from Baldwin and Shi~\cite{Smc-r002}, is a class that satisfies the following:}\par{If \(A \in  K\), \(A \leq  A\)}\par{If \(A \leq  B\), then \(A \subseteq  B\)}\par{\(\leq\) is transitive}\par{If \(A \leq  C\), and \(A \subseteq  B \subseteq  C\), then \(A \leq  B\) for \(A,B,C  \in  K\)}\par{\(\emptyset \in  K\) and \(\emptyset   \leq  A\) for all \(A \in  K\)}\par{The only difference between these two characterizations is that in the first definition, we essentially stipulate that \(\leq\) is definable/determined by a 
+set of universal formulas. This turns out to be an advantage in working with these classes. Certainly, classes satisfying the first definition will satisfy Baldwin-Shi's. In this way,
+it is perhaps wiser to regard the second definition as a characterization as opposed to an actual definition.}
+\printbibliography
+\end{document}

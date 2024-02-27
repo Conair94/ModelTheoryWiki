@@ -1,0 +1,21 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Smooth Extension of Fraisse's Theorem}
+
+\date{February 17, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{If \(\mathcal {L}\) is countable, and \((K, \leq )\) is a smooth class of finite structures has the \ForesterRef{Fra-d003}{amalgamation property} and the \ForesterRef{Fra-d004}{joint embedding property}, 
+then there is a unique, countable structure \(\mathcal {M}\)  with the following properties:}\par{1. Any isomorphism \(f:A \rightarrow  B\) with \(A,B \leq   \mathcal {M}\) and \(A,B \in  K\) extends to
+an automorphism of \(\mathcal {M}\).}\par{2. \(\mathcal {M} =  \bigcup ^ \omega _n A_n\) where \(A_n  \leq  A_{n+1}\) and for all \(n\), \(A_n \in  K\)}\par{3. \(For every  A \in  K , there is an embedding  f:A \rightarrow  M  of  A  into  M  such that  f(A)  \leq  M\)}\par{The structure \(\mathcal {M}\) is the \emph{generic}, or sometimes, the \emph{limit} of \(K\).}\par{An equivalent characterization of a generic is properties 2 and 3 and the following property:}\par{4. If \(A \leq  M\) and \(A \leq  B\) for \(B \in  K\), then there is an isomorphism \(f: B \rightarrow  M\) extending the identity map \(id: A \rightarrow  M\) 
+such that \(f(B)  \leq  M\)}
+\printbibliography
+\end{document}

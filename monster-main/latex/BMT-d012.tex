@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of Free and Bound Variables}
+
+\date{February 16, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    The set of \emph{free variables} of an \ForesterRef{BMT-d009}{\(\mathcal  L\)-formula} is defined inductively as follows.
+    \begin{enumerate}
+\item{
+            The set of free variables of an atomic formula is the set of all variables appearing in the formula.
+        }
+        \item{\(\mathrm {var}( \neg  A) =  \mathrm {var}(A)\), where \(A\) is a formula.
+        }
+        \item{\(\mathrm {var}(A \lor  B) =  \mathrm {var}(A) \cup \mathrm {var}(B)\), where \(A\) and \(B\) are formulas.
+        }
+        \item{\(\mathrm {var}(A \land  B) =  \mathrm {var}(A) \cup \mathrm {var}(B)\), where \(A\) and \(B\) are formulas.
+        }
+        \item{\(\mathrm {var}( \exists  v \, A) =  \mathrm {var}(A) \setminus \set  v\), where \(A\) is a formula and \(v\) is a variable.
+        }
+        \item{\(\mathrm {var}( \forall  v \, A) =  \mathrm {var}(A) \setminus \set  v\), where \(A\) is a formula and \(v\) is a variable.
+        }
+\end{enumerate}}\par{
+    If a variable appears in a formula but is not free, then it is called \emph{bound}.
+}
+\printbibliography
+\end{document}
