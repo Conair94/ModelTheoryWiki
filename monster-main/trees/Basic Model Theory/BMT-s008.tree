@@ -1,7 +1,7 @@
-\title{Definition of an Elimination Set}
+\title{Model Complete}
 \date{2024-02-27}
 \author{connor-lockhart}
-\taxon{definition}
+\taxon{Section}
 
 \p{An \em{Elimination Set} for a language #{\mathcal{L}} and class #{K} of #{\mathcal{L}}-structures, then a set #{\Gamma} of formulas #{\phi} is an elimination set for #{K} if for every formula #{\phi(\bar{x})} of #{\mathcal{L}} there is a formula #{\phi^*(\bar{x})} which is a boolean combinations of formulas in #{\Gamma} and #{\phi} is equivalent to #{\phi^*} in every structure in #{K}}
 

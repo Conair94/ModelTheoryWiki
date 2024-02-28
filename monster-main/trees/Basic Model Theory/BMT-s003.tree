@@ -3,9 +3,9 @@
 \author{connor-lockhart}
 \taxon{section}
 
-\p{Quantifier Elimination is a broader technique in Model Theory where for a structure in a given language, an arbitrary formula can be written as a boolean combination of perhaps simpler formulas}
+\p{Quantifier Elimination is a part of a broader technique in Model Theory where for a structure in a given language, an arbitrary formula can be written as a boolean combination of perhaps simpler formulas}
 \transclude{BMT-d014}
-\p{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. When }
+\p{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. It is worth noting that, in some cases it is not possible to have a full quantifier elimination down to the level of a quantifier free set but perhaps we can restrict ourself to some reasonable set of formulas.}
 
 
 
