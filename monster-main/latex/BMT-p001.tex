@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Morgan Bryant\thanks{With contributions from Connor Lockhart.}}
+\author{Morgan Bryant\thanks{With contributions from connorlockhart, Connor Lockhart.}}
 
 \begin{document}
 \maketitle
@@ -76,7 +76,11 @@ Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined induct
   
   
 \begin{tree}{title={Quantifier Elimination}, taxon={section}, slug={BMT-s003}}
-In this section we give the basic definitions and theorems for quantifier Elimination
+Quantifier Elimination is a broader technique in Model Theory where for a structure in a given language, an arbitrary formula can be written as a boolean combination of perhaps simpler formulas
+\begin{tree}{title={Definition of an Elimination Set}, taxon={definition}, slug={BMT-d014}}
+An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
+\end{tree}
+\par{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. When }
 \end{tree}
 
 
