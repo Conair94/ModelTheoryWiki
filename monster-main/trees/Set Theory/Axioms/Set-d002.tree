@@ -1,0 +1,7 @@
+\title{Axiom of Pairing (PA)}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+
+\p{The Pairing Axiom is as follows:}
+\p{#{\forall x \forall y \exists z (\forall w(w\in z \leftrightarrow (w= x\lor w=y)))}}
