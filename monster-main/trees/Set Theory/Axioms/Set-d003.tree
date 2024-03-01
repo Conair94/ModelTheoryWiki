@@ -1,0 +1,7 @@
+\title{Axiom of Union (UA)}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+
+\p{The Union Axiom is as follows:}
+\p{#{\forall x \exists z(\forall y( y\in z \leftrightarrow (\exists w \in x (y\in w))))}}
