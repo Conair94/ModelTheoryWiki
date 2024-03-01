@@ -1,0 +1,7 @@
+\title{Definition of Meagre and Comeagre Sets}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a topological space #{X}, #{A\subseteq X} is meagre if ##{A = \bigcup_i^\omega A_i} where the closure of #{A_i} has empty interior (i.e., nowhere dense)}
+\p{Comeagre sets are the complements of meagre sets}
