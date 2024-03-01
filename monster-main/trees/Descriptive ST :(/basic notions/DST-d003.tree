@@ -7,3 +7,4 @@
 \p{(Seperable = Second Countable = There is a dense, countable set in #{X})}
 \p{(Completely metrisable = there is a metric on #{X} which is complete = there is a metric on #{X} so that every cauchy sequence 
 has a limit)}
+\p{Closed subsets of Polish spaces are themselves Polish (closed = the restricted metric is complete), Product and sums of topologies of Polish spaces are Polish}
