@@ -4,3 +4,7 @@
 \taxon{section}
 
 \p{We describe the different set theory axioms and different accepted sets of these axioms, such as ZFC, ZFC+, etc.}
+\transclude{Set-d001}
+\transclude{Set-d002}
+\transclude{Set-d003}
+\transclude{Set-d004}
