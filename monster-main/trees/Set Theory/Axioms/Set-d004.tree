@@ -1,0 +1,7 @@
+\title{Axiom of Seperation (SA)}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+
+\p{The axiom of seperation, or the seperation schema, is as follows:}
+\p{If #{\varphi(x_1,\dots, x_n,z)} is any formula in the appropriate language, then there exists a set #{ y = \{z: \varphi(x_1,\dots, x_n, z)}} 
