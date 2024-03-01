@@ -1,0 +1,7 @@
+\title{Axiom of Existentionality (AE)}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+
+\p{The axiom of existentionality is as follows:}
+\p{\forall x \forall y( x = y \Leftrightarrow (\forall z (z\in x \leftrightarrow z\in y)))}
