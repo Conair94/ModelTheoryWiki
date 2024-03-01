@@ -1,0 +1,9 @@
+\title{Definition of Polish Space}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+
+\p{Given a topological space #{X}, #{X} is a Polish space if #{X} is completely metrisable and seperable}
+\p{(Seperable = Second Countable = There is a dense, countable set in #{X})}
+\p{(Completely metrisable = there is a metric on #{X} which is complete = there is a metric on #{X} so that every cauchy sequence 
+has a limit)}
