@@ -1,0 +1,8 @@
+\title{Definition of Ramsey Class}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+\p{For structures #{A,B}, let ##{\binom{B}{A} = \{A_0: A_0\leq B \&\; A_0\cong B\}}
+\p{Given a class and relation #{(K,\leq)}, we say that #{K} has the Ramsey property if for every #{A\leq B \in K}, there is some #{C\in K} with #{B\leq C}
+such that for every #{k}-coloring #{c: \binom{C}{A}\rightarrow k}, there is some #{B' \in \binom{C}{B}} with ##{c|_{\binom{B'}{A}}} constant.}
+\p{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}
