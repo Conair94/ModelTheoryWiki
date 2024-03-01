@@ -4,4 +4,4 @@
 \taxon{definition}
 
 \p{The axiom of existentionality is as follows:}
-\p{\forall x \forall y( x = y \Leftrightarrow (\forall z (z\in x \leftrightarrow z\in y)))}
+\p{#{\forall x \forall y( x = y \Leftrightarrow (\forall z (z\in x \leftrightarrow z\in y)))}}
