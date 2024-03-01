@@ -5,3 +5,4 @@
 
 \p{We present the basics of descriptive set theory (DST) and its relationship to model theory.}
 \p{The main resource will be [Kechris's Classical Descriptive Set Theory](DST-r001).}
+\transclude{DST-s001}
