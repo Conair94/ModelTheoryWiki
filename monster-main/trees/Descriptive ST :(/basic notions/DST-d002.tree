@@ -1,0 +1,10 @@
+\title{Definition of Borel Hierarchy}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+
+\p{Building off of the [Borel sets](DST-d001), welet #{\Sigma_0} denote open sets, #{\Pi_0} the closed sets, and then 
+##{\Sigma_n = \{\bigcup_i^\omega A_i : A_i \in \Pi_{n-1}\}}
+##{\Pi_n = \{\bigcap_i^\omega A_i : A_i \in \Sigma_{n-1}\}}}
+\p{This is the Borel Hierarchy, and it mirrors similar hierarchies in recursion theory. 
+Notice in particular #{\Sigma_1} is the set of #{F_\sigma} sets, #{\Pi_1} is the set of #{G_\delta} sets. }
