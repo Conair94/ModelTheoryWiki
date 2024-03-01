@@ -4,3 +4,6 @@
 \taxon{definition}
 
 \p{We give basic definitions of Borel sets, topology, polish spaces, Baire spaces, etc.}
+\transclude{DST-d001}
+\transclude{DST-d002}
+\transclude{DST-d003}
