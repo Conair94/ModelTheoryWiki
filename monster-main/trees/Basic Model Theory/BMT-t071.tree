@@ -1,0 +1,7 @@
+\title{Łoś's Theorem}
+\date{2024-03-07}
+\author{gpeters}
+\taxon{Theorem}
+
+\p{Let #{\mathcal{A}_* = \prod\limits_{i\in I} \mathcal{A}_i / \mathcal{U}} be an [ultraproduct](BMT-d073). Then for any #{L}-formula #{\phi(x_1,\dots,x_n)}, we have ##{\mathcal{A}_*\models \phi(\underline{a}_1,\dots,\underline{a}_n) \text{ if and only if } \{i\in I: A_i\models\phi(\underline{a}_1(i),\dots, \underline{a}_n(i))\}\in\mathcal{U}.} }
+

@@ -1,0 +1,11 @@
+\title{Definition of a Filter}
+\date{2024-03-01}
+\author{gpeters}
+\taxon{definition}
+
+\p{Let #{I} be any set. Then a filter #{\mathcal{F}} on the power set #{\mathcal{P}(I)} is a collection of subsets of #{I} with the following properties:}
+\p{1: #{I\in\mathcal{F}}.}
+\p{2: If #{A\in \mathcal{F}} and #{A\subseteq B}, then #{B\in \mathcal{F}}.}
+\p{3: If #{A,B \in \mathcal{F}}, then we have #{A\cap B\in \mathcal{F}}.}
+\p{Furthermore, a filter is proper if #{\emptyset\notin\mathcal{F}}.}
+
