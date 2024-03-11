@@ -1,0 +1,19 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of Ramsey Class}
+
+\date{March 1, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{For structures \(A,B\), let \[\binom {B}{A} =  \{ A_0: A_0 \leq  B & ; A_0 \cong  B \}\]}\par{Given a class and relation \((K, \leq )\), we say that \(K\) has the Ramsey property if for every \(A \leq  B  \in  K\), there is some \(C \in  K\) with \(B \leq  C\)
+such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there is some \(B'  \in   \binom {C}{B}\) with \[c|_{ \binom {B'}{A}}\] constant.}\par{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}
+\printbibliography
+\end{document}
