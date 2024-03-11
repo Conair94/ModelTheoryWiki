@@ -1,0 +1,8 @@
+\title{Definition of #{\kappa}-categoricity}
+\date{2024-03-10}
+\author{francis.westhead}
+\taxon{definition}
+
+\p{
+    Given a cardinal #{\kappa} and a [language](BMT-d001) #{\mathcal{L}}, an [#{\mathcal{L}}-theory](BMT-d017) is \em{#{\kappa}-categorical} if whenever #{\mathcal{M}} and #{\mathcal{N}} are #{\mathcal{L}}-structures with #{|\mathcal{M}|=|\mathcal{M}|=\kappa}, then #{\mathcal{M} \cong \mathcal{N}}. 
+}

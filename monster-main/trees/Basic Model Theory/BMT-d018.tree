@@ -1,0 +1,7 @@
+\title{Definition of #{T}-equivalence of formulas}
+\date{2024-03-10}
+\author{francis.westhead}
+\taxon{definition}
+
+\p{Given a [language](BMT-d001), #{\mathcal{L}}, a tuple of variables, #{x}, and [#{\mathcal{L}}-formulas](BMT-d009), #{\varphi(x)} and #{\varpsi(x)}, #{\varphi(x)} and #{\varpsi(x)} are \em{#{T}-equivalent} if #{T \models \forall x (\varphi(x) \leftrightarrow \varpsi(x))}. }
+\p{It is simple to show that #{T}-equivalence of formulas is an equivalence relation.}

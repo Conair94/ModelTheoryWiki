@@ -1,0 +1,8 @@
+\title{Definition of an #{\mathcal{L}}-theory}
+\date{2024-03-10}
+\author{francis.westhead}
+\taxon{definition}
+
+\p{
+    Given a [language](BMT-d001) #{\mathcal{L}}, a \em{#{\mathcal{L}}-theory} is a set of [#{\mathcal{L}}-sentences](BMT-d013). Sometimes it is notationally convenient to assume that theories are deductively closed.
+}

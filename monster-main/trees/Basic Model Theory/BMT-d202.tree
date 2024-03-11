@@ -1,0 +1,6 @@
+\title{Definition of a Tarski-Lindenbaum Algebra}
+\date{2024-03-10}
+\author{francis.westhead}
+\taxon{definition}
+
+\p{Given a [language](BMT-d001), #{\mathcal{L}}, and an [#{\mathcal{L}}-theory](BMT-d017), #{T}, the \em{#{n}'th Tarski-Lindenbaum algebra of #{T}} is the set of [#{\mathcal{L}}-formulas](BMT-d009) quotiented by the relation of [#{T}-equivalence](BMT-d018).}
