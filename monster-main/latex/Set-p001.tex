@@ -16,6 +16,22 @@
 \par{In this part, we give some of the basic notions of set theory that are necessary to studying model theory. Topics include definitions of ZFC, set theory axioms, cardinals and ordinals, partial/linear orders,....}
 \begin{tree}{title={Axioms of Set Theory}, taxon={section}, slug={Set-s001}}
 We describe the different set theory axioms and different accepted sets of these axioms, such as ZFC, ZFC+, etc.
+\begin{tree}{title={Axiom of Existentionality (AE)}, taxon={definition}, slug={Set-d001}}
+The axiom of existentionality is as follows:\par{\(\forall  x  \forall  y( x = y  \Leftrightarrow  ( \forall  z (z \in  x  \leftrightarrow  z \in  y)))\)}
+\end{tree}
+
+\begin{tree}{title={Axiom of Pairing (PA)}, taxon={definition}, slug={Set-d002}}
+The Pairing Axiom is as follows:\par{\(\forall  x  \forall  y  \exists  z ( \forall  w(w \in  z  \leftrightarrow  (w= x \lor  w=y)))\)}
+\end{tree}
+
+\begin{tree}{title={Axiom of Union (UA)}, taxon={definition}, slug={Set-d003}}
+The Union Axiom is as follows:\par{\(\forall  x  \exists  z( \forall  y( y \in  z  \leftrightarrow  ( \exists  w  \in  x (y \in  w))))\)}
+\end{tree}
+
+\begin{tree}{title={Axiom of Seperation (SA)}, taxon={definition}, slug={Set-d004}}
+The axiom of seperation, or the seperation schema, is as follows:\par{If \(\varphi (x_1, \dots , x_n,z)\) is any formula in the appropriate language, then there exists a set \( y =  \{ z:  \varphi (x_1, \dots , x_n, z)\)}
+\end{tree}
+
 \end{tree}
 
 \printbibliography

@@ -1,0 +1,21 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of Borel Hierarchy}
+
+\date{March 1, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{Building off of the \ForesterRef{DST-d001}{Borel sets}, welet \(\Sigma _0\) denote open sets, \(\Pi _0\) the closed sets, and then 
+\[\Sigma _n =  \{ \bigcup _i^ \omega  A_i : A_i  \in   \Pi _{n-1} \}\]
+\[\Pi _n =  \{ \bigcap _i^ \omega  A_i : A_i  \in   \Sigma _{n-1} \}\]}\par{This is the Borel Hierarchy, and it mirrors similar hierarchies in recursion theory. 
+Notice in particular \(\Sigma _1\) is the set of \(F_ \sigma\) sets, \(\Pi _1\) is the set of \(G_ \delta\) sets. }
+\printbibliography
+\end{document}
