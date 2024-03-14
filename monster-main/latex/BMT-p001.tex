@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Morgan Bryant\thanks{With contributions from Connor Lockhart, Garrett Peters.}}
+\author{Morgan Bryant\thanks{With contributions from Connor Lockhart, Francis Westhead, Garrett Peters.}}
 
 \begin{document}
 \maketitle
@@ -131,6 +131,35 @@ Fix an index set \(I\) and a \ForesterRef{BMT-d001}{language} \(L\). Let \(\{ \m
 
 \begin{tree}{title={ŁOś's Theorem}, taxon={Theorem}, slug={BMT-t071}}
 Let \(\mathcal {A}_* =  \prod \limits _{i \in  I}  \mathcal {A}_i /  \mathcal {U}\) be an \ForesterRef{BMT-d073}{ultraproduct}. Then for any \(L\)-formula \(\phi (x_1, \dots ,x_n)\), we have \[\mathcal {A}_* \models   \phi ( \underline {a}_1, \dots , \underline {a}_n)  \text { if and only if }  \{ i \in  I: A_i \models \phi ( \underline {a}_1(i), \dots ,  \underline {a}_n(i)) \} \in \mathcal {U}.\]
+\end{tree}
+
+\end{tree}
+
+
+  
+  
+\begin{tree}{title={Model Completenes}, taxon={Section}, slug={BMT-s008}}
+An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
+\end{tree}
+
+
+  
+  
+\begin{tree}{title={Categoricity}, taxon={section}, slug={BMT-s009}}
+In this section, we give the basic definitions for \(\kappa\)-categoricity. We then establish some classical characterisations of \(\aleph _0\)-categoricity.
+\begin{tree}{title={Definition of \(\kappa\)-categoricity}, taxon={definition}, slug={BMT-d201}}
+
+    Given a cardinal \(\kappa\) and a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory} is \emph{\(\kappa\)-categorical} if whenever \(\mathcal {M}\) and \(\mathcal {N}\) are \(\mathcal {L}\)-structures with \(| \mathcal {M}|=| \mathcal {M}|= \kappa\), then \(\mathcal {M}  \cong   \mathcal {N}\). 
+
+\end{tree}
+
+\begin{tree}{title={Definition of a Tarski-Lindenbaum Algebra}, taxon={definition}, slug={BMT-d202}}
+Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory}, \(T\), the \emph{\(n\)'th Tarski-Lindenbaum algebra of \(T\)} is the set of \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formulas} quotiented by the relation of \ForesterRef{BMT-d018}{\(T\)-equivalence}.
+\end{tree}
+
+\begin{tree}{title={(Ryll-Nardjewski) Characterisations of \(\omega\)-categoricity}, taxon={theorem}, slug={BMT-t003}}
+For \(\aleph _0\)-categoricity, there are a number of useful characterisations. The following are due to Ryll and Nardjewski.\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory} \(T\), the following are equivalent:}\par{1 \(T\) is \(\aleph _0\)-categorical.}\par{For every \(n \in   \omega\), there are finitely many \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formulas} in \(n\)-variables up to \ForesterRef{BMT-d018}{\(T\)-equivalence}.}\par{For every \(n \in   \omega\), the \ForesterRef{BMT-d202}{\(n\)'th Tarski-Lindenbaum algebra of \(T\)} is finite. 
+Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated}. }
 \end{tree}
 
 \end{tree}
