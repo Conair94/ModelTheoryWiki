@@ -1,0 +1,7 @@
+\title{Compactness Theorem}
+\date{2024-03-14}
+\author{gpeters}
+\taxon{Theorem}
+
+\p{Let #{L} be any language, and #{T} be any #{L}-theory. Then #{T} is satisfiable if and only if every finite subset #{T_0\subseteq T} is satisfiable.}
+

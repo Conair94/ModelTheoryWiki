@@ -9,7 +9,7 @@
 
 \date{}
 
-\author{Adam Melrod \and Connor Lockhart \and Morgan Bryant\thanks{With contributions from Francis Westhead, Garrett Peters.}}
+\author{Connor Lockhart \and Adam Melrod \and Morgan Bryant \and Francis Westhead \and Garrett Peters \and Oscar Coppola}
 
 \begin{document}
 \maketitle
@@ -22,12 +22,12 @@ We give the common definitions and theorems for basic/introductory model theory
   
 \begin{tree}{title={Structures, Isomorphisms, Substructures}, taxon={section}, slug={BMT-s001}}
 In this section we give the basic notions and theorems for structures, isomorphisms, and substructures
-\begin{tree}{title={Definition of a language}, taxon={definition}, slug={BMT-d001}}
+\begin{tree}{title={Language}, taxon={definition}, slug={BMT-d001}}
 A language, also called a vocabulary or signature by different authors, is a set \(\mathcal {L}\) consisting of symbols for constants, relations, and functions, 
 often denoted by \(c\), \(R\), and \(f\) respectively. Languages may have any cardinality.
 \end{tree}
 
-\begin{tree}{title={Definition of a Structure}, taxon={definition}, slug={BMT-d002}}
+\begin{tree}{title={Structure}, taxon={definition}, slug={BMT-d002}}
 Given a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), an \(\mathcal {L}\)-structure \(\mathcal {M}\) in this language has a universe \(M\) (often, the structure and its universe 
 are written the same, by abuse of notation). The structure \(\mathcal {M}\) "interprets" the symbols of \(\mathcal {L}\) as follows:\par{For a constant symbol \(c \in   \mathcal {L}\), the interpretation of \(c\) in \(\mathcal {M}\), denoted \(c^{ \mathcal {M}}\) represents a fixed 
 element of \(M\)}\par{For an \(n\)-ary function symbol \(f \in   \mathcal {L}\), the interpretation of \(f\) in \(\mathcal {M}\), denoted \(f^{ \mathcal {M}}\),
@@ -35,21 +35,21 @@ is a function from \(M^n\) to \(M\)}\par{For an \(n\)-ary relation symbol \(R \i
 is a subset \(M^n\)}\par{Often, we are interested in the cardinality of a structure, denoted \(| \mathcal {M}|\), which is defined to be the cardinality of its universe.}
 \end{tree}
 
-\begin{tree}{title={Definition of a Homomorphism}, taxon={definition}, slug={BMT-d003}}
+\begin{tree}{title={Homomorphism}, taxon={definition}, slug={BMT-d003}}
 Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), a \emph{homomorphism} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
 is a function between the universes \(A\) and \(B\) of \(\mathcal {A}\) and \(\mathcal {B}\) respectively such that:\par{ For every n-ary function \(f \in   \mathcal {L}\), for all \(a_1, \dots , a_n \in  A\), \(\varphi (f^{ \mathcal {A}}(a_1, \dots , a_n)) = f^{ \mathcal {B}}( \varphi (a_1), \dots ,  \varphi (a_n))\)}\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Rightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{For every constant symbol \(c  \in   \mathcal {L}\), \(\varphi (c^{ \mathcal {A}}) =c^{ \mathcal {B}}\)}
 \end{tree}
 
-\begin{tree}{title={Definition of an embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
+\begin{tree}{title={Embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
 Given two structures in a language \(\mathcal {L}\) \(\mathcal {A}\) and \(\mathcal {B}\), an \emph{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
 is a \ForesterRef{BMT-d003}{homomorphism} such that:\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Leftrightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{This is stronger than a homomorphism because we now require a two way implication in the above property.}
 \end{tree}
 
-\begin{tree}{title={Definition of an isomorphism}, taxon={definition}, slug={BMT-d005}}
+\begin{tree}{title={Isomorphism}, taxon={definition}, slug={BMT-d005}}
 An \ForesterRef{BMT-d004}{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\) between \(\mathcal {L}\)-structures is a \emph{isomorphism} if it is surjective.
 \end{tree}
 
-\begin{tree}{title={Definition of a Substructure}, taxon={definition}, slug={BMT-d006}}
+\begin{tree}{title={Substructure}, taxon={definition}, slug={BMT-d006}}
 Given a \(\mathcal {L}\)-structure \(\mathcal {A}\), a subset \(B  \subseteq  A\) is called a \emph{substructure} of \(\mathcal {A}\) if:\par{For every constant \(c \in   \mathcal {L}\), \(c^{ \mathcal {A}}  \in  B\)}\par{For every n-ary function \(f \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), \(f^{ \mathcal {A}}(b_1, \dots ,b_n)  \in  B\)}\par{For every n-ary relation, \(R \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), we write \(R^B = R^{ \mathcal {A}} \cap   \mathcal {P}(B^n)\) and require that
 \(R^{B}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{B}\))  if and only if \(R^{ \mathcal {A}}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{ \mathcal {A}}\)) 
 Note that this condition is vacuously true, so only the first two conditions need to be checked when verifying a substructure.}
@@ -62,15 +62,15 @@ Note that this condition is vacuously true, so only the first two conditions nee
   
 \begin{tree}{title={Formulas and Models}, taxon={section}, slug={BMT-s002}}
 In this section we define formulas, elementary equivalence, elementary substructures, theories, and models
-\begin{tree}{title={Definition of a term}, taxon={definition}, slug={BMT-d007}}
+\begin{tree}{title={Term}, taxon={definition}, slug={BMT-d007}}
 Given a language \(\mathcal {L}\), we define a \emph{term} to be any of the following:\par{If \(c \in   \mathcal {L}\) is a constant symbol, then \(c\) is a term}\par{If \(x\) is a variable symbol, then \(x\) is a term. We generally assume we have countably infinitely many variable symbols}\par{If \(t_1,..., t_n\) are terms, and \(f \in   \mathcal {L}\) is an \(n\)-ary function, then \(f(t_1,..., t_n)\) is a term.}
 \end{tree}
 
-\begin{tree}{title={Definition of an atomic formula}, taxon={definition}, slug={BMT-d008}}
+\begin{tree}{title={Atomic Formula}, taxon={definition}, slug={BMT-d008}}
 Given a language \(\mathcal {L}\), an \emph{atomic formula} is defined as follows:\par{If \(R \in   \mathcal {L}\) is an n-ary relation symbol, and \(t_1, \dots , t_n\) are \ForesterRef{BMT-d007}{terms}, then \(R(t_1, \dots , t_n)\) is an atomic formula.}\par{If \(t_1\) and \(t_2\) are \(\mathcal {L}\)-terms, then \(t_1 = t_2\) is an atomic formula. }
 \end{tree}
 
-\begin{tree}{title={Definition of an \(\mathcal {L}\)-formula}, taxon={definition}, slug={BMT-d009}}
+\begin{tree}{title={\(\mathcal {L}\)-Formula}, taxon={definition}, slug={BMT-d009}}
 Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined inductively as follows:\par{If \(\phi\) is an \(\mathcal {L}\)-\ForesterRef{BMT-d008}{atomic formula} then \(\phi\) is a formula}\par{If \(\phi\) and \(\psi\) are both formulas, then \(\neg \phi\), \(\phi   \land   \psi\), and \(\phi \lor \phi\) are formulas, where \(\lor , \neg , \land\) are the usual \ForesterRef{BMT-d010}{logical connectives}}\par{If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}}
 \end{tree}
 
@@ -81,7 +81,7 @@ Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined induct
   
 \begin{tree}{title={Quantifier Elimination}, taxon={section}, slug={BMT-s003}}
 Quantifier Elimination is a part of a broader technique in Model Theory where for a structure in a given language, an arbitrary formula can be written as a boolean combination of perhaps simpler formulas
-\begin{tree}{title={Definition of an Elimination Set}, taxon={definition}, slug={BMT-d014}}
+\begin{tree}{title={Elimination Set}, taxon={definition}, slug={BMT-d014}}
 An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
 \end{tree}
 \par{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. It is worth noting that, in some cases it is not possible to have a full quantifier elimination down to the level of a quantifier free set but perhaps we can restrict ourself to some reasonable set of formulas.}
@@ -137,6 +137,10 @@ Fix an index set \(I\) and a \ForesterRef{BMT-d001}{language} \(L\). Let \(\{ \m
 Let \(\mathcal {A}_* =  \prod \limits _{i \in  I}  \mathcal {A}_i /  \mathcal {U}\) be an \ForesterRef{BMT-d073}{ultraproduct}. Then for any \(L\)-formula \(\phi (x_1, \dots ,x_n)\), we have \[\mathcal {A}_* \models   \phi ( \underline {a}_1, \dots , \underline {a}_n)  \text { if and only if }  \{ i \in  I: A_i \models \phi ( \underline {a}_1(i), \dots ,  \underline {a}_n(i)) \} \in \mathcal {U}.\]
 \end{tree}
 
+\begin{tree}{title={Compactness Theorem}, taxon={Theorem}, slug={BMT-t072}}
+Let \(L\) be any language, and \(T\) be any \(L\)-theory. Then \(T\) is satisfiable if and only if every finite subset \(T_0 \subseteq  T\) is satisfiable.
+\end{tree}
+
 \end{tree}
 
 
@@ -178,26 +182,26 @@ Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated
 We present Fraisse Classes, Smooth classes, and related results and variants.
 \begin{tree}{title={Fraisse Classes}, taxon={section}, slug={Fra-s001}}
 We define Fraisse constructions and their properties. Most of the concepts can be referred to in Wilfred Hodges' Model Theory~\cite{Ref-0001}
-\begin{tree}{title={Definition of a class}, taxon={definition}, slug={Fra-d001}}
+\begin{tree}{title={Class of Structures}, taxon={definition}, slug={Fra-d001}}
 Given a language \(\mathcal {L}\), a class \(K\) is defined to be a set of \(\mathcal {L}\)-structures\par{Often, we want there to be a relation \(\leq\) acting on the structures in \(K\), and when we do, we write the class and relation as a pair \((K,  \leq )\)}
 \end{tree}
 
-\begin{tree}{title={Definition of an Age}, taxon={definition}, slug={Fra-d002}}
+\begin{tree}{title={Age}, taxon={definition}, slug={Fra-d002}}
 Given a structure \(A\) in a language \(\mathcal {L}\), the \emph{Age} (pronounced ah-zh) of \(A\) is \[\{ B \subseteq  A: B  \text { is finitely generated } \}\]\par{The age of a structure is itself a class, often under the relation of substructure}
 \end{tree}
 
-\begin{tree}{title={Definition of Amalgamation Property (AP)}, taxon={definition}, slug={Fra-d003}}
+\begin{tree}{title={Amalgamation Property (AP)}, taxon={definition}, slug={Fra-d003}}
 Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Amalgamation Property} if for every \(A,B,C  \in  K\), if there 
 exists an embedding \(f:A \rightarrow  B\) such that \(f(A)  \leq  B\) and and embedding \(g:A \rightarrow  C\) such that \(A \leq  B\), then there exists a structure \(D\) 
 and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\) and \(h_2(f(A)) = h_1(g(A))\)
 \end{tree}
 
-\begin{tree}{title={Definition of Joint Embedding Property (JEP)}, taxon={definition}, slug={Fra-d004}}
+\begin{tree}{title={Joint Embedding Property (JEP)}, taxon={definition}, slug={Fra-d004}}
 Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Amalgamation Property} if for every \(A,B  \in  K\), there exists a structure \(D\) 
 and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\)\par{\ForesterRef{Fra-d003}{Amalgamation Property} does NOT necessarily imply JEP, unless the empty set \(\emptyset\) is in \(K\) and for all \(A \in  K\), we have that \(\emptyset   \leq  A\)}
 \end{tree}
 
-\begin{tree}{title={Definition of Hereditary Property (HP)}, taxon={definition}, slug={Fra-d005}}
+\begin{tree}{title={Hereditary Property (HP)}, taxon={definition}, slug={Fra-d005}}
 A class \((K, \leq )\) has the hereditary property if for every \(A \in  K\), and any \(B \subseteq  A\) finitely generated, then there is some \(C \in  K\) such that \(C \cong  B\)
 \end{tree}
 
@@ -212,11 +216,11 @@ The converse of Fraisse's Theorem is also true in the sense that if we have a st
 If \(M\) is the \ForesterRef{Fra-t001}{Fraisse Limit} of a class \((K,  \leq )\), then \(Th(M)\) has quantifier elimination and is \(\omega\)-categorical
 \end{tree}
 
-\begin{tree}{title={Ex: The Random Graph}, taxon={Example}, slug={Fra-e001}}
+\begin{tree}{title={The Random Graph}, taxon={Example}, slug={Fra-e001}}
 Rado's famous random graph is indeed the Fraisse Limit of the class of finite graphs in the language \(\mathcal {L} =  \{ E \}\) where \(E\) is a binary relation representing "there is an edge" between two points.\par{More precisely, a graph is an \(\mathcal {L}-\)structure for which \(E\) is anti-reflexive and symmetric.}
 \end{tree}
 
-\begin{tree}{title={Ex: \(( \mathbb {Q},  \leq )\)}, taxon={Example}, slug={Fra-e002}}
+\begin{tree}{title={\(( \mathbb {Q},  \leq )\)}, taxon={Example}, slug={Fra-e002}}
 The Dense Linear Order \(( \mathbb {Q},  \leq )\) is the Fraisse Limit of the class of all finite linear orders
 \end{tree}
 
@@ -224,13 +228,13 @@ The Dense Linear Order \(( \mathbb {Q},  \leq )\) is the Fraisse Limit of the cl
 
 \begin{tree}{title={Other Properties of Classes}, taxon={section}, slug={Fra-s002}}
 We define other common properties and variants of the set up shown in the \ForesterRef{Fra-s001}{Fraisse section}
-\begin{tree}{title={Definition of Disjoint Amalgamation Property (dAP)}, taxon={definition}, slug={Fra-d006}}
+\begin{tree}{title={Disjoint Amalgamation Property (dAP)}, taxon={definition}, slug={Fra-d006}}
 Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Disjoint Amalgamation Property} if for every \(A,B,C  \in  K\) such that \(B \cap  C =A\), if there 
 exists an embedding \(f:A \rightarrow  B\) such that \(f(A)  \leq  B\) and and embedding \(g:A \rightarrow  C\) such that \(A \leq  B\), then there exists a structure \(D\) 
 and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\), \(h_2(f(A)) = h_1(g(A))\), and \(h_2(C)  \cap  h_1(B) = h_1(A)\)\par{An example of a class which has the dAP is the \ForesterRef{Fra-e001}{Fraisse class of finite graphs}}\par{An example of a smooth class which does not have the dAP is \ForesterRef{Smc-e001}{The class of initial segments}}
 \end{tree}
 
-\begin{tree}{title={Definition of Ramsey Class}, taxon={definition}, slug={Fra-d007}}
+\begin{tree}{title={Ramsey Class}, taxon={definition}, slug={Fra-d007}}
 For structures \(A,B\), let \[\binom {B}{A} =  \{ A_0: A_0 \leq  B & ; A_0 \cong  B \}\]\par{Given a class and relation \((K, \leq )\), we say that \(K\) has the Ramsey property if for every \(A \leq  B  \in  K\), there is some \(C \in  K\) with \(B \leq  C\)
 such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there is some \(B'  \in   \binom {C}{B}\) with \[c|_{ \binom {B'}{A}}\] constant.}\par{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}
 \end{tree}
@@ -239,7 +243,7 @@ such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there i
 
 \begin{tree}{title={Smooth Classes}, taxon={section}, slug={Smc-s001}}
 We define Smooth class constructions and their properties. Sources for this section are the papers On Generic Structures~\cite{Smc-r001} and Stable generic structures~\cite{Smc-r002}
-\begin{tree}{title={Definition of a Smooth Class}, taxon={definition}, slug={Smc-d001}}
+\begin{tree}{title={Smooth Class}, taxon={definition}, slug={Smc-d001}}
 We assume the language \(\mathcal {L}\) is countable and only relational.\par{A class \((K, \leq )\) of finite \(\mathcal {L}\)-structures (closed under isomorphism) is called \emph{a smooth class} if \(\leq\) is transitive, \(A \leq  B  \Rightarrow  A \subsetq  B\), and for each \(A \in  K\), there is a set of universal formulas \(\Phi _A\) such that:
 \[A \leq  B  \Leftrightarrow  B \models   \Phi _A(A)\]
 and we require that \(A \cong  A'  \Leftrightarrow   \Phi _A =  \Phi _{A'}\)}\par{This definition comes from On Generic structures~\cite{Smc-r001}}\par{An alternative definition, or characterization, from Baldwin and Shi~\cite{Smc-r002}, is a class that satisfies the following:}\par{If \(A \in  K\), \(A \leq  A\)}\par{If \(A \leq  B\), then \(A \subseteq  B\)}\par{\(\leq\) is transitive}\par{If \(A \leq  C\), and \(A \subseteq  B \subseteq  C\), then \(A \leq  B\) for \(A,B,C  \in  K\)}\par{\(\emptyset \in  K\) and \(\emptyset   \leq  A\) for all \(A \in  K\)}\par{The only difference between these two characterizations is that in the first definition, we essentially stipulate that \(\leq\) is definable/determined by a 
@@ -247,7 +251,7 @@ set of universal formulas. This turns out to be an advantage in working with the
 it is perhaps wiser to regard the second definition as a characterization as opposed to an actual definition.}
 \end{tree}
 
-\begin{tree}{title={Ex: Initial Segments}, taxon={example}, slug={Smc-e001}}
+\begin{tree}{title={Initial Segments}, taxon={example}, slug={Smc-e001}}
  Let \((K, \leq _*)\) be the class of be finite, initial segements of the linear order \(( \omega , \leq )\), where \(A \leq _* B\) is "\(A\) is an initial segment of \(B\)".\par{It is clear that \(\leq\) fits into the definition of a smooth class, simply by the universal formula \(\Phi _A(y_1, \dots , y_n) =  \forall  x(( x=y_1 \lor \dots \lor  x=y_n)  \lor   \bigwedge _i^n x \geq  y_i)\)}\par{This class has \ForesterRef{Fra-d003}{AP} and \ForesterRef{Fra-d004}{JEP}, but not \ForesterRef{Fra-d005}{HP} or \ForesterRef{Fra-d006}{dAP}}
 \end{tree}
 
