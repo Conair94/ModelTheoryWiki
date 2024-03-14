@@ -22,12 +22,12 @@ We give the common definitions and theorems for basic/introductory model theory
   
 \begin{tree}{title={Structures, Isomorphisms, Substructures}, taxon={section}, slug={BMT-s001}}
 In this section we give the basic notions and theorems for structures, isomorphisms, and substructures
-\begin{tree}{title={Definition of a language}, taxon={definition}, slug={BMT-d001}}
+\begin{tree}{title={Language}, taxon={definition}, slug={BMT-d001}}
 A language, also called a vocabulary or signature by different authors, is a set \(\mathcal {L}\) consisting of symbols for constants, relations, and functions, 
 often denoted by \(c\), \(R\), and \(f\) respectively. Languages may have any cardinality.
 \end{tree}
 
-\begin{tree}{title={Definition of a Structure}, taxon={definition}, slug={BMT-d002}}
+\begin{tree}{title={Structure}, taxon={definition}, slug={BMT-d002}}
 Given a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), an \(\mathcal {L}\)-structure \(\mathcal {M}\) in this language has a universe \(M\) (often, the structure and its universe 
 are written the same, by abuse of notation). The structure \(\mathcal {M}\) "interprets" the symbols of \(\mathcal {L}\) as follows:\par{For a constant symbol \(c \in   \mathcal {L}\), the interpretation of \(c\) in \(\mathcal {M}\), denoted \(c^{ \mathcal {M}}\) represents a fixed 
 element of \(M\)}\par{For an \(n\)-ary function symbol \(f \in   \mathcal {L}\), the interpretation of \(f\) in \(\mathcal {M}\), denoted \(f^{ \mathcal {M}}\),
@@ -35,21 +35,21 @@ is a function from \(M^n\) to \(M\)}\par{For an \(n\)-ary relation symbol \(R \i
 is a subset \(M^n\)}\par{Often, we are interested in the cardinality of a structure, denoted \(| \mathcal {M}|\), which is defined to be the cardinality of its universe.}
 \end{tree}
 
-\begin{tree}{title={Definition of a Homomorphism}, taxon={definition}, slug={BMT-d003}}
+\begin{tree}{title={Homomorphism}, taxon={definition}, slug={BMT-d003}}
 Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), a \emph{homomorphism} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
 is a function between the universes \(A\) and \(B\) of \(\mathcal {A}\) and \(\mathcal {B}\) respectively such that:\par{ For every n-ary function \(f \in   \mathcal {L}\), for all \(a_1, \dots , a_n \in  A\), \(\varphi (f^{ \mathcal {A}}(a_1, \dots , a_n)) = f^{ \mathcal {B}}( \varphi (a_1), \dots ,  \varphi (a_n))\)}\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Rightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{For every constant symbol \(c  \in   \mathcal {L}\), \(\varphi (c^{ \mathcal {A}}) =c^{ \mathcal {B}}\)}
 \end{tree}
 
-\begin{tree}{title={Definition of an embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
+\begin{tree}{title={Embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
 Given two structures in a language \(\mathcal {L}\) \(\mathcal {A}\) and \(\mathcal {B}\), an \emph{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
 is a \ForesterRef{BMT-d003}{homomorphism} such that:\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Leftrightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{This is stronger than a homomorphism because we now require a two way implication in the above property.}
 \end{tree}
 
-\begin{tree}{title={Definition of an isomorphism}, taxon={definition}, slug={BMT-d005}}
+\begin{tree}{title={Isomorphism}, taxon={definition}, slug={BMT-d005}}
 An \ForesterRef{BMT-d004}{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\) between \(\mathcal {L}\)-structures is a \emph{isomorphism} if it is surjective.
 \end{tree}
 
-\begin{tree}{title={Definition of a Substructure}, taxon={definition}, slug={BMT-d006}}
+\begin{tree}{title={Substructure}, taxon={definition}, slug={BMT-d006}}
 Given a \(\mathcal {L}\)-structure \(\mathcal {A}\), a subset \(B  \subseteq  A\) is called a \emph{substructure} of \(\mathcal {A}\) if:\par{For every constant \(c \in   \mathcal {L}\), \(c^{ \mathcal {A}}  \in  B\)}\par{For every n-ary function \(f \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), \(f^{ \mathcal {A}}(b_1, \dots ,b_n)  \in  B\)}\par{For every n-ary relation, \(R \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), we write \(R^B = R^{ \mathcal {A}} \cap   \mathcal {P}(B^n)\) and require that
 \(R^{B}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{B}\))  if and only if \(R^{ \mathcal {A}}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{ \mathcal {A}}\)) 
 Note that this condition is vacuously true, so only the first two conditions need to be checked when verifying a substructure.}
@@ -62,15 +62,15 @@ Note that this condition is vacuously true, so only the first two conditions nee
   
 \begin{tree}{title={Formulas and Models}, taxon={section}, slug={BMT-s002}}
 In this section we define formulas, elementary equivalence, elementary substructures, theories, and models
-\begin{tree}{title={Definition of a term}, taxon={definition}, slug={BMT-d007}}
+\begin{tree}{title={Term}, taxon={definition}, slug={BMT-d007}}
 Given a language \(\mathcal {L}\), we define a \emph{term} to be any of the following:\par{If \(c \in   \mathcal {L}\) is a constant symbol, then \(c\) is a term}\par{If \(x\) is a variable symbol, then \(x\) is a term. We generally assume we have countably infinitely many variable symbols}\par{If \(t_1,..., t_n\) are terms, and \(f \in   \mathcal {L}\) is an \(n\)-ary function, then \(f(t_1,..., t_n)\) is a term.}
 \end{tree}
 
-\begin{tree}{title={Definition of an atomic formula}, taxon={definition}, slug={BMT-d008}}
+\begin{tree}{title={Atomic Formula}, taxon={definition}, slug={BMT-d008}}
 Given a language \(\mathcal {L}\), an \emph{atomic formula} is defined as follows:\par{If \(R \in   \mathcal {L}\) is an n-ary relation symbol, and \(t_1, \dots , t_n\) are \ForesterRef{BMT-d007}{terms}, then \(R(t_1, \dots , t_n)\) is an atomic formula.}\par{If \(t_1\) and \(t_2\) are \(\mathcal {L}\)-terms, then \(t_1 = t_2\) is an atomic formula. }
 \end{tree}
 
-\begin{tree}{title={Definition of an \(\mathcal {L}\)-formula}, taxon={definition}, slug={BMT-d009}}
+\begin{tree}{title={\(\mathcal {L}\)-Formula}, taxon={definition}, slug={BMT-d009}}
 Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined inductively as follows:\par{If \(\phi\) is an \(\mathcal {L}\)-\ForesterRef{BMT-d008}{atomic formula} then \(\phi\) is a formula}\par{If \(\phi\) and \(\psi\) are both formulas, then \(\neg \phi\), \(\phi   \land   \psi\), and \(\phi \lor \phi\) are formulas, where \(\lor , \neg , \land\) are the usual \ForesterRef{BMT-d010}{logical connectives}}\par{If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}}
 \end{tree}
 
@@ -81,7 +81,7 @@ Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined induct
   
 \begin{tree}{title={Quantifier Elimination}, taxon={section}, slug={BMT-s003}}
 Quantifier Elimination is a part of a broader technique in Model Theory where for a structure in a given language, an arbitrary formula can be written as a boolean combination of perhaps simpler formulas
-\begin{tree}{title={Definition of an Elimination Set}, taxon={definition}, slug={BMT-d014}}
+\begin{tree}{title={Elimination Set}, taxon={definition}, slug={BMT-d014}}
 An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
 \end{tree}
 \par{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. It is worth noting that, in some cases it is not possible to have a full quantifier elimination down to the level of a quantifier free set but perhaps we can restrict ourself to some reasonable set of formulas.}

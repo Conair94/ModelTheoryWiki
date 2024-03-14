@@ -14,15 +14,15 @@
 \begin{document}
 \maketitle
 \par{In this section we define formulas, elementary equivalence, elementary substructures, theories, and models}
-\begin{tree}{title={Definition of a term}, taxon={definition}, slug={BMT-d007}}
+\begin{tree}{title={Term}, taxon={definition}, slug={BMT-d007}}
 Given a language \(\mathcal {L}\), we define a \emph{term} to be any of the following:\par{If \(c \in   \mathcal {L}\) is a constant symbol, then \(c\) is a term}\par{If \(x\) is a variable symbol, then \(x\) is a term. We generally assume we have countably infinitely many variable symbols}\par{If \(t_1,..., t_n\) are terms, and \(f \in   \mathcal {L}\) is an \(n\)-ary function, then \(f(t_1,..., t_n)\) is a term.}
 \end{tree}
 
-\begin{tree}{title={Definition of an atomic formula}, taxon={definition}, slug={BMT-d008}}
+\begin{tree}{title={Atomic Formula}, taxon={definition}, slug={BMT-d008}}
 Given a language \(\mathcal {L}\), an \emph{atomic formula} is defined as follows:\par{If \(R \in   \mathcal {L}\) is an n-ary relation symbol, and \(t_1, \dots , t_n\) are \ForesterRef{BMT-d007}{terms}, then \(R(t_1, \dots , t_n)\) is an atomic formula.}\par{If \(t_1\) and \(t_2\) are \(\mathcal {L}\)-terms, then \(t_1 = t_2\) is an atomic formula. }
 \end{tree}
 
-\begin{tree}{title={Definition of an \(\mathcal {L}\)-formula}, taxon={definition}, slug={BMT-d009}}
+\begin{tree}{title={\(\mathcal {L}\)-Formula}, taxon={definition}, slug={BMT-d009}}
 Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined inductively as follows:\par{If \(\phi\) is an \(\mathcal {L}\)-\ForesterRef{BMT-d008}{atomic formula} then \(\phi\) is a formula}\par{If \(\phi\) and \(\psi\) are both formulas, then \(\neg \phi\), \(\phi   \land   \psi\), and \(\phi \lor \phi\) are formulas, where \(\lor , \neg , \land\) are the usual \ForesterRef{BMT-d010}{logical connectives}}\par{If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}}
 \end{tree}
 

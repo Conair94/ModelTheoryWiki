@@ -14,12 +14,12 @@
 \begin{document}
 \maketitle
 \par{In this section we give the basic notions and theorems for structures, isomorphisms, and substructures}
-\begin{tree}{title={Definition of a language}, taxon={definition}, slug={BMT-d001}}
+\begin{tree}{title={Language}, taxon={definition}, slug={BMT-d001}}
 A language, also called a vocabulary or signature by different authors, is a set \(\mathcal {L}\) consisting of symbols for constants, relations, and functions, 
 often denoted by \(c\), \(R\), and \(f\) respectively. Languages may have any cardinality.
 \end{tree}
 
-\begin{tree}{title={Definition of a Structure}, taxon={definition}, slug={BMT-d002}}
+\begin{tree}{title={Structure}, taxon={definition}, slug={BMT-d002}}
 Given a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), an \(\mathcal {L}\)-structure \(\mathcal {M}\) in this language has a universe \(M\) (often, the structure and its universe 
 are written the same, by abuse of notation). The structure \(\mathcal {M}\) "interprets" the symbols of \(\mathcal {L}\) as follows:\par{For a constant symbol \(c \in   \mathcal {L}\), the interpretation of \(c\) in \(\mathcal {M}\), denoted \(c^{ \mathcal {M}}\) represents a fixed 
 element of \(M\)}\par{For an \(n\)-ary function symbol \(f \in   \mathcal {L}\), the interpretation of \(f\) in \(\mathcal {M}\), denoted \(f^{ \mathcal {M}}\),
@@ -27,21 +27,21 @@ is a function from \(M^n\) to \(M\)}\par{For an \(n\)-ary relation symbol \(R \i
 is a subset \(M^n\)}\par{Often, we are interested in the cardinality of a structure, denoted \(| \mathcal {M}|\), which is defined to be the cardinality of its universe.}
 \end{tree}
 
-\begin{tree}{title={Definition of a Homomorphism}, taxon={definition}, slug={BMT-d003}}
+\begin{tree}{title={Homomorphism}, taxon={definition}, slug={BMT-d003}}
 Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), a \emph{homomorphism} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
 is a function between the universes \(A\) and \(B\) of \(\mathcal {A}\) and \(\mathcal {B}\) respectively such that:\par{ For every n-ary function \(f \in   \mathcal {L}\), for all \(a_1, \dots , a_n \in  A\), \(\varphi (f^{ \mathcal {A}}(a_1, \dots , a_n)) = f^{ \mathcal {B}}( \varphi (a_1), \dots ,  \varphi (a_n))\)}\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Rightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{For every constant symbol \(c  \in   \mathcal {L}\), \(\varphi (c^{ \mathcal {A}}) =c^{ \mathcal {B}}\)}
 \end{tree}
 
-\begin{tree}{title={Definition of an embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
+\begin{tree}{title={Embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
 Given two structures in a language \(\mathcal {L}\) \(\mathcal {A}\) and \(\mathcal {B}\), an \emph{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
 is a \ForesterRef{BMT-d003}{homomorphism} such that:\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Leftrightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{This is stronger than a homomorphism because we now require a two way implication in the above property.}
 \end{tree}
 
-\begin{tree}{title={Definition of an isomorphism}, taxon={definition}, slug={BMT-d005}}
+\begin{tree}{title={Isomorphism}, taxon={definition}, slug={BMT-d005}}
 An \ForesterRef{BMT-d004}{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\) between \(\mathcal {L}\)-structures is a \emph{isomorphism} if it is surjective.
 \end{tree}
 
-\begin{tree}{title={Definition of a Substructure}, taxon={definition}, slug={BMT-d006}}
+\begin{tree}{title={Substructure}, taxon={definition}, slug={BMT-d006}}
 Given a \(\mathcal {L}\)-structure \(\mathcal {A}\), a subset \(B  \subseteq  A\) is called a \emph{substructure} of \(\mathcal {A}\) if:\par{For every constant \(c \in   \mathcal {L}\), \(c^{ \mathcal {A}}  \in  B\)}\par{For every n-ary function \(f \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), \(f^{ \mathcal {A}}(b_1, \dots ,b_n)  \in  B\)}\par{For every n-ary relation, \(R \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), we write \(R^B = R^{ \mathcal {A}} \cap   \mathcal {P}(B^n)\) and require that
 \(R^{B}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{B}\))  if and only if \(R^{ \mathcal {A}}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{ \mathcal {A}}\)) 
 Note that this condition is vacuously true, so only the first two conditions need to be checked when verifying a substructure.}
