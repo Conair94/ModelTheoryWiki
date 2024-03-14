@@ -1,0 +1,8 @@
+\title{Ultraproduct}
+\date{2024-03-07}
+\author{gpeters}
+\taxon{definition}
+
+\p{Fix an index set #{I} and a [language](BMT-d001) #{L}. Let #{\{\mathcal{A}_i: i\in I\}} be a family of #{L}-[structures](BMT-d002), and let #{\mathcal{U}} be any [ultrafilter](BMT-d072) on #{\mathcal{P}(I)}. Then the ultraproduct is the #{L}-structure #{\mathcal{A}_* := \prod_{i\in I} A_i /\mathcal{U}}. }
+
+\p{In #{\mathcal{A}_*}, the elements of the universe of #{\mathcal{A}_*} are functions #{\underline{a}} with domain #{I} and #{\underline{a}(i)\in A_i} under the equivalence class #{\sim_{\mathcal{U}}}, where ##{\underline{a}\sim_{\mathcal{U}}\underline{b} \text{ if and only if }\{i\in I: \underline{a}(i)=\underline{b}(i)\} \in \mathcal{U}.} }

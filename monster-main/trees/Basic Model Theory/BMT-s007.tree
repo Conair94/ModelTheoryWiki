@@ -4,3 +4,11 @@
 \taxon{section}
 
 \p{In this section we give the basic definitions and theorems for the use of ultraproducts in model theory.}
+
+\transclude{BMT-d071}
+\transclude{BMT-d072}
+\transclude{BMT-e071}
+\transclude{BMT-e072}
+\transclude{BMT-d073}
+\transclude{BMT-t071}
+
