@@ -1,6 +1,11 @@
 \title{Types}
-\date{2024-02-08}
+\date{2024-03-14}
 \author{connor-lockhart}
+\author{oscarc}
 \taxon{section}
 
 \p{In this section we give the basic definitions and theorems for types.}
+\transclude{BMT-d019}
+\transclude{BMT-d020}
+\transclude{BMT-d021}
+\transclude{BMT-d023}
