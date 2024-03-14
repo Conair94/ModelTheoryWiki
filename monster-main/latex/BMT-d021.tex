@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of the Stone Space, #[S_n(T)]}
+
+\date{March 10, 2024}
+
+\author{Francis Westhead}
+
+\begin{document}
+\maketitle
+\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)}, \emph{#[S_n(T)]} denotes a topological space whose underlying set is the set of all complete \(n-types\) of \(T\). The topology on \(S_n(T)\) has a basis of open sets given by all sets of the form \([ \varphi (x)] :=  \{ p(x) \in  S_n(T):  \varphi (x)  \in  p(x) \}\) (for \(\varphi (x)\) an \(\mathcal {L}\)-formula). This space is a Stone Space in the usual sense and the Boolean Algebra associated to it via Stone Duality is the \(n\)'th Tarski Linedenbaum Algebra of \(T\).}
+\printbibliography
+\end{document}

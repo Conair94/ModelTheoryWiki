@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of a type}
+
+\date{March 10, 2024}
+
+\author{Francis Westhead}
+
+\begin{document}
+\maketitle
+\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)}, a \emph{partial type} of \(T\) is a \ForesterRef{BMT-d022}{finitely satisfiable} set of formulas in a fixed tuple of variables \(x\).}\par{A partial type \(p(x)\) (meaning that the denoted type consists of formulas each in the variables \(x\)) is \emph{complete} if for every \(\mathcal {L}\)-formula in the variables \(x\), \(\varphi (x) \in  p(x)\), either \(\varphi (x) \in  p(x)\) or \(\neg   \varphi (x) \in  p(x)\).}
+\printbibliography
+\end{document}

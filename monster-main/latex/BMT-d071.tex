@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of a Filter}
+
+\date{March 1, 2024}
+
+\author{Garrett Peters}
+
+\begin{document}
+\maketitle
+\par{Let \(I\) be any set. Then a filter \(\mathcal {F}\) on the power set \(\mathcal {P}(I)\) is a collection of subsets of \(I\) with the following properties:}\par{1: \(I \in \mathcal {F}\).}\par{2: If \(A \in   \mathcal {F}\) and \(A \subseteq  B\), then \(B \in   \mathcal {F}\).}\par{3: If \(A,B  \in   \mathcal {F}\), then we have \(A \cap  B \in   \mathcal {F}\).}\par{Furthermore, a filter is proper if \(\emptyset \notin \mathcal {F}\).}
+\printbibliography
+\end{document}

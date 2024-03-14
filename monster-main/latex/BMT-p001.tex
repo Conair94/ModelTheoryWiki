@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Morgan Bryant\thanks{With contributions from Connor Lockhart.}}
+\author{Morgan Bryant\thanks{With contributions from Connor Lockhart, Garrett Peters.}}
 
 \begin{document}
 \maketitle
@@ -109,6 +109,30 @@ In this section we give the basic definitions and theorems for saturation of mod
   
 \begin{tree}{title={Ultraproducts}, taxon={section}, slug={BMT-s007}}
 In this section we give the basic definitions and theorems for the use of ultraproducts in model theory.
+\begin{tree}{title={Definition of a Filter}, taxon={definition}, slug={BMT-d071}}
+Let \(I\) be any set. Then a filter \(\mathcal {F}\) on the power set \(\mathcal {P}(I)\) is a collection of subsets of \(I\) with the following properties:\par{1: \(I \in \mathcal {F}\).}\par{2: If \(A \in   \mathcal {F}\) and \(A \subseteq  B\), then \(B \in   \mathcal {F}\).}\par{3: If \(A,B  \in   \mathcal {F}\), then we have \(A \cap  B \in   \mathcal {F}\).}\par{Furthermore, a filter is proper if \(\emptyset \notin \mathcal {F}\).}
+\end{tree}
+
+\begin{tree}{title={Definition of an Ultrafilter}, taxon={definition}, slug={BMT-d072}}
+Let \(I\) be any set. Then an ultrafilter \(\mathcal {U}\) on \(\mathcal {P}(I)\) is a proper \ForesterRef{BMT-d071}{filter} on \(I\) with the additional property:\par{For every \(A \subseteq  I\), either \(A \in \mathcal {U}\) or \(I \backslash  A \in \mathcal {U}\).}\par{Every proper filter can be extended into an ultrafilter.}
+\end{tree}
+
+\begin{tree}{title={Principal Ultrafilters}, taxon={example}, slug={BMT-e071}}
+Fix any \(i \in  I\). Then \(\mathcal {U}_i :=  \{ A \subseteq  I: i \in  A \}\) is an \ForesterRef{BMT-d072}{ultrafilter}. This is referred to as the principal ultrafilter concentrated at \(i\).
+\end{tree}
+
+\begin{tree}{title={The Fréchet Filter}, taxon={example}, slug={BMT-e072}}
+For any set \(I\) of infinite cardinality, the family of cofinite sets forms a proper \ForesterRef{BMT-d071}{filter}. This filter is referred to as the Fréchet filter.\par{When extending the Fréchet filter to an \ForesterRef{BMT-d072}{ultrafilter}, the result is not \ForesterRef{BMT-e071}{principal}.}
+\end{tree}
+
+\begin{tree}{title={Ultraproduct}, taxon={definition}, slug={BMT-d073}}
+Fix an index set \(I\) and a \ForesterRef{BMT-d001}{language} \(L\). Let \(\{ \mathcal {A}_i: i \in  I \}\) be a family of \(L\)-\ForesterRef{BMT-d002}{structures}, and let \(\mathcal {U}\) be any \ForesterRef{BMT-d072}{ultrafilter} on \(\mathcal {P}(I)\). Then the ultraproduct is the \(L\)-structure \(\mathcal {A}_* :=  \prod _{i \in  I} A_i / \mathcal {U}\). \par{In \(\mathcal {A}_*\), the elements of the universe of \(\mathcal {A}_*\) are functions \(\underline {a}\) with domain \(I\) and \(\underline {a}(i) \in  A_i\) under the equivalence class \(\sim _{ \mathcal {U}}\), where \[\underline {a} \sim _{ \mathcal {U}} \underline {b}  \text { if and only if } \{ i \in  I:  \underline {a}(i)= \underline {b}(i) \}   \in   \mathcal {U}.\]}
+\end{tree}
+
+\begin{tree}{title={ŁOś's Theorem}, taxon={Theorem}, slug={BMT-t071}}
+Let \(\mathcal {A}_* =  \prod \limits _{i \in  I}  \mathcal {A}_i /  \mathcal {U}\) be an \ForesterRef{BMT-d073}{ultraproduct}. Then for any \(L\)-formula \(\phi (x_1, \dots ,x_n)\), we have \[\mathcal {A}_* \models   \phi ( \underline {a}_1, \dots , \underline {a}_n)  \text { if and only if }  \{ i \in  I: A_i \models \phi ( \underline {a}_1(i), \dots ,  \underline {a}_n(i)) \} \in \mathcal {U}.\]
+\end{tree}
+
 \end{tree}
 
 

@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Ultraproduct}
+
+\date{March 7, 2024}
+
+\author{Garrett Peters}
+
+\begin{document}
+\maketitle
+\par{Fix an index set \(I\) and a \ForesterRef{BMT-d001}{language} \(L\). Let \(\{ \mathcal {A}_i: i \in  I \}\) be a family of \(L\)-\ForesterRef{BMT-d002}{structures}, and let \(\mathcal {U}\) be any \ForesterRef{BMT-d072}{ultrafilter} on \(\mathcal {P}(I)\). Then the ultraproduct is the \(L\)-structure \(\mathcal {A}_* :=  \prod _{i \in  I} A_i / \mathcal {U}\). }\par{In \(\mathcal {A}_*\), the elements of the universe of \(\mathcal {A}_*\) are functions \(\underline {a}\) with domain \(I\) and \(\underline {a}(i) \in  A_i\) under the equivalence class \(\sim _{ \mathcal {U}}\), where \[\underline {a} \sim _{ \mathcal {U}} \underline {b}  \text { if and only if } \{ i \in  I:  \underline {a}(i)= \underline {b}(i) \}   \in   \mathcal {U}.\]}
+\printbibliography
+\end{document}

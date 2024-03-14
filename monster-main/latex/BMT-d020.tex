@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Definition of an isolated/principal type}
+
+\date{March 10, 2024}
+
+\author{Francis Westhead}
+
+\begin{document}
+\maketitle
+\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)}, a partial type of T, {p(x)}, \emph{principal} if there is an \(\mathcal {L}\)-formula, \(\varphi (x)\), such that \(\models   \exists  x  \varphi (x)\) and for every \(\varpsi (x)  \in  p(x)\) we have that \(\models   \forall  x ( \varphi (x)  \rightarrow   \varpsi (x))\). In the case that \(p(x)\) is complete, we must have that \(\varphi (x) \in  p(x)\) and the first condition is redundant.}\par{A complete type of T, {p(x)} is \emph{isolated} if it is principal as a partial type. Equivalently, {p(x)} is \emph{isolated} if \(\{ p(x) \}\) is open \ForesterRef{BMT-d021}{S_n(T)}. This coincides with the usual topological terminology.}
+\printbibliography
+\end{document}
