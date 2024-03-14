@@ -71,7 +71,23 @@ Given a language \(\mathcal {L}\), an \emph{atomic formula} is defined as follow
 \end{tree}
 
 \begin{tree}{title={\(\mathcal {L}\)-Formula}, taxon={definition}, slug={BMT-d009}}
-Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined inductively as follows:\par{If \(\phi\) is an \(\mathcal {L}\)-\ForesterRef{BMT-d008}{atomic formula} then \(\phi\) is a formula}\par{If \(\phi\) and \(\psi\) are both formulas, then \(\neg \phi\), \(\phi   \land   \psi\), and \(\phi \lor \phi\) are formulas, where \(\lor , \neg , \land\) are the usual \ForesterRef{BMT-d010}{logical connectives}}\par{If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}}
+Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined inductively as follows:\par{\begin{enumerate}
+\item{
+            If \(\phi\) is an \(\mathcal {L}\)-\ForesterRef{BMT-d008}{atomic formula} then \(\phi\) is a formula.
+        }
+        \item{
+            If \(\phi\) and \(\psi\) are both formulas, then \(\neg \phi\), \(\phi   \land   \psi\), and 
+            \(\phi \lor \phi\) are formulas, where \(\lor , \neg , \land\) are the usual \ForesterRef{BMT-d010}{logical connectives}.
+        }
+        \item{
+            If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, 
+            where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}.
+        }
+        \item{
+            If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, 
+            where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}.
+        }
+\end{enumerate}}
 \end{tree}
 
 \end{tree}
@@ -99,6 +115,27 @@ In this section we give the basic definitions and theorems for quantifier Elimin
   
 \begin{tree}{title={Types}, taxon={section}, slug={BMT-s005}}
 In this section we give the basic definitions and theorems for types.
+\begin{tree}{title={Definition of a type}, taxon={definition}, slug={BMT-d019}}
+Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)}, a \emph{partial type} of \(T\) is a \ForesterRef{BMT-d022}{finitely satisfiable} set of formulas in a fixed tuple of variables \(x\).\par{A partial type \(p(x)\) (meaning that the denoted type consists of formulas each in the variables \(x\)) is \emph{complete} if for every \(\mathcal {L}\)-formula in the variables \(x\), \(\varphi (x) \in  p(x)\), either \(\varphi (x) \in  p(x)\) or \(\neg   \varphi (x) \in  p(x)\).}
+\end{tree}
+
+\begin{tree}{title={Definition of an isolated/principal type}, taxon={definition}, slug={BMT-d020}}
+Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)}, a partial type of T, {p(x)}, \emph{principal} if there is an \(\mathcal {L}\)-formula, \(\varphi (x)\), such that \(\models   \exists  x  \varphi (x)\) and for every \(\varpsi (x)  \in  p(x)\) we have that \(\models   \forall  x ( \varphi (x)  \rightarrow   \varpsi (x))\). In the case that \(p(x)\) is complete, we must have that \(\varphi (x) \in  p(x)\) and the first condition is redundant.\par{A complete type of T, {p(x)} is \emph{isolated} if it is principal as a partial type. Equivalently, {p(x)} is \emph{isolated} if \(\{ p(x) \}\) is open \ForesterRef{BMT-d021}{S_n(T)}. This coincides with the usual topological terminology.}
+\end{tree}
+
+\begin{tree}{title={The Stone Space #[S_n(T)]}, taxon={definition}, slug={BMT-d021}}
+Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)},
+\emph{#[S_n(T)]} denotes a topological space whose underlying set is the set of all complete \(n-types\) of \(T\).
+The topology on \(S_n(T)\) has a basis of open sets given by all sets of the form \([ \varphi (x)] :=  \{ p(x) \in  S_n(T):
+ \varphi (x)  \in  p(x) \}\) (for \(\varphi (x)\) an \(\mathcal {L}\)-formula).
+This space is a Stone Space in the usual sense and the Boolean Algebra associated to it via Stone Duality is
+the \(n\)'th Tarski Linedenbaum Algebra of \(T\).
+\end{tree}
+
+\begin{tree}{title={Finite Satisfiability}, taxon={definition}, slug={BMT-d023}}
+
+\end{tree}
+
 \end{tree}
 
 
@@ -155,13 +192,13 @@ An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\
   
 \begin{tree}{title={Categoricity}, taxon={section}, slug={BMT-s009}}
 In this section, we give the basic definitions for \(\kappa\)-categoricity. We then establish some classical characterisations of \(\aleph _0\)-categoricity.
-\begin{tree}{title={Definition of \(\kappa\)-categoricity}, taxon={definition}, slug={BMT-d201}}
+\begin{tree}{title={\(\kappa\)-categoricity}, taxon={definition}, slug={BMT-d201}}
 
     Given a cardinal \(\kappa\) and a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory} is \emph{\(\kappa\)-categorical} if whenever \(\mathcal {M}\) and \(\mathcal {N}\) are \(\mathcal {L}\)-structures with \(| \mathcal {M}|=| \mathcal {M}|= \kappa\), then \(\mathcal {M}  \cong   \mathcal {N}\). 
 
 \end{tree}
 
-\begin{tree}{title={Definition of a Tarski-Lindenbaum Algebra}, taxon={definition}, slug={BMT-d202}}
+\begin{tree}{title={Tarski-Lindenbaum Algebra}, taxon={definition}, slug={BMT-d202}}
 Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory}, \(T\), the \emph{\(n\)'th Tarski-Lindenbaum algebra of \(T\)} is the set of \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formulas} quotiented by the relation of \ForesterRef{BMT-d018}{\(T\)-equivalence}.
 \end{tree}
 
@@ -258,7 +295,7 @@ it is perhaps wiser to regard the second definition as a characterization as opp
 \begin{tree}{title={Smooth Extension of Fraisse's Theorem}, taxon={theorem}, slug={Smc-t001}}
 If \(\mathcal {L}\) is countable, and \((K, \leq )\) is a smooth class of finite structures has the \ForesterRef{Fra-d003}{amalgamation property} and the \ForesterRef{Fra-d004}{joint embedding property}, 
 then there is a unique, countable structure \(\mathcal {M}\)  with the following properties:\par{1. Any isomorphism \(f:A \rightarrow  B\) with \(A,B \leq   \mathcal {M}\) and \(A,B \in  K\) extends to
-an automorphism of \(\mathcal {M}\).}\par{2. \(\mathcal {M} =  \bigcup ^ \omega _n A_n\) where \(A_n  \leq  A_{n+1}\) and for all \(n\), \(A_n \in  K\)}\par{3. \(For every  A \in  K , there is an embedding  f:A \rightarrow  M  of  A  into  M  such that  f(A)  \leq  M\)}\par{The structure \(\mathcal {M}\) is the \emph{generic}, or sometimes, the \emph{limit} of \(K\).}\par{An equivalent characterization of a generic is properties 2 and 3 and the following property:}\par{4. If \(A \leq  M\) and \(A \leq  B\) for \(B \in  K\), then there is an isomorphism \(f: B \rightarrow  M\) extending the identity map \(id: A \rightarrow  M\) 
+an automorphism of \(\mathcal {M}\).}\par{2. \(\mathcal {M} =  \bigcup ^ \omega _n A_n\) where \(A_n  \leq  A_{n+1}\) and for all \(n\), \(A_n \in  K\)}\par{3. For every \(A \in  K\), there is an embedding \(f:A \rightarrow  M\) of \(A\) into \(M\) such that \(f(A)  \leq  M\)}\par{The structure \(\mathcal {M}\) is the \emph{generic}, or sometimes, the \emph{limit} of \(K\).}\par{An equivalent characterization of a generic is properties 2 and 3 and the following property:}\par{4. If \(A \leq  M\) and \(A \leq  B\) for \(B \in  K\), then there is an isomorphism \(f: B \rightarrow  M\) extending the identity map \(id: A \rightarrow  M\) 
 such that \(f(B)  \leq  M\)}
 \end{tree}
 

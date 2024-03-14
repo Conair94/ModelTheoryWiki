@@ -12,7 +12,7 @@
     \ul{
         \li{
             If #{\phi} is an [atomic formula](BMT-d008) #{R(x_1,\dots,x_n)},
-            then #{\mathcal M\vDash\phi(a_1,\dots,a_n)} when #{(a_1,\dots,a_n)\in R^{\mathcal M}}}.
+            then #{\mathcal M\vDash\phi(a_1,\dots,a_n)} when #{(a_1,\dots,a_n)\in R^{\mathcal M}}.
         }
         \li{
             If #{\phi} is of the form #{\psi\land\theta}, where #{\psi} and #{\theta}
