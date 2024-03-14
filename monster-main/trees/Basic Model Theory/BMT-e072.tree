@@ -1,0 +1,10 @@
+\title{The Fréchet Filter}
+\date{2024-03-01}
+\author{gpeters}
+\taxon{example}
+
+\p{For any set #{I} of infinite cardinality, the family of cofinite sets forms a proper [filter](BMT-d071). This filter is referred to as the Fréchet filter.}
+\p{When extending the Fréchet filter to an [ultrafilter](BMT-d072), the result is not [principal](BMT-e071).}
+
+
+

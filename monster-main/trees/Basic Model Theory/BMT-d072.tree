@@ -1,0 +1,9 @@
+\title{Definition of an Ultrafilter}
+\date{2024-03-01}
+\author{gpeters}
+\taxon{definition}
+
+\p{Let #{I} be any set. Then an ultrafilter #{\mathcal{U}} on #{\mathcal{P}(I)} is a proper [filter](BMT-d071) on #{I} with the additional property:}
+\p{For every #{A\subseteq I}, either #{A\in\mathcal{U}} or #{I\backslash A\in\mathcal{U}}.}
+\p{Every proper filter can be extended into an ultrafilter.}
+
