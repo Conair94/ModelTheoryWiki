@@ -33,3 +33,11 @@
   \put\transclude/expanded{false}
   \transclude{BMT-s007}
 }
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-s008}
+}
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-s009}
+}
