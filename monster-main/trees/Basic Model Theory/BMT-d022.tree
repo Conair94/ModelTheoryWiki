@@ -1,4 +1,42 @@
-\title{Definition of satisfiability}
+\title{Satisfiability}
 \date{2024-03-10}
 \author{francis-westhead}
+\author{oscarc}
 \taxon{definition}
+\p{
+    The satisfaction connective #{\vDash} is defined as follows.
+    To begin, it is defined with #{\mathcal L}-structures satsifying certain #{\mathcal L}-formulas.
+}
+\p{
+    Let #{\phi(x_1,\dots,x_n)} be an #{\mathcal L}-formula, and let #{a_1,\dots,a_n\in M}.
+    \ul{
+        \li{
+            If #{\phi} is an [atomic formula](BMT-d008) #{R(x_1,\dots,x_n)},
+            then #{\mathcal M\vDash\phi(a_1,\dots,a_n)} when #{(a_1,\dots,a_n)\in R^{\mathcal M}}.
+        }
+        \li{
+            If #{\phi} is of the form #{\psi\land\theta}, where #{\psi} and #{\theta}
+            are #{\mathcal L}-formulas, then #{\mathcal M\vDash\phi(a_1,\dots,a_n)}
+            when #{\mathcal M\vDash\psi(a_1,\dots,a_n)} and #{\mathcal M\vDash\theta(a_1,\dots,a_n)}.
+        }
+        \li{
+            If #{\phi} is of the form #{\psi\lor\theta}, where #{\psi} and #{\theta}
+            are #{\mathcal L}-formulas, then #{\mathcal M\vDash\phi(a_1,\dots,a_n)}
+            when #{\mathcal M\vDash\psi(a_1,\dots,a_n)} or #{\mathcal M\vDash\theta(a_1,\dots,a_n)}.
+        }
+        \li{
+            If #{\phi} is of the form #{\neg\psi}, where #{\psi} is a #{\mathcal L}-formula,
+            then #{\mathcal M\vDash\phi(a_1,\dots,a_n)} when #{\mathcal M\not\vDash\psi(a_1,\dots,a_n)}.
+        }
+        \li{
+            If #{\phi} is of the form #{\exists y\,\psi(x_1,\dots,x_n,y)},
+            where #{\psi} is a #{\mathcal L}-formula, then #{\mathcal M\vDash\phi(a_1,\dots,a_n)}
+            when there is #{b\in M} such that #{\mathcal M\vDash\psi(a_1,\dots,a_n,b)}.
+        }
+        \li{
+            If #{\phi} is of the form #{\forall y\,\psi(x_1,\dots,x_n,y)},
+            where #{\psi} is a #{\mathcal L}-formula, then #{\mathcal M\vDash\phi(a_1,\dots,a_n)}
+            when for every #{b\in M}, #{\mathcal M\vDash\psi(a_1,\dots,a_n,b)}.
+        }
+    }
+}

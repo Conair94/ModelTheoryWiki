@@ -1,0 +1,23 @@
+\title{Interpretation of Terms}
+\date{2024-03-14}
+\author{oscarc}
+\taxon{definition}
+\p{
+    Given a [language](BMT-d001) #{\mathcal L} and an #{\mathcal L}-structure #{\mathcal M},
+    the interpretation of an [#{\mathcal L}-term](BMT-d007) in #{\mathcal M} gives an element of #{M}.
+    This definition is inductive.
+}
+\p{
+    Let #{t} be an #{\mathcal L}-term.
+    \ul{
+        \li{
+            If #{t} is a constant symbol #{c} from #{\mathcal L},
+            then the interpretation of #{t} in #{\mathcal M} is simply #{c^{\mathcal M}}.
+        }
+        \li{
+            If #{t} is a function symbol #{f} from #{\mathcal L} applied to a series of
+            #{\mathcal L}-terms #{t_1,\dots,t_n}, then the interpretation of #{t} in #{\mathcal M} is
+            #{f^{\mathcal M}(t_1^{\mathcal M},\dots,t_n^{\mathcal M})}.
+        }
+    }
+}

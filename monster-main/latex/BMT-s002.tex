@@ -23,7 +23,23 @@ Given a language \(\mathcal {L}\), an \emph{atomic formula} is defined as follow
 \end{tree}
 
 \begin{tree}{title={\(\mathcal {L}\)-Formula}, taxon={definition}, slug={BMT-d009}}
-Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined inductively as follows:\par{If \(\phi\) is an \(\mathcal {L}\)-\ForesterRef{BMT-d008}{atomic formula} then \(\phi\) is a formula}\par{If \(\phi\) and \(\psi\) are both formulas, then \(\neg \phi\), \(\phi   \land   \psi\), and \(\phi \lor \phi\) are formulas, where \(\lor , \neg , \land\) are the usual \ForesterRef{BMT-d010}{logical connectives}}\par{If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}}
+Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined inductively as follows:\par{\begin{enumerate}
+\item{
+            If \(\phi\) is an \(\mathcal {L}\)-\ForesterRef{BMT-d008}{atomic formula} then \(\phi\) is a formula.
+        }
+        \item{
+            If \(\phi\) and \(\psi\) are both formulas, then \(\neg \phi\), \(\phi   \land   \psi\), and 
+            \(\phi \lor \phi\) are formulas, where \(\lor , \neg , \land\) are the usual \ForesterRef{BMT-d010}{logical connectives}.
+        }
+        \item{
+            If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, 
+            where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}.
+        }
+        \item{
+            If \(\phi\) is a formula, then \(\exists  x  \phi\) and \(\forall  x  \phi\) are formulas, 
+            where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}.
+        }
+\end{enumerate}}
 \end{tree}
 
 \printbibliography

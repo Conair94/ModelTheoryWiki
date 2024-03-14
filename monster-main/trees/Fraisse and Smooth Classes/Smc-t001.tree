@@ -8,7 +8,7 @@ then there is a unique, countable structure #{\mathcal{M}}  with the following p
 \p{1. Any isomorphism #{f:A\rightarrow B} with #{A,B\leq \mathcal{M}} and #{A,B\in K} extends to
 an automorphism of #{\mathcal{M}}.}
 \p{2. #{\mathcal{M} = \bigcup^\omega_n A_n} where #{A_n \leq A_{n+1}} and for all #{n}, #{A_n\in K}}
-\p{3. #{For every #{A\in K}, there is an embedding #{f:A\rightarrow M} of #{A} into #{M} such that #{f(A) \leq M}}}
+\p{3. For every #{A\in K}, there is an embedding #{f:A\rightarrow M} of #{A} into #{M} such that #{f(A) \leq M}}
 
 \p{The structure #{\mathcal{M}} is the \em{generic}, or sometimes, the \em{limit} of #{K}.}
 

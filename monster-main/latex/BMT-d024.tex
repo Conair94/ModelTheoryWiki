@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Interpretation of Terms}
+
+\date{March 14, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    Given a \ForesterRef{BMT-d001}{language} \(\mathcal  L\) and an \(\mathcal  L\)-structure \(\mathcal  M\),
+    the interpretation of an \ForesterRef{BMT-d007}{\(\mathcal  L\)-term} in \(\mathcal  M\) gives an element of \(M\).
+    This definition is inductive.
+}\par{
+    Let \(t\) be an \(\mathcal  L\)-term.
+    \begin{enumerate}
+\item{
+            If \(t\) is a constant symbol \(c\) from \(\mathcal  L\),
+            then the interpretation of \(t\) in \(\mathcal  M\) is simply \(c^{ \mathcal  M}\).
+        }
+        \item{
+            If \(t\) is a function symbol \(f\) from \(\mathcal  L\) applied to a series of
+            \(\mathcal  L\)-terms \(t_1, \dots ,t_n\), then the interpretation of \(t\) in \(\mathcal  M\) is
+            \(f^{ \mathcal  M}(t_1^{ \mathcal  M}, \dots ,t_n^{ \mathcal  M})\).
+        }
+\end{enumerate}}
+\printbibliography
+\end{document}

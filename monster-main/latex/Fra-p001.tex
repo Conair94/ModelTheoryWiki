@@ -16,26 +16,26 @@
 \par{We present Fraisse Classes, Smooth classes, and related results and variants.}
 \begin{tree}{title={Fraisse Classes}, taxon={section}, slug={Fra-s001}}
 We define Fraisse constructions and their properties. Most of the concepts can be referred to in Wilfred Hodges' Model Theory~\cite{Ref-0001}
-\begin{tree}{title={Definition of a class}, taxon={definition}, slug={Fra-d001}}
+\begin{tree}{title={Class of Structures}, taxon={definition}, slug={Fra-d001}}
 Given a language \(\mathcal {L}\), a class \(K\) is defined to be a set of \(\mathcal {L}\)-structures\par{Often, we want there to be a relation \(\leq\) acting on the structures in \(K\), and when we do, we write the class and relation as a pair \((K,  \leq )\)}
 \end{tree}
 
-\begin{tree}{title={Definition of an Age}, taxon={definition}, slug={Fra-d002}}
+\begin{tree}{title={Age}, taxon={definition}, slug={Fra-d002}}
 Given a structure \(A\) in a language \(\mathcal {L}\), the \emph{Age} (pronounced ah-zh) of \(A\) is \[\{ B \subseteq  A: B  \text { is finitely generated } \}\]\par{The age of a structure is itself a class, often under the relation of substructure}
 \end{tree}
 
-\begin{tree}{title={Definition of Amalgamation Property (AP)}, taxon={definition}, slug={Fra-d003}}
+\begin{tree}{title={Amalgamation Property (AP)}, taxon={definition}, slug={Fra-d003}}
 Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Amalgamation Property} if for every \(A,B,C  \in  K\), if there 
 exists an embedding \(f:A \rightarrow  B\) such that \(f(A)  \leq  B\) and and embedding \(g:A \rightarrow  C\) such that \(A \leq  B\), then there exists a structure \(D\) 
 and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\) and \(h_2(f(A)) = h_1(g(A))\)
 \end{tree}
 
-\begin{tree}{title={Definition of Joint Embedding Property (JEP)}, taxon={definition}, slug={Fra-d004}}
+\begin{tree}{title={Joint Embedding Property (JEP)}, taxon={definition}, slug={Fra-d004}}
 Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Amalgamation Property} if for every \(A,B  \in  K\), there exists a structure \(D\) 
 and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\)\par{\ForesterRef{Fra-d003}{Amalgamation Property} does NOT necessarily imply JEP, unless the empty set \(\emptyset\) is in \(K\) and for all \(A \in  K\), we have that \(\emptyset   \leq  A\)}
 \end{tree}
 
-\begin{tree}{title={Definition of Hereditary Property (HP)}, taxon={definition}, slug={Fra-d005}}
+\begin{tree}{title={Hereditary Property (HP)}, taxon={definition}, slug={Fra-d005}}
 A class \((K, \leq )\) has the hereditary property if for every \(A \in  K\), and any \(B \subseteq  A\) finitely generated, then there is some \(C \in  K\) such that \(C \cong  B\)
 \end{tree}
 
@@ -50,11 +50,11 @@ The converse of Fraisse's Theorem is also true in the sense that if we have a st
 If \(M\) is the \ForesterRef{Fra-t001}{Fraisse Limit} of a class \((K,  \leq )\), then \(Th(M)\) has quantifier elimination and is \(\omega\)-categorical
 \end{tree}
 
-\begin{tree}{title={Ex: The Random Graph}, taxon={Example}, slug={Fra-e001}}
+\begin{tree}{title={The Random Graph}, taxon={Example}, slug={Fra-e001}}
 Rado's famous random graph is indeed the Fraisse Limit of the class of finite graphs in the language \(\mathcal {L} =  \{ E \}\) where \(E\) is a binary relation representing "there is an edge" between two points.\par{More precisely, a graph is an \(\mathcal {L}-\)structure for which \(E\) is anti-reflexive and symmetric.}
 \end{tree}
 
-\begin{tree}{title={Ex: \(( \mathbb {Q},  \leq )\)}, taxon={Example}, slug={Fra-e002}}
+\begin{tree}{title={\(( \mathbb {Q},  \leq )\)}, taxon={Example}, slug={Fra-e002}}
 The Dense Linear Order \(( \mathbb {Q},  \leq )\) is the Fraisse Limit of the class of all finite linear orders
 \end{tree}
 
@@ -62,13 +62,13 @@ The Dense Linear Order \(( \mathbb {Q},  \leq )\) is the Fraisse Limit of the cl
 
 \begin{tree}{title={Other Properties of Classes}, taxon={section}, slug={Fra-s002}}
 We define other common properties and variants of the set up shown in the \ForesterRef{Fra-s001}{Fraisse section}
-\begin{tree}{title={Definition of Disjoint Amalgamation Property (dAP)}, taxon={definition}, slug={Fra-d006}}
+\begin{tree}{title={Disjoint Amalgamation Property (dAP)}, taxon={definition}, slug={Fra-d006}}
 Given a class and relation \((K, \leq )\), we say that \(K\) has the \emph{Disjoint Amalgamation Property} if for every \(A,B,C  \in  K\) such that \(B \cap  C =A\), if there 
 exists an embedding \(f:A \rightarrow  B\) such that \(f(A)  \leq  B\) and and embedding \(g:A \rightarrow  C\) such that \(A \leq  B\), then there exists a structure \(D\) 
 and embeddings \(h_1:C \rightarrow  D\) and \(h_2:B \rightarrow  D\) such that \(h_1(C) \leq  D\) and \(h_2(B)  \leq  D\), \(h_2(f(A)) = h_1(g(A))\), and \(h_2(C)  \cap  h_1(B) = h_1(A)\)\par{An example of a class which has the dAP is the \ForesterRef{Fra-e001}{Fraisse class of finite graphs}}\par{An example of a smooth class which does not have the dAP is \ForesterRef{Smc-e001}{The class of initial segments}}
 \end{tree}
 
-\begin{tree}{title={Definition of Ramsey Class}, taxon={definition}, slug={Fra-d007}}
+\begin{tree}{title={Ramsey Class}, taxon={definition}, slug={Fra-d007}}
 For structures \(A,B\), let \[\binom {B}{A} =  \{ A_0: A_0 \leq  B & ; A_0 \cong  B \}\]\par{Given a class and relation \((K, \leq )\), we say that \(K\) has the Ramsey property if for every \(A \leq  B  \in  K\), there is some \(C \in  K\) with \(B \leq  C\)
 such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there is some \(B'  \in   \binom {C}{B}\) with \[c|_{ \binom {B'}{A}}\] constant.}\par{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}
 \end{tree}
@@ -77,7 +77,7 @@ such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there i
 
 \begin{tree}{title={Smooth Classes}, taxon={section}, slug={Smc-s001}}
 We define Smooth class constructions and their properties. Sources for this section are the papers On Generic Structures~\cite{Smc-r001} and Stable generic structures~\cite{Smc-r002}
-\begin{tree}{title={Definition of a Smooth Class}, taxon={definition}, slug={Smc-d001}}
+\begin{tree}{title={Smooth Class}, taxon={definition}, slug={Smc-d001}}
 We assume the language \(\mathcal {L}\) is countable and only relational.\par{A class \((K, \leq )\) of finite \(\mathcal {L}\)-structures (closed under isomorphism) is called \emph{a smooth class} if \(\leq\) is transitive, \(A \leq  B  \Rightarrow  A \subsetq  B\), and for each \(A \in  K\), there is a set of universal formulas \(\Phi _A\) such that:
 \[A \leq  B  \Leftrightarrow  B \models   \Phi _A(A)\]
 and we require that \(A \cong  A'  \Leftrightarrow   \Phi _A =  \Phi _{A'}\)}\par{This definition comes from On Generic structures~\cite{Smc-r001}}\par{An alternative definition, or characterization, from Baldwin and Shi~\cite{Smc-r002}, is a class that satisfies the following:}\par{If \(A \in  K\), \(A \leq  A\)}\par{If \(A \leq  B\), then \(A \subseteq  B\)}\par{\(\leq\) is transitive}\par{If \(A \leq  C\), and \(A \subseteq  B \subseteq  C\), then \(A \leq  B\) for \(A,B,C  \in  K\)}\par{\(\emptyset \in  K\) and \(\emptyset   \leq  A\) for all \(A \in  K\)}\par{The only difference between these two characterizations is that in the first definition, we essentially stipulate that \(\leq\) is definable/determined by a 
@@ -85,14 +85,14 @@ set of universal formulas. This turns out to be an advantage in working with the
 it is perhaps wiser to regard the second definition as a characterization as opposed to an actual definition.}
 \end{tree}
 
-\begin{tree}{title={Ex: Initial Segments}, taxon={example}, slug={Smc-e001}}
+\begin{tree}{title={Initial Segments}, taxon={example}, slug={Smc-e001}}
  Let \((K, \leq _*)\) be the class of be finite, initial segements of the linear order \(( \omega , \leq )\), where \(A \leq _* B\) is "\(A\) is an initial segment of \(B\)".\par{It is clear that \(\leq\) fits into the definition of a smooth class, simply by the universal formula \(\Phi _A(y_1, \dots , y_n) =  \forall  x(( x=y_1 \lor \dots \lor  x=y_n)  \lor   \bigwedge _i^n x \geq  y_i)\)}\par{This class has \ForesterRef{Fra-d003}{AP} and \ForesterRef{Fra-d004}{JEP}, but not \ForesterRef{Fra-d005}{HP} or \ForesterRef{Fra-d006}{dAP}}
 \end{tree}
 
 \begin{tree}{title={Smooth Extension of Fraisse's Theorem}, taxon={theorem}, slug={Smc-t001}}
 If \(\mathcal {L}\) is countable, and \((K, \leq )\) is a smooth class of finite structures has the \ForesterRef{Fra-d003}{amalgamation property} and the \ForesterRef{Fra-d004}{joint embedding property}, 
 then there is a unique, countable structure \(\mathcal {M}\)  with the following properties:\par{1. Any isomorphism \(f:A \rightarrow  B\) with \(A,B \leq   \mathcal {M}\) and \(A,B \in  K\) extends to
-an automorphism of \(\mathcal {M}\).}\par{2. \(\mathcal {M} =  \bigcup ^ \omega _n A_n\) where \(A_n  \leq  A_{n+1}\) and for all \(n\), \(A_n \in  K\)}\par{3. \(For every  A \in  K , there is an embedding  f:A \rightarrow  M  of  A  into  M  such that  f(A)  \leq  M\)}\par{The structure \(\mathcal {M}\) is the \emph{generic}, or sometimes, the \emph{limit} of \(K\).}\par{An equivalent characterization of a generic is properties 2 and 3 and the following property:}\par{4. If \(A \leq  M\) and \(A \leq  B\) for \(B \in  K\), then there is an isomorphism \(f: B \rightarrow  M\) extending the identity map \(id: A \rightarrow  M\) 
+an automorphism of \(\mathcal {M}\).}\par{2. \(\mathcal {M} =  \bigcup ^ \omega _n A_n\) where \(A_n  \leq  A_{n+1}\) and for all \(n\), \(A_n \in  K\)}\par{3. For every \(A \in  K\), there is an embedding \(f:A \rightarrow  M\) of \(A\) into \(M\) such that \(f(A)  \leq  M\)}\par{The structure \(\mathcal {M}\) is the \emph{generic}, or sometimes, the \emph{limit} of \(K\).}\par{An equivalent characterization of a generic is properties 2 and 3 and the following property:}\par{4. If \(A \leq  M\) and \(A \leq  B\) for \(B \in  K\), then there is an isomorphism \(f: B \rightarrow  M\) extending the identity map \(id: A \rightarrow  M\) 
 such that \(f(B)  \leq  M\)}
 \end{tree}
 
