@@ -40,3 +40,17 @@
         }
     }
 }
+\p{
+    Given an #{\mathcal L}-structure #{\mathcal M}, and an #{\mathcal L}-theory #{T},
+    #{\mathcal M\vDash T} when #{\mathcal M\vDash\phi} for all #{\phi\in T}.
+}
+\p{
+    Given #{\mathcal L}-theories #{\Gamma} and #{\Delta}, #{\Gamma\vDash\Delta}
+    when for any #{\mathcal L}-structure #{\mathcal M}, if #{\mathcal M\vDash\Gamma}
+    then #{\mathcal M\vDash\Delta}.
+    If #{\Delta=\{\phi\}}, then one may write #{\Gamma\vDash\phi}; similarly if #{|\Gamma|=1}.
+}
+\p{
+    A #{\mathcal L}-theory #{T} is \emph{satisfiable} when there exists an #{L}-structure #{\mathcal M}
+    such that #{\mathcal M\vDash T}.
+}

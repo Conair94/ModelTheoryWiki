@@ -4,8 +4,8 @@
 \taxon{definition}
 
 \p{Given a [language](BMT-d001), #{\mathcal{L}}, and a [#{\mathcal{L}}-theory #{T}](BMT-d017),
-\em{#[S_n(T)]} denotes a topological space whose underlying set is the set of all complete #{n-types} of #{T}.
+#{S_n(T)} denotes a topological space whose underlying set is the set of all complete #{n-types} of #{T}.
 The topology on #{S_n(T)} has a basis of open sets given by all sets of the form #{[\varphi(x)] := \{p(x)\in S_n(T):
 \varphi(x) \in p(x)\}} (for #{\varphi(x)} an #{\mathcal{L}}-formula).
 This space is a Stone Space in the usual sense and the Boolean Algebra associated to it via Stone Duality is
-the #{n}'th Tarski Linedenbaum Algebra of #{T}.}
+the #{n}th Tarski-Lindenbaum Algebra of #{T}.}
