@@ -46,7 +46,18 @@
             If <tex>\phi</tex> is of the form <tex>\forall  y \, \psi (x_1, \dots ,x_n,y)</tex>,
             where <tex>\psi</tex> is a <tex>\mathcal  L</tex>-formula, then <tex>\mathcal  M \vDash \phi (a_1, \dots ,a_n)</tex>
             when for every <tex>b \in  M</tex>, <tex>\mathcal  M \vDash \psi (a_1, \dots ,a_n,b)</tex>.
-        </li></ul></p></mainmatter> </tree><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>214</anchor>  <taxon>Definition</taxon> <addr>BMT-d009</addr> <source-path>/Users/connorlockhart/Documents/GitHub/ModelTheoryWiki/monster-main/trees/Basic Model Theory/BMT-d009.tree</source-path> <route>BMT-d009.xml</route> <date><year>2024</year> <month>2</month> <day>8</day></date> <authors><author><link href="mbryant.xml" type="local">Morgan Bryant</link></author> </authors> <title><tex>\mathcal {L}</tex>-Formula</title> </frontmatter> <mainmatter><p>Given a language <tex>\mathcal {L}</tex>, an <tex>\mathcal {L}</tex>-formula is defined inductively as follows:</p><p><ul><li>
+        </li></ul></p><p>
+    Given an <tex>\mathcal  L</tex>-structure <tex>\mathcal  M</tex>, and an <tex>\mathcal  L</tex>-theory <tex>T</tex>,
+    <tex>\mathcal  M \vDash  T</tex> when <tex>\mathcal  M \vDash \phi</tex> for all <tex>\phi \in  T</tex>.
+</p><p>
+    Given <tex>\mathcal  L</tex>-theories <tex>\Gamma</tex> and <tex>\Delta</tex>, <tex>\Gamma \vDash \Delta</tex>
+    when for any <tex>\mathcal  L</tex>-structure <tex>\mathcal  M</tex>, if <tex>\mathcal  M \vDash \Gamma</tex>
+    then <tex>\mathcal  M \vDash \Delta</tex>.
+    If <tex>\Delta = \{ \phi \}</tex>, then one may write <tex>\Gamma \vDash \phi</tex>; similarly if <tex>| \Gamma |=1</tex>.
+</p><p>
+    A <tex>\mathcal  L</tex>-theory <tex>T</tex> is <em>satisfiable</em> when there exists an <tex>L</tex>-structure <tex>\mathcal  M</tex>
+    such that <tex>\mathcal  M \vDash  T</tex>.
+</p></mainmatter> </tree><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>214</anchor>  <taxon>Definition</taxon> <addr>BMT-d009</addr> <source-path>/Users/connorlockhart/Documents/GitHub/ModelTheoryWiki/monster-main/trees/Basic Model Theory/BMT-d009.tree</source-path> <route>BMT-d009.xml</route> <date><year>2024</year> <month>2</month> <day>8</day></date> <authors><author><link href="mbryant.xml" type="local">Morgan Bryant</link></author> </authors> <title><tex>\mathcal {L}</tex>-Formula</title> </frontmatter> <mainmatter><p>Given a language <tex>\mathcal {L}</tex>, an <tex>\mathcal {L}</tex>-formula is defined inductively as follows:</p><p><ul><li>
             If <tex>\phi</tex> is an <tex>\mathcal {L}</tex>-<link href="BMT-d008.xml" type="local" title="Atomic Formula">atomic formula</link> then <tex>\phi</tex> is a formula.
         </li>
         <li>
