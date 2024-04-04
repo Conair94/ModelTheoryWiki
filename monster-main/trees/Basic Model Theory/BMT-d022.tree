@@ -51,6 +51,6 @@
     If #{\Delta=\{\phi\}}, then one may write #{\Gamma\vDash\phi}; similarly if #{|\Gamma|=1}.
 }
 \p{
-    A #{\mathcal L}-theory #{T} is \emph{satisfiable} when there exists an #{L}-structure #{\mathcal M}
+    A #{\mathcal L}-theory #{T} is \em{satisfiable} when there exists an #{L}-structure #{\mathcal M}
     such that #{\mathcal M\vDash T}.
 }

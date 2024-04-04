@@ -3,5 +3,5 @@
 \author{oscarc}
 \taxon{definition}
 \p{
-    An [#{\mathcal L}-theory](BMT-d017) #{T} is \emph{finitely satisfiable} when every finite subset of #{T} is satisfiable.
+    An [#{\mathcal L}-theory](BMT-d017) #{T} is \em{finitely satisfiable} when every finite subset of #{T} is satisfiable.
 }
