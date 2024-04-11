@@ -1,5 +1,6 @@
 **/.DS_Store
-/ModelTheoryWiki.code-workspace
 **/*.fdb_latexmk
 **/*.fls
 **/*.log
+ModelTheoryWiki.code-workspace
+monster-main/trees/.vscode
