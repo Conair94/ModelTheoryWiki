@@ -1,0 +1,6 @@
+\title{Order Class}
+\date{2024-04-23}
+\author{mbryant}
+\taxon{definition}
+\p{A class #{K} in a language #{\mathcal{L} \supseteq \{\leq\}} is an \em{Order Class} if for every #{A\in K}, #{\leq} is a linear ordering on #{A}
+\p{Citations Needed***}
