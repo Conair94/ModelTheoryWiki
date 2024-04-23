@@ -1,0 +1,6 @@
+\title{Rigid Structures}
+\date{2024-04-23}
+\author{mbryant}
+\taxon{definition}
+\p{A structure #{A} in a language #{\mathcal{L}} is called \em{rigid} if #{Aut(A)} is trivial. I.e., the only automorphism of #{A} is the identity.}
+\p{Ex. Finite linear orders are rigid structures.}
