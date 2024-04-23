@@ -1,0 +1,7 @@
+\title{Indivisible Property (Class version) on Embeddings (InvPE)}
+\date{2024-04-23}
+\author{mbryant}
+\taxon{definition}
+\p{Given a class and relation #{(K,\leq)}, we say that #{K} has the indivisibility property on embeddings if for every #{A \in K}, there is some #{C\in K}
+such that for every #{k}-coloring #{c: C\rightarrow k}, there is some strong embedding #{f:A\rightarrow C} such that #{c\circ f} is constant.}
+\p{Citations Needed***}
