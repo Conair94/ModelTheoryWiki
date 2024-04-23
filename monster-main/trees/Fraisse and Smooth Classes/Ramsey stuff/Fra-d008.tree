@@ -1,0 +1,12 @@
+\title{Ramsey Property on Embeddings (RPE)}
+\date{2024-03-01}
+\author{mbryant}
+\taxon{definition}
+\p{For structures #{A,B}, let #{\binom{B}{A} = \{f:A\rightarrow B : f \; \text{is an embedding }\}}}
+\p{Given a class and relation #{(K,\leq)}, we say that #{K} has the Ramsey property on embeddings if for every #{A\leq B \in K}, there is some #{C\in K} with #{B\leq C}
+such that for every #{k}-coloring #{c: \binom{C}{A}\rightarrow k}, there is some #{B' \in \binom{C}{B}} with ##{c|_{\binom{B'}{A}}} constant.}
+\p{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}
+\p{Take care not to mix up [RPS](Fra-d007) and RPE}
+\p{The fundamental difference between RPS and RPE is that #{RPE \Rightarrow RPS}, but the reverse implication is not true. Notice that if 
+a class has RPE, then all structures are [rigid](Fra-d009). There exist classes of structures which have RPS but not RPE, as they contain non-rigid structures. 
+e.g., The class of structures with an equivalence relation, where the class is ordered by #{\subset}.}
