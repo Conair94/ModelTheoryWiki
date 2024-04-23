@@ -1,0 +1,8 @@
+\title{Kechris-Pestov-Todorcevic Theorem}
+\date{2024-04-23}
+\author{mbryant}
+\taxon{theorem}
+\p{For an an [order class](Fra-d012) #{K} which is Fraisse with limit #{M}, the following are equivalent:}
+\p{Aut(M) is extremely amenable}
+\p{#{K} has the Ramsey Property.}
+\p{Citations Needed***}
