@@ -1,0 +1,8 @@
+\title{Indivisible Property (Class version) on Substructures (InvP)}
+\date{2024-04-23}
+\author{mbryant}
+\taxon{definition}
+\p{Given a class and relation #{(K,\leq)}, we say that #{K} has the indivisibility property on substructures if for every #{A \in K}, there is some #{C\in K}
+such that for every #{k}-coloring #{c: C\rightarrow k}, there is some #{A'\leq C} such that #{A' \cong A} with ##{c|_{A'}} constant.}
+\p{Indivisibility is a weakening of the Ramsey property. In some explicit cases, RPS implies InvP.}
+\p{Citations Needed***}
