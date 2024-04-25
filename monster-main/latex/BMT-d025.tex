@@ -1,0 +1,23 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Type}
+
+\date{April 4, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    Given a language \(\mathcal  L\), a \emph{partial type} is a \ForesterRef{BMT-d023}{finitely satisfiable} \(mathcal L\)-theory.
+}\par{
+    A partial type \(p\) is a \emph{complete type} when for every \(\mathcal  L\)-formula \(\phi\), either \(\phi\) is in \(p\)
+    or \(\neg \phi\) is in \(p\).
+}
+\printbibliography
+\end{document}

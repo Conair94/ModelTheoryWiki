@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Ramsey Properties}
+
+\date{April 23, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{We define different Ramsey properties on classes. }
+\begin{tree}{title={Ramsey Property on Substructures (RPS)}, taxon={definition}, slug={Fra-d007}}
+For structures \(A,B\), let \(\binom {B}{A} =  \{ A_0: A_0 \leq  B & ; A_0 \cong  B \}\)\par{Given a class and relation \((K, \leq )\), we say that \(K\) has the Ramsey property on substructures if for every \(A \leq  B  \in  K\), there is some \(C \in  K\) with \(B \leq  C\)
+such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there is some \(B'  \in   \binom {C}{B}\) with \[c|_{ \binom {B'}{A}}\] constant.}\par{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}\par{Take care not to mix up RPS and \ForesterRef{Fra-d008}{RPE}}
+\end{tree}
+
+\begin{tree}{title={Ramsey Property on Embeddings (RPE)}, taxon={definition}, slug={Fra-d008}}
+For structures \(A,B\), let \(\binom {B}{A} =  \{ f:A \rightarrow  B : f  \;   \text {is an embedding } \}\)\par{Given a class and relation \((K, \leq )\), we say that \(K\) has the Ramsey property on embeddings if for every \(A \leq  B  \in  K\), there is some \(C \in  K\) with \(B \leq  C\)
+such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there is some \(B'  \in   \binom {C}{B}\) with \[c|_{ \binom {B'}{A}}\] constant.}\par{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}\par{Take care not to mix up \ForesterRef{Fra-d007}{RPS} and RPE}\par{The fundamental difference between RPS and RPE is that \(RPE  \Rightarrow  RPS\), but the reverse implication is not true. Notice that if 
+a class has RPE, then all structures are \ForesterRef{Fra-d009}{rigid}. There exist classes of structures which have RPS but not RPE, as they contain non-rigid structures. 
+e.g., The class of structures with an equivalence relation, where the class is ordered by \(\subset\).}
+\end{tree}
+
+\begin{tree}{title={Rigid Structures}, taxon={definition}, slug={Fra-d009}}
+A structure \(A\) in a language \(\mathcal {L}\) is called \emph{rigid} if \(Aut(A)\) is trivial. I.e., the only automorphism of \(A\) is the identity.\par{Ex. Finite linear orders are rigid structures.}
+\end{tree}
+
+\begin{tree}{title={Indivisible Property (Class version) on Substructures (InvP)}, taxon={definition}, slug={Fra-d010}}
+Given a class and relation \((K, \leq )\), we say that \(K\) has the indivisibility property on substructures if for every \(A  \in  K\), there is some \(C \in  K\)
+such that for every \(k\)-coloring \(c: C \rightarrow  k\), there is some \(A' \leq  C\) such that \(A'  \cong  A\) with \[c|_{A'}\] constant.\par{Indivisibility is a weakening of the Ramsey property. In some explicit cases, RPS implies InvP.}\par{Citations Needed***}
+\end{tree}
+
+\begin{tree}{title={Indivisible Property (Class version) on Embeddings (InvPE)}, taxon={definition}, slug={Fra-d011}}
+Given a class and relation \((K, \leq )\), we say that \(K\) has the indivisibility property on embeddings if for every \(A  \in  K\), there is some \(C \in  K\)
+such that for every \(k\)-coloring \(c: C \rightarrow  k\), there is some strong embedding \(f:A \rightarrow  C\) such that \(c \circ  f\) is constant.\par{Citations Needed***}
+\end{tree}
+
+\begin{tree}{title={Order Class}, taxon={definition}, slug={Fra-d012}}
+A class \(K\) in a language \(\mathcal {L}  \supseteq   \{ \leq \}\) is an \emph{Order Class} if for every \(A \in  K\), \(\leq\) is a linear ordering on \(A\)\par{Citations Needed***}
+\end{tree}
+
+\begin{tree}{title={Kechris-Pestov-Todorcevic Theorem}, taxon={theorem}, slug={Fra-t013}}
+For an an \ForesterRef{Fra-d012}{order class} \(K\) which is Fraisse with limit \(M\), the following are equivalent:\par{Aut(M) is extremely amenable}\par{\(K\) has the Ramsey Property.}\par{Citations Needed***}
+\end{tree}
+
+\printbibliography
+\end{document}

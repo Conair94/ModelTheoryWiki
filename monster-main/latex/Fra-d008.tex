@@ -1,0 +1,21 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Ramsey Property on Embeddings (RPE)}
+
+\date{March 1, 2024}
+
+\author{Morgan Bryant}
+
+\begin{document}
+\maketitle
+\par{For structures \(A,B\), let \(\binom {B}{A} =  \{ f:A \rightarrow  B : f  \;   \text {is an embedding } \}\)}\par{Given a class and relation \((K, \leq )\), we say that \(K\) has the Ramsey property on embeddings if for every \(A \leq  B  \in  K\), there is some \(C \in  K\) with \(B \leq  C\)
+such that for every \(k\)-coloring \(c:  \binom {C}{A} \rightarrow  k\), there is some \(B'  \in   \binom {C}{B}\) with \[c|_{ \binom {B'}{A}}\] constant.}\par{Ramsey classes are highly related to descriptive set theory, in particular, extremely amenable sets.}\par{Take care not to mix up \ForesterRef{Fra-d007}{RPS} and RPE}\par{The fundamental difference between RPS and RPE is that \(RPE  \Rightarrow  RPS\), but the reverse implication is not true. Notice that if 
+a class has RPE, then all structures are \ForesterRef{Fra-d009}{rigid}. There exist classes of structures which have RPS but not RPE, as they contain non-rigid structures. 
+e.g., The class of structures with an equivalence relation, where the class is ordered by \(\subset\).}
+\printbibliography
+\end{document}

@@ -116,12 +116,23 @@ Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{B
 \end{tree}
 
 \begin{tree}{title={Definition of an isolated/principal type}, taxon={definition}, slug={BMT-d020}}
-Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)}, a partial type of T, {p(x)}, \emph{principal} if there is an \(\mathcal {L}\)-formula, \(\varphi (x)\), such that \(\models   \exists  x  \varphi (x)\) and for every \(\varpsi (x)  \in  p(x)\) we have that \(\models   \forall  x ( \varphi (x)  \rightarrow   \varpsi (x))\). In the case that \(p(x)\) is complete, we must have that \(\varphi (x) \in  p(x)\) and the first condition is redundant.\par{A complete type of T, {p(x)} is \emph{isolated} if it is principal as a partial type. Equivalently, {p(x)} is \emph{isolated} if \(\{ p(x) \}\) is open \ForesterRef{BMT-d021}{S_n(T)}. This coincides with the usual topological terminology.}
+
+    Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)},
+    a partial type of T {p(x)} is \emph{principal} when there is an \(\mathcal {L}\)-formula \(\varphi (x)\) such that
+    \(\models   \exists  x  \varphi (x)\) and for every \(\varpsi (x)  \in  p(x)\) we have that
+    \(\models   \forall  x ( \varphi (x)  \rightarrow   \varpsi (x))\).
+    In the case that \(p(x)\) is complete, we must have that \(\varphi (x) \in  p(x)\),
+    and the first condition is redundant.
+\par{
+    A complete type of T, \(p(x)\) is \emph{isolated} if it is principal as a partial type.
+    Equivalently, {p(x)} is \emph{isolated} if \(\{ p(x) \}\) is open \ForesterRef{BMT-d021}{S_n(T)}.
+    This coincides with the usual topological terminology.
+}
 \end{tree}
 
-\begin{tree}{title={The Stone Space #[S_n(T)]}, taxon={definition}, slug={BMT-d021}}
+\begin{tree}{title={The Stone Space \(S_n(T)\)}, taxon={definition}, slug={BMT-d021}}
 Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and a \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory \(T\)},
-\(S_n(T)\) denotes a topological space whose underlying set is the set of all complete \(n-types\) of \(T\).
+\(S_n(T)\) denotes a topological space whose underlying set is the set of all complete \emph{n-types} of \(T\).
 The topology on \(S_n(T)\) has a basis of open sets given by all sets of the form \([ \varphi (x)] :=  \{ p(x) \in  S_n(T):
  \varphi (x)  \in  p(x) \}\) (for \(\varphi (x)\) an \(\mathcal {L}\)-formula).
 This space is a Stone Space in the usual sense and the Boolean Algebra associated to it via Stone Duality is
@@ -130,7 +141,7 @@ the \(n\)th Tarski-Lindenbaum Algebra of \(T\).
 
 \begin{tree}{title={Finite Satisfiability}, taxon={definition}, slug={BMT-d023}}
 
-    An \ForesterRef{BMT-d017}{\(\mathcal  L\)-theory} \(T\) is \emph{finitely satisfiable} when every finite subset of \(T\) is satisfiable.
+    An \ForesterRef{BMT-d017}{\(\mathcal  L\)-theory} \(T\) is \emph{finitely satisfiable} when every finite subset of \(T\) is \ForesterRef{BMT-d022}{satisfiable}.
 
 \end{tree}
 
