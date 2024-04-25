@@ -1,6 +1,7 @@
 \title{Definition of a type}
 \date{2024-03-10}
 \author{francis-westhead}
+\author{oscarc}
 \taxon{definition}
 
 \p{Given a [language](BMT-d001), #{\mathcal{L}}, and a [#{\mathcal{L}}-theory #{T}](BMT-d017), a \em{partial type} of #{T} is a [finitely satisfiable](BMT-d022) set of formulas in a fixed tuple of variables #{x}.}

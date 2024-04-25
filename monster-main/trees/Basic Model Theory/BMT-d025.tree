@@ -1,0 +1,11 @@
+\title{Type}
+\date{2024-04-04}
+\author{oscarc}
+\taxon{definition}
+\p{
+    Given a language #{\mathcal L}, a \em{partial type} is a [finitely satisfiable](BMT-d023) #{mathcal L}-theory.
+}
+\p{
+    A partial type #{p} is a \em{complete type} when for every #{\mathcal L}-formula #{\phi}, either #{\phi} is in #{p}
+    or #{\neg\phi} is in #{p}.
+}

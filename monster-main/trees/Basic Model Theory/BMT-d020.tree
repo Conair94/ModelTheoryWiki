@@ -1,7 +1,19 @@
 \title{Definition of an isolated/principal type}
 \date{2024-03-10}
 \author{francis-westhead}
+\author{oscarc}
 \taxon{definition}
 
-\p{Given a [language](BMT-d001), #{\mathcal{L}}, and a [#{\mathcal{L}}-theory #{T}](BMT-d017), a partial type of T, {p(x)}, \em{principal} if there is an #{\mathcal{L}}-formula, #{\varphi(x)}, such that #{\models \exists x \varphi(x)} and for every #{\varpsi(x) \in p(x)} we have that #{\models \forall x (\varphi(x) \rightarrow \varpsi(x))}. In the case that #{p(x)} is complete, we must have that #{\varphi(x)\in p(x)} and the first condition is redundant.}
-\p{A complete type of T, {p(x)} is \em{isolated} if it is principal as a partial type. Equivalently, {p(x)} is \em{isolated} if #{\{p(x)\}} is open [S_n(T)](BMT-d021). This coincides with the usual topological terminology.}
+\p{
+    Given a [language](BMT-d001), #{\mathcal{L}}, and a [#{\mathcal{L}}-theory #{T}](BMT-d017),
+    a partial type of T {p(x)} is \em{principal} when there is an #{\mathcal{L}}-formula #{\varphi(x)} such that
+    #{\models \exists x \varphi(x)} and for every #{\varpsi(x) \in p(x)} we have that
+    #{\models \forall x (\varphi(x) \rightarrow \varpsi(x))}.
+    In the case that #{p(x)} is complete, we must have that #{\varphi(x)\in p(x)},
+    and the first condition is redundant.
+}
+\p{
+    A complete type of T, #{p(x)} is \em{isolated} if it is principal as a partial type.
+    Equivalently, {p(x)} is \em{isolated} if #{\{p(x)\}} is open [S_n(T)](BMT-d021).
+    This coincides with the usual topological terminology.
+}
