@@ -1,0 +1,31 @@
+\title{DLO}
+\date{2024-04-25}
+\author{oscarc}
+\taxon{definition}
+\p{
+    The \em{dense linear order without endpoints} is a theory in the language #{\mathcal L=\{<\}}
+    consisting of the following sentences.
+    \ul{
+        \li{
+            \forall x\,\neg x<x
+        }
+        \li{
+            #{\forall x\forall y\,(x<y\rightarrow\neg(y<x))}
+        }
+        \li{
+            #{\forall x\forall y\forall z\,((x<y\land y<z)\rightarrow x<z)}
+        }
+        \li{
+            #{\forall x\forall y\,((\neg x=y)\rightarrow(x<y\lor y<x))}
+        }
+        \li{
+            #{\forall x\forall y\,x<y\rightarrow(\exists z\,x<z\land z<y)}
+        }
+        \li{
+            #{\forall x\exists z\,z<x}
+        }
+        \li{
+            #{\forall x\exists z\,x<z}
+        }
+    }
+}
