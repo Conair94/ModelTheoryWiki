@@ -41,3 +41,8 @@
   \put\transclude/expanded{false}
   \transclude{BMT-s009}
 }
+
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-s010}
+}

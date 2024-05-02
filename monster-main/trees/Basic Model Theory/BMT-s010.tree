@@ -7,4 +7,5 @@
     Here, we give the basic and canonical examples of Model Theory, summarizing their properties.
 }
 
-
+\transclude{BMT-e030}
+\transclude{BMT-e031}

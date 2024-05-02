@@ -1,8 +1,14 @@
 \title{Definition of an #{\mathcal{L}}-theory}
-\date{2024-03-10}
+\date{2024-05-02}
 \author{francis-westhead}
+\author{oscarc}
 \taxon{definition}
 
 \p{
-    Given a [language](BMT-d001) #{\mathcal{L}}, a \em{#{\mathcal{L}}-theory} is a set of [#{\mathcal{L}}-sentences](BMT-d013). Sometimes it is notationally convenient to assume that theories are deductively closed.
+    Given a [language](BMT-d001) #{\mathcal{L}}, a \em{#{\mathcal{L}}-theory} is a set of [#{\mathcal{L}}-sentences](BMT-d013).
+    Sometimes it is notationally convenient to assume that theories are deductively closed.
+}
+\p{
+    An #{\mathcal L}-theory is \em{complete} when for every [#{\mathcal L}-formula](BMT-d009) #{\phi} we have that
+    #{\phi} may be deduced from #{T} or #{\neg\phi} may be deduced from #{T}.
 }

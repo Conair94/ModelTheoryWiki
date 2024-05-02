@@ -1,0 +1,50 @@
+\title{Algebraically Closed Fields}
+\date{2024-05-02}
+\author{oscarc}
+\taxon{example}
+\p{
+    The theory of \em{algebraically closed fields} (ACF) is a [theory](BMT-d017) in the [language](BMT-d001) #{\mathcal L=\{0,1,+,\cdot\}}
+    consisting of the following (sentences)[BMT-d013].
+    \ul{
+        \li{
+            #{\forall x\forall y\forall z\,(x+y)+z=x+(y+z)}.
+        }
+        \li{
+            #{\forall x\,x+0=x\land0+x=x}.
+        }
+        \li{
+            #{\forall x\exists y\,x+y=0\land y+x=0}.
+        }
+        \li{
+            #{\forall x\forall y\,x+y=y+x}.
+        }
+        \li{
+            #{\forall x\forall y\forall z\,(x\cdot y)\cdot z=x\cdot (y+\cdot z)}.
+        }
+        \li{
+            #{\forall x\,x\cdot1=x\land1\cdot x=x}.
+        }
+        \li{
+            #{\forall x\exists y\,x\cdot y=1\land y\cdot x=1}.
+        }
+        \li{
+            #{\forall x\forall y\,x+\cdot y=y\cdot x}.
+        }
+        \li{
+            #{\forall x\forall y\forall z\,x\cdot(y+z)=(x\cdot y)+(x\cdot z)}.
+        }
+        \li{
+            For each #{n\in\mathbb N}, a sentence #{\forall y_1\cdots\forall y_n\exists x\,(y_1\cdot x)+\cdots+(y_n\cdot x)=0}.
+        }
+    }
+}
+\p{
+    The theory of algebraically closed fields of characteristic #{p} (#{\text{ACF}_p}) is ACF together with the sentence
+    #{1+\cdots+1=0}, where #{1} is being added #{p} times. #{\text{ACF}_p} is a [complete theory](BMT-d017) having
+    [quantifier elimination](BMT-s003).
+}
+\p{
+    The theory of algebraically closed fields of characteristic #{0} (#{\text{ACF}_0}) is ACF together with the collection of sentences
+    of the form #{\neg(1+\cdots+1=0)}, for any number of #{1}s being added together. #{\text{ACF}_0} is also a
+    [complete theory](BMT-d017) having [quantifier elimination](BMT-s003).
+}
