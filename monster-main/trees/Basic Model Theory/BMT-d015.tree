@@ -1,7 +1,13 @@
-\title{Morleyization}
+\title{Elimination of Atomic Formulas}
 \date{2024-02-27}
 \author{connor-lockhart}
-\taxon{definition}
+\taxon{lemma}
 
-\p{An \em{Elimination Set} for a language #{\mathcal{L}} and class #{K} of #{\mathcal{L}}-structures, then a set #{\Gamma} of formulas #{\phi} is an elimination set for #{K} if for every formula #{\phi(\bar{x})} of #{\mathcal{L}} there is a formula #{\phi^*(\bar{x})} which is a boolean combinations of formulas in #{\Gamma} and #{\phi} is equivalent to #{\phi^*} in every structure in #{K}}
+\p{Let #{K} be a class of #{L} structures and #{\Phi} be a set of #{L}-formulas. Denote #{\Phi^-} as the set of negations of formulas in #{\Phi}.}
+\p{Suppose that 
+  \ol{
+    \li{every atomic formula of #{L} is in #{\Phi} and} 
+    \li{for every formula #{\theta(\overline{x})} of #{L} which is of the form #{\exists y \bigwedge_{i<n} \psi_i (\overline{x},y)} with each #{\psi_i \in \Phi\cup \Phi^-}, there is an #{L}-formula #{\theta^*(\overline{x})} which is a boolean combination of formulas in #{\Phi} and is equivalent to #{\theta} in every structure in #{K}.}
+  }
+  Then #{\Phi} is an elimination set of #{K}}
 
