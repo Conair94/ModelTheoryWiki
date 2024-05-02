@@ -1,4 +1,12 @@
-\title{Definition of }
-\date{2024-02-09}
+\title{Monadic NFCP}
+\date{2024-05-02}
 \author{connor-lockhart}
+\author{gpeters}
 \taxon{section}
+
+\transclude{moe-d001}
+\transclude{moe-d002}
+\transclude{moe-d003}
+\transclude{moe-e001}
+\transclude{moe-d004}
+

@@ -1,0 +1,7 @@
+\title{Mutually Algebraic Sets}
+\date{2024-05-02}
+\author{gpeters}
+\taxon{definition}
+
+\p{Let #{X} be a non-empty set and #{l\geq1}. Then a subset #{C\subseteq X^l} is mutually algebraic if there exists some #{K} such that for all #{a\in X}, we have #{|\{\overline{c}\in C: a\in\overline{c}\}|\leq K}.}
+

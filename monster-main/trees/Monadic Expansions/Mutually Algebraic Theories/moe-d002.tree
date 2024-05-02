@@ -1,0 +1,9 @@
+\title{Monadically NFCP}
+\date{2024-05-02}
+\author{gpeters}
+\taxon{definition}
+
+\p{Let #{M} be an #{L}-[structure](BMT-d002). Then #{M} is monadically NFCP if it is NFCP under every [monadic expansion of #{L}](moe-d001).}
+
+
+

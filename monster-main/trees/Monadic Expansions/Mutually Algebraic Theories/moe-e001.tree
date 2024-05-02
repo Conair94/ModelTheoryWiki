@@ -1,0 +1,8 @@
+\title{Mated Pairs}
+\date{2024-05-02}
+\author{gpeters}
+\taxon{example}
+
+\p{For #{l}=2, if #{C\subseteq X^2} is a set of mated pairs, i.e. every element in #{X} has a unique "mate," which is symmetric, then #{C} is [mutually algebraic](moe-d003).}
+
+

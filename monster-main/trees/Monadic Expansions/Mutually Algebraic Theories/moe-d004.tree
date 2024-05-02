@@ -1,0 +1,7 @@
+\title{Mutually Algebraic Formulas}
+\date{2024-05-02}
+\author{gpeters}
+\taxon{definition}
+
+\p{Suppose #{M} is an #{L}-[structure](BMT-d002) and #{\phi(\overline{z})} is an #{L(M)} definable set. Then #{\phi} is a mutually algebraic formula if #{D=\phi(\overline{z})} is a [mutually algebraic subset](moe-d003) of #{M^{lg(\overline{z})}}.}
+
