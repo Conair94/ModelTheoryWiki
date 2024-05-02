@@ -5,7 +5,7 @@
 \usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
 \addbibresource{forest.bib}
 
-\title{Morleyization}
+\title{Elimination of Atomic Formulas}
 
 \date{February 27, 2024}
 
@@ -13,6 +13,11 @@
 
 \begin{document}
 \maketitle
-\par{An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)}
+\par{Let \(K\) be a class of \(L\) structures and \(\Phi\) be a set of \(L\)-formulas. Denote \(\Phi ^-\) as the set of negations of formulas in \(\Phi\).}\par{Suppose that 
+  \begin{enumerate}
+\item{every atomic formula of \(L\) is in \(\Phi\) and} 
+    \item{for every formula \(\theta ( \overline {x})\) of \(L\) which is of the form \(\exists  y  \bigwedge _{i<n}  \psi _i ( \overline {x},y)\) with each \(\psi _i  \in   \Phi \cup   \Phi ^-\), there is an \(L\)-formula \(\theta ^*( \overline {x})\) which is a boolean combination of formulas in \(\Phi\) and is equivalent to \(\theta\) in every structure in \(K\).}
+\end{enumerate}
+  Then \(\Phi\) is an elimination set of \(K\)}
 \printbibliography
 \end{document}

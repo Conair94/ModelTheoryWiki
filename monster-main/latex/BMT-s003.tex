@@ -17,6 +17,15 @@
 \begin{tree}{title={Elimination Set}, taxon={definition}, slug={BMT-d014}}
 An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
 \end{tree}
-\par{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. It is worth noting that, in some cases it is not possible to have a full quantifier elimination down to the level of a quantifier free set but perhaps we can restrict ourself to some reasonable set of formulas.}
+\par{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. It is worth noting that, in some cases it is not possible to have a full quantifier elimination down to the level of a quantifier free set but perhaps we can restrict ourself to some reasonable set of formulas.}\par{Frequently, we use the following lemma to simplify the task of showing that \(\Phi\) is an elimination set}
+\begin{tree}{title={Elimination of Atomic Formulas}, taxon={lemma}, slug={BMT-d015}}
+Let \(K\) be a class of \(L\) structures and \(\Phi\) be a set of \(L\)-formulas. Denote \(\Phi ^-\) as the set of negations of formulas in \(\Phi\).\par{Suppose that 
+  \begin{enumerate}
+\item{every atomic formula of \(L\) is in \(\Phi\) and} 
+    \item{for every formula \(\theta ( \overline {x})\) of \(L\) which is of the form \(\exists  y  \bigwedge _{i<n}  \psi _i ( \overline {x},y)\) with each \(\psi _i  \in   \Phi \cup   \Phi ^-\), there is an \(L\)-formula \(\theta ^*( \overline {x})\) which is a boolean combination of formulas in \(\Phi\) and is equivalent to \(\theta\) in every structure in \(K\).}
+\end{enumerate}
+  Then \(\Phi\) is an elimination set of \(K\)}
+\end{tree}
+\par{The art of quantifier elimination lies in choosing an appropriate elimination set that allows the above lemma to be used with minimal obstructions. }
 \printbibliography
 \end{document}

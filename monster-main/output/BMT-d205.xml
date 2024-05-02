@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="forest.xsl"?>
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>373</anchor>  <taxon>Definition</taxon> <addr>BMT-d205</addr> <source-path>/Users/connorlockhart/Documents/GitHub/ModelTheoryWiki/monster-main/trees/Basic Model Theory/BMT-d205.tree</source-path> <route>BMT-d205.xml</route> <date><year>2024</year> <month>4</month> <day>29</day></date> <authors><author><link href="francis-westhead.xml" type="local">Francis Westhead</link></author> </authors> <title>Strong homogeneous model</title> </frontmatter> <mainmatter><p><tex>\mathcal {M}</tex> is strongly <tex>\kappa</tex>-homogeneous if, 
+given any <tex>A  \subseteq   \mathcal {M}</tex> with <tex>|A| &lt;  \kappa</tex> and an elementary map 
+<tex>f:A  \rightarrow   \mathcal {M}</tex>, there is an automorphism 
+<tex>f^*:  \mathcal {M}  \rightarrow   \mathcal {M}</tex> such that <tex>f^*|_A = f</tex>.</p><p>We can observe that if <tex>\kappa</tex> is some infinite cardinality such that <tex>\mathcal {M}</tex> is strongly <tex>\kappa</tex>-homogeneous,
+then whenever <tex>A,B,B' \subseteq   \mathcal {M}</tex> have <tex>|A|,|B|,|B'|&lt; \kappa</tex> and <tex>B  \equiv _A B'</tex>, 
+there is an automorphism <tex>f  \in  Aut( \mathcal {M}/A)</tex> such that <tex>f(B)=B'</tex>.</p><p><tex>\mathcal {M}</tex> is strongly homogeneous if it is strongly <tex>| \mathcal {M}|</tex>-homogeneous.</p></mainmatter> <backmatter><contributions/> <context/> <related/> <backlinks/> <references/></backmatter></tree>

@@ -1,0 +1,20 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Prime model}
+
+\date{May 1, 2024}
+
+\author{Francis Westhead}
+
+\begin{document}
+\maketitle
+\par{Fix a language \(\mathcal {L}\) and an \(\mathcal {L}\)-theory \(T\). 
+An \(\mathcal {L}\)-structure, \(\mathcal {M}\), is a prime model of \(T\) if for any model \(\mathcal {N}  \models  T\)
+there is an elementary embedding \(f:  \mathcal {M}  \rightarrow   \mathcal {N}\).}\par{We say that \(\mathcal {M}\) is prime if it is a prime model of \(Th( \mathcal {M})\).}\par{By downward Lowenheim-Skolem, if \(\mathcal {M}\) is a prime model of \(T\), then \(| \mathcal {M}| \leq  max \{ |T|,  \aleph _0 \}\).}
+\printbibliography
+\end{document}

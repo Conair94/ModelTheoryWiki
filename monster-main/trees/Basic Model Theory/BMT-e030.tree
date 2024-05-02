@@ -7,7 +7,7 @@
     consisting of the following (sentences)[BMT-d013].
     \ul{
         \li{
-            \forall x\,\neg x<x
+            #{\forall x\,\neg x<x}
         }
         \li{
             #{\forall x\forall y\,(x<y\rightarrow\neg(y<x))}

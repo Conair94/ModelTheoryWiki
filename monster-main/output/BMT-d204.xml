@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="forest.xsl"?>
+<tree expanded="true" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>372</anchor>  <taxon>Definition</taxon> <addr>BMT-d204</addr> <source-path>/Users/connorlockhart/Documents/GitHub/ModelTheoryWiki/monster-main/trees/Basic Model Theory/BMT-d204.tree</source-path> <route>BMT-d204.xml</route> <date><year>2024</year> <month>4</month> <day>29</day></date> <authors><author><link href="francis-westhead.xml" type="local">Francis Westhead</link></author> </authors> <title>Homogeneous model</title> </frontmatter> <mainmatter><p>Fix a language <tex>\mathcal {L}</tex> and a cardinal <tex>\kappa</tex>. 
+An <tex>\mathcal {L}</tex>-structure, <tex>\mathcal {M}</tex>, is <tex>\kappa</tex>-homogeneous if, 
+given any <tex>A  \subseteq   \mathcal {M}</tex> with <tex>|A| &lt;  \kappa</tex> and an elementary map 
+<tex>f:A  \rightarrow   \mathcal {M}</tex>, for any <tex>b \in   \mathcal {M}</tex>, there is an elementary map 
+<tex>f_b: A  \cup   \{ b \}   \rightarrow   \mathcal {M}</tex> such that <tex>f_b|_A = f</tex>.</p><p>If <tex>\mathcal {M}</tex> is <tex>\kappa</tex>-homogeneous, then we can observe by a recursive construction 
+that whenever <tex>B  \subseteq   \mathcal {M}</tex> has <tex>|B|&lt; \kappa</tex> the elementary map <tex>f</tex>
+extends to an elementary map <tex>f_B: A \cup  B  \rightarrow   \mathcal {M}</tex>.</p><p><tex>\mathcal {M}</tex> is homogeneous if it is <tex>| \mathcal {M}|</tex>-homogeneous.</p></mainmatter> <backmatter><contributions/> <context/> <related/> <backlinks/> <references/></backmatter></tree>

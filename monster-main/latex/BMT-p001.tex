@@ -96,7 +96,16 @@ Quantifier Elimination is a part of a broader technique in Model Theory where fo
 \begin{tree}{title={Elimination Set}, taxon={definition}, slug={BMT-d014}}
 An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
 \end{tree}
-\par{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. It is worth noting that, in some cases it is not possible to have a full quantifier elimination down to the level of a quantifier free set but perhaps we can restrict ourself to some reasonable set of formulas.}
+\par{In particular, we will be most interested in elimination sets that are comprised of the set of quantifier free formulas. It is worth noting that, in some cases it is not possible to have a full quantifier elimination down to the level of a quantifier free set but perhaps we can restrict ourself to some reasonable set of formulas.}\par{Frequently, we use the following lemma to simplify the task of showing that \(\Phi\) is an elimination set}
+\begin{tree}{title={Elimination of Atomic Formulas}, taxon={lemma}, slug={BMT-d015}}
+Let \(K\) be a class of \(L\) structures and \(\Phi\) be a set of \(L\)-formulas. Denote \(\Phi ^-\) as the set of negations of formulas in \(\Phi\).\par{Suppose that 
+  \begin{enumerate}
+\item{every atomic formula of \(L\) is in \(\Phi\) and} 
+    \item{for every formula \(\theta ( \overline {x})\) of \(L\) which is of the form \(\exists  y  \bigwedge _{i<n}  \psi _i ( \overline {x},y)\) with each \(\psi _i  \in   \Phi \cup   \Phi ^-\), there is an \(L\)-formula \(\theta ^*( \overline {x})\) which is a boolean combination of formulas in \(\Phi\) and is equivalent to \(\theta\) in every structure in \(K\).}
+\end{enumerate}
+  Then \(\Phi\) is an elimination set of \(K\)}
+\end{tree}
+\par{The art of quantifier elimination lies in choosing an appropriate elimination set that allows the above lemma to be used with minimal obstructions. }
 \end{tree}
 
 
@@ -192,7 +201,7 @@ Let \(L\) be any language, and \(T\) be any \(L\)-theory. Then \(T\) is satisfia
 
   
   
-\begin{tree}{title={Model Completenes}, taxon={Section}, slug={BMT-s008}}
+\begin{tree}{title={Model Completeness}, taxon={Section}, slug={BMT-s008}}
 An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
 \end{tree}
 
@@ -212,8 +221,73 @@ Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{
 \end{tree}
 
 \begin{tree}{title={(Ryll-Nardjewski) Characterisations of \(\omega\)-categoricity}, taxon={theorem}, slug={BMT-t003}}
-For \(\aleph _0\)-categoricity, there are a number of useful characterisations. The following are due to Ryll and Nardjewski.\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory} \(T\), the following are equivalent:}\par{1 \(T\) is \(\aleph _0\)-categorical.}\par{For every \(n \in   \omega\), there are finitely many \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formulas} in \(n\)-variables up to \ForesterRef{BMT-d018}{\(T\)-equivalence}.}\par{For every \(n \in   \omega\), the \ForesterRef{BMT-d202}{\(n\)'th Tarski-Lindenbaum algebra of \(T\)} is finite. 
+For \(\aleph _0\)-categoricity, there are a number of useful characterisations. The following are due to Ryll-Nardjewski.\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory} \(T\), the following are equivalent:}\par{1 \(T\) is \(\aleph _0\)-categorical.}\par{For every \(n \in   \omega\), there are finitely many \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formulas} in \(n\)-variables up to \ForesterRef{BMT-d018}{\(T\)-equivalence}.}\par{For every \(n \in   \omega\), the \ForesterRef{BMT-d202}{\(n\)'th Tarski-Lindenbaum algebra of \(T\)} is finite. 
 Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated}. }
+\end{tree}
+
+\end{tree}
+
+
+  
+  
+\begin{tree}{title={Examples}, taxon={section}, slug={BMT-s010}}
+
+    Here, we give the basic and canonical examples of Model Theory, summarizing their properties.
+
+\begin{tree}{title={DLO}, taxon={example}, slug={BMT-e030}}
+
+    The \emph{dense linear order without endpoints} (DLO) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ < \}\)
+    consisting of the following (sentences)[BMT-d013].
+    \begin{enumerate}
+\item{\(\forall  x \, \neg  x<x\)}
+        \item{\(\forall  x \forall  y \, (x<y \rightarrow \neg (y<x))\)}
+        \item{\(\forall  x \forall  y \forall  z \, ((x<y \land  y<z) \rightarrow  x<z)\)}
+        \item{\(\forall  x \forall  y \, (( \neg  x=y) \rightarrow (x<y \lor  y<x))\)}
+        \item{\(\forall  x \forall  y \, x<y \rightarrow ( \exists  z \, x<z \land  z<y)\)}
+        \item{\(\forall  x \exists  z \, z<x\)}
+        \item{\(\forall  x \exists  z \, x<z\)}
+\end{enumerate}\par{
+    The set of rationals \(\mathbb  Q\) with the usual ordering is a model of DLO, and DLO is \ForesterRef{BMT-d201}{\(\aleph _0\)-categorical},
+    so every countable model is isomorphic to \(( \Q ,<)\). DLO is also a \ForesterRef{BMT-d017}{complete theory} with
+    \ForesterRef{BMT-s003}{quantifier elimination}.
+}
+\end{tree}
+
+\begin{tree}{title={Algebraically Closed Fields}, taxon={example}, slug={BMT-e031}}
+
+    The theory of \emph{algebraically closed fields} (ACF) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ 0,1,+, \cdot \}\)
+    consisting of the following (sentences)[BMT-d013].
+    \begin{enumerate}
+\item{\(\forall  x \forall  y \forall  z \, (x+y)+z=x+(y+z)\).
+        }
+        \item{\(\forall  x \, x+0=x \land0 +x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x+y=0 \land  y+x=0\).
+        }
+        \item{\(\forall  x \forall  y \, x+y=y+x\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, (x \cdot  y) \cdot  z=x \cdot  (y+ \cdot  z)\).
+        }
+        \item{\(\forall  x \, x \cdot1 =x \land1 \cdot  x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x \cdot  y=1 \land  y \cdot  x=1\).
+        }
+        \item{\(\forall  x \forall  y \, x+ \cdot  y=y \cdot  x\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, x \cdot (y+z)=(x \cdot  y)+(x \cdot  z)\).
+        }
+        \item{
+            For each \(n \in \mathbb  N\), a sentence \(\forall  y_1 \cdots \forall  y_n \exists  x \, (y_1 \cdot  x)+ \cdots +(y_n \cdot  x)=0\).
+        }
+\end{enumerate}\par{
+    The theory of algebraically closed fields of characteristic \(p\) (\(\text {ACF}_p\)) is ACF together with the sentence
+    \(1+ \cdots +1=0\), where \(1\) is being added \(p\) times. \(\text {ACF}_p\) is a \ForesterRef{BMT-d017}{complete theory} having
+    \ForesterRef{BMT-s003}{quantifier elimination}.
+}\par{
+    The theory of algebraically closed fields of characteristic \(0\) (\(\text {ACF}_0\)) is ACF together with the collection of sentences
+    of the form \(\neg (1+ \cdots +1=0)\), for any number of \(1\)s being added together. \(\text {ACF}_0\) is also a
+    \ForesterRef{BMT-d017}{complete theory} having \ForesterRef{BMT-s003}{quantifier elimination}.
+}
 \end{tree}
 
 \end{tree}

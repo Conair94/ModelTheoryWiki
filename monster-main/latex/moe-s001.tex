@@ -5,14 +5,34 @@
 \usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
 \addbibresource{forest.bib}
 
-\title{Definition of }
+\title{Monadic NFCP}
 
-\date{February 9, 2024}
+\date{May 2, 2024}
 
-\author{Connor Lockhart}
+\author{Connor Lockhart \and Garrett Peters}
 
 \begin{document}
 \maketitle
+
+\begin{tree}{title={Monadic Expansion of a Language}, taxon={definition}, slug={moe-d001}}
+Let \(L\) be any \ForesterRef{BMT-d001}{language}. Then a monadic expansion of \(L\) is a language \(L':= L \cup \{ R_i \} _{i \in  I}\), where \(\{ R_i \} _{i \in  I}\) is a collection of unary relation symbols.
+\end{tree}
+
+\begin{tree}{title={Monadically NFCP}, taxon={definition}, slug={moe-d002}}
+Let \(M\) be an \(L\)-\ForesterRef{BMT-d002}{structure}. Then \(M\) is monadically NFCP if it is NFCP under every \ForesterRef{moe-d001}{monadic expansion of \(L\)}.
+\end{tree}
+
+\begin{tree}{title={Mutually Algebraic Sets}, taxon={definition}, slug={moe-d003}}
+Let \(X\) be a non-empty set and \(l \geq1\). Then a subset \(C \subseteq  X^l\) is mutually algebraic if there exists some \(K\) such that for all \(a \in  X\), we have \(| \{ \overline {c} \in  C: a \in \overline {c} \} | \leq  K\).
+\end{tree}
+
+\begin{tree}{title={Mated Pairs}, taxon={example}, slug={moe-e001}}
+For \(l\)=2, if \(C \subseteq  X^2\) is a set of mated pairs, i.e. every element in \(X\) has a unique "mate," which is symmetric, then \(C\) is \ForesterRef{moe-d003}{mutually algebraic}.
+\end{tree}
+
+\begin{tree}{title={Mutually Algebraic Formulas}, taxon={definition}, slug={moe-d004}}
+Suppose \(M\) is an \(L\)-\ForesterRef{BMT-d002}{structure} and \(\phi ( \overline {z})\) is an \(L(M)\) definable set. Then \(\phi\) is a mutually algebraic formula if \(D= \phi ( \overline {z})\) is a \ForesterRef{moe-d003}{mutually algebraic subset} of \(M^{lg( \overline {z})}\).
+\end{tree}
 
 \printbibliography
 \end{document}

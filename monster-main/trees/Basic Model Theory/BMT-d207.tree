@@ -9,4 +9,4 @@ there is an elementary embedding #{f: \mathcal{M} \rightarrow \mathcal{N}}.}
 
 \p{We say that #{\mathcal{M}} is prime if it is a prime model of #{Th(\mathcal{M})}.}
 
-\p{By downward L\"owenheim-Skolem, if #{\mathcal{M}} is a prime model of #{T}, then #{|\mathcal{M}|\leq max\{|T|, \aleph_0\}}.}
+\p{By downward Lowenheim-Skolem, if #{\mathcal{M}} is a prime model of #{T}, then #{|\mathcal{M}|\leq max\{|T|, \aleph_0\}}.}

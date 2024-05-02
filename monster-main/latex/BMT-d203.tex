@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Saturated model}
+
+\date{April 29, 2024}
+
+\author{Francis Westhead}
+
+\begin{document}
+\maketitle
+\par{Fix a language \(\mathcal {L}\) and a cardinal \(\kappa\). For each cardinal \(\lambda  <  \kappa\), define \(\mathcal {L}_ \lambda  :=  \mathcal {L}  \cup   \{ c_i \} _{i< \lambda }\) where each \(c_i\) is a new constant symbol. An \(\mathcal {L}\)-structure, \(\mathcal {M}\), is \(\kappa\)-saturated if given any cardinal \(\lambda < \kappa\) and any expansion of \(\mathcal {M}\) to an \(\mathcal {L}_ \lambda\)-structure, \(\mathcal {M}^*\), \(\mathcal {M}^*\) realises all 1-types in \(\mathcal {L}_ \lambda\).}\par{If this condition holds, we say that \(\mathcal {M}\) realises all 1-types over parameter sets of size strictly less than \(\kappa\). It is an easy exercise to show that this implies that \(\mathcal {M}\) realises all n-types over parameter sets of size strictly less than \(\kappa\) for each \(n  \in   \mathbb {N}\).}
+\printbibliography
+\end{document}
