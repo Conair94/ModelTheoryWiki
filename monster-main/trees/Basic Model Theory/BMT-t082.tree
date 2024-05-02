@@ -1,0 +1,7 @@
+\title{Saturated elementarily equivalent models of the same cardinality are isomorphic.}
+\date{2024-04-10}
+\author{francis-westhead}
+\taxon{theorem}
+
+\p{If #{\mathcal{M}} and #{\mathcal{N}} are each saturated, #{|\mathcal{M}|=|\mathcal{N}|} and #{Th(\mathcal{M})=Th(\mathcal{N})}
+, then #{\mathcal{M}} and #{\mathcal{N}} are isomorphic.}

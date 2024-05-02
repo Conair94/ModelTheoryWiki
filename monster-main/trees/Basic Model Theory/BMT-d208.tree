@@ -1,0 +1,7 @@
+\title{Atomic model}
+\date{2024-05-01}
+\author{francis-westhead}
+\taxon{definition}
+
+\p{Fix a language #{\mathcal{L}} and an #{\mathcal{L}}-theory #{T}. 
+An #{\mathcal{L}}-structure, #{\mathcal{M}}, is an atomic model of #{T} if for any #{m\in \mathcal{M}}, #{tp(m)} is principal.}

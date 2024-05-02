@@ -1,0 +1,21 @@
+\title{Homogeneous model}
+\date{2024-04-29}
+\author{francis-westhead}
+\taxon{definition}
+
+\p{Fix a language #{\mathcal{L}} and a cardinal #{\kappa}. 
+An #{\mathcal{L}}-structure, #{\mathcal{M}}, is #{\kappa}-homogeneous if, 
+given any #{A \subseteq \mathcal{M}} with #{|A| < \kappa} and an elementary map 
+#{f:A \rightarrow \mathcal{M}}, for any #{b\in \mathcal{M}}, there is an elementary map 
+#{f_b: A \cup \{b\} \rightarrow \mathcal{M}} such that #{f_b|_A = f}.}
+
+\p{If $\mathcal{M} is #{\kappa}-homogeneous, then we can observe by a recursive construction 
+that whenever #{B \subseteq \mathcal{M}} has #{|B|<\kappa} the elementary map #{f}
+extends to an elementary map #{f_B: A\cup B \rightarrow \mathcal{M}}.}
+
+\p{#{\mathcal{M}} is homogeneous if it is #{|\mathcal{M}|}-homogeneous.}
+
+
+
+
+
