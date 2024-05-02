@@ -1,0 +1,13 @@
+\title{Universal model}
+\date{2024-05-01}
+\author{francis-westhead}
+\taxon{definition}
+
+\p{Fix a language #{\mathcal{L}}, a cardinal #{\kappa} and an #{\mathcal{L}}-theory #{T}. 
+An #{\mathcal{L}}-structure, #{\mathcal{M}}, is a #{\kappa}-universal model of #{T} if for any model #{\mathcal{N} \models T}
+there is an elementary embedding #{f: \mathcal{N} \rightarrow \mathcal{M}}.}
+
+\p{We say that #{\mathcal{M}} is #{\kappa}-universal if it is a #{\kappa}-universal model of #{Th(\mathcal{M})}.}
+
+\p{We say that #{\mathcal{M}} is a universal model of #{T} if it is a #{|\mathcal{M}|^+}-universal model of #{T}.}
+

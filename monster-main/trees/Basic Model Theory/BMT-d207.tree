@@ -1,0 +1,12 @@
+\title{Prime model}
+\date{2024-05-01}
+\author{francis-westhead}
+\taxon{definition}
+
+\p{Fix a language #{\mathcal{L}} and an #{\mathcal{L}}-theory #{T}. 
+An #{\mathcal{L}}-structure, #{\mathcal{M}}, is a prime model of #{T} if for any model #{\mathcal{N} \models T}
+there is an elementary embedding #{f: \mathcal{M} \rightarrow \mathcal{N}}.}
+
+\p{We say that #{\mathcal{M}} is prime if it is a prime model of #{Th(\mathcal{M})}.}
+
+\p{By downward L\"owenheim-Skolem, if #{\mathcal{M}} is a prime model of #{T}, then #{|\mathcal{M}|\leq max\{|T|, \aleph_0\}}.}

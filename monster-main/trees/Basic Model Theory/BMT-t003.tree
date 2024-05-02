@@ -3,7 +3,7 @@
 \author{francis-westhead}
 \taxon{theorem}
 
-\p{For #{\aleph_0}-categoricity, there are a number of useful characterisations. The following are due to Ryll and Nardjewski.}
+\p{For #{\aleph_0}-categoricity, there are a number of useful characterisations. The following are due to Ryll-Nardjewski.}
 
 \p{Given a [language](BMT-d001), #{\mathcal{L}}, and an [#{\mathcal{L}}-theory](BMT-d017) #{T}, the following are equivalent:}
 

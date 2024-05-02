@@ -1,0 +1,15 @@
+\title{Strong homogeneous model}
+\date{2024-04-29}
+\author{francis-westhead}
+\taxon{definition}
+
+\p{#{\mathcal{M}} is strongly #{\kappa}-homogeneous if, 
+given any #{A \subseteq \mathcal{M}} with #{|A| < \kappa} and an elementary map 
+#{f:A \rightarrow \mathcal{M}}, there is an automorphism 
+#{f^*: \mathcal{M} \rightarrow \mathcal{M}} such that #{f^*|_A = f}.}
+
+\p{We can observe that if #{\kappa} is some infinite cardinality such that #{\mathcal{M}} is strongly #{\kappa}-homogeneous,
+then whenever #{A,B,B'\subseteq \mathcal{M}} have #{|A|,|B|,|B'|<\kappa} and #{B \equiv_A B'}, 
+there is an automorphism #{f \in Aut(\mathcal{M}/A)} such that #{f(B)=B'}.}
+
+\p{#{\mathcal{M}} is strongly homogeneous if it is strongly #{|\mathcal{M}|}-homogeneous.}
