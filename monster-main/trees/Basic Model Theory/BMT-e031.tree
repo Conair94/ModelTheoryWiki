@@ -4,7 +4,7 @@
 \taxon{example}
 \p{
     The theory of \em{algebraically closed fields} (ACF) is a [theory](BMT-d017) in the [language](BMT-d001) #{\mathcal L=\{0,1,+,\cdot\}}
-    consisting of the following (sentences)[BMT-d013].
+    consisting of the following [sentences](BMT-d013).
     \ul{
         \li{
             #{\forall x\forall y\forall z\,(x+y)+z=x+(y+z)}.

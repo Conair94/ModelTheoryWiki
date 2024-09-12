@@ -4,7 +4,7 @@
 \taxon{example}
 \p{
     The \em{dense linear order without endpoints} (DLO) is a [theory](BMT-d017) in the [language](BMT-d001) #{\mathcal L=\{<\}}
-    consisting of the following (sentences)[BMT-d013].
+    consisting of the following [sentences](BMT-d013).
     \ul{
         \li{
             #{\forall x\,\neg x<x}
@@ -31,6 +31,6 @@
 }
 \p{
     The set of rationals #{\mathbb Q} with the usual ordering is a model of DLO, and DLO is [#{\aleph_0}-categorical](BMT-d201),
-    so every countable model is isomorphic to #{(\Q,<)}. DLO is also a [complete theory](BMT-d017) with
+    so every countable model is isomorphic to #{(\mathbb Q,<)}. DLO is also a [complete theory](BMT-d017) with
     [quantifier elimination](BMT-s003).
 }
