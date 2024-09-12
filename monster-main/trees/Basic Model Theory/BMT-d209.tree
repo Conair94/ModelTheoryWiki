@@ -1,0 +1,8 @@
+\title{Saturated Model}
+\date{2024-09-12}
+\author{ruohan-hu}
+\taxon{definition}
+
+\p{
+    A [structure](BMT-d002) #{M} is #{\lambda}-saturated, for a cardinal #{\lambda}, when for every #{A\subseteq M} such that #{|A|<\lambda}, every [type](BMT-d019) over #{A} is realized in #{M}. #{M} is simply said to be saturated if #{M} is #{|M|}-saturated.
+}
