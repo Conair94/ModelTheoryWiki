@@ -1,0 +1,34 @@
+\title{Vector Spaces}
+\date{2024-09-12}
+\author{oscarc}
+\taxon{example}
+\p{
+    The theory of vector spaces over a field #{F} is a [theory](BMT-d017) in the [language](BMT-d001) #{\mathcal L=\{0,+,(\times_f)_{f\in F}\}}
+    consisting of the following [sentences](BMT-d013).
+    \ul{
+        \li{
+            #{\forall x\forall y\forall z\,(x+y)+z=x+(y+z)}.
+        }
+        \li{
+            #{\forall x\,x+0=x\land0+x=x}.
+        }
+        \li{
+            #{\forall x\exists y\,x+y=0\land y+x=0}.
+        }
+        \li{
+            #{\forall x\forall y\,x+y=y+x}.
+        }
+        \li{
+            For each #{f,g\in F}, the sentence #{\forall x\,\times_f(\times_g(x)) = \times_{fg}(x)}, where #{fg} is the product of #{f} and #{g} in #{F}.
+        }
+        \li{
+            #{\forall x\,\times_1(x) = x} where #{1} is the multiplicative identity in #{F}.
+        }
+        \li{
+            For each #{f\in F}, the sentence #{\forall x\forall y\,\times_f(x+y) = \times_f(x)+\times_f(y)}.
+        }
+        \li{
+            For each #{f,g\in F}, the sentence #{\forall x\,\times_(f+g)(x) = \times_f(x)+\times_g(x)}, where #{f+g} is the sum of #{f} and #{g} in #{F}.
+        }
+    }
+}
