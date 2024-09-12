@@ -4,3 +4,4 @@
 **/*.log
 ModelTheoryWiki.code-workspace
 monster-main/trees/.vscode
+monster-main/.DS_Store
