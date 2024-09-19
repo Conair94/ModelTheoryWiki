@@ -9,7 +9,7 @@
 
 \date{}
 
-\author{Connor Lockhart \and Adam Melrod \and Morgan Bryant \and Francis Westhead \and Garrett Peters \and Oscar Coppola}
+\author{Connor Lockhart \and Adam Melrod \and Morgan Bryant \and Francis Westhead \and Garrett Peters \and Oscar Coppola \and ruohan-hu}
 
 \begin{document}
 \maketitle
@@ -165,6 +165,12 @@ the \(n\)th Tarski-Lindenbaum Algebra of \(T\).
   
 \begin{tree}{title={Saturation}, taxon={section}, slug={BMT-s006}}
 In this section we give the basic definitions and theorems for saturation of models.
+\begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d209}}
+
+    A \ForesterRef{BMT-d002}{structure} \(M\) is \(\lambda\)-saturated, for a cardinal \(\lambda\), when for every \(A \subseteq  M\) such that \(|A|< \lambda\), every \ForesterRef{BMT-d019}{type} over \(A\) is realized in \(M\). \(M\) is simply said to be saturated if \(M\) is \(|M|\)-saturated.
+
+\end{tree}
+
 \end{tree}
 
 
@@ -192,7 +198,7 @@ For any set \(I\) of infinite cardinality, the family of cofinite sets forms a p
 Fix an index set \(I\) and a \ForesterRef{BMT-d001}{language} \(L\). Let \(\{ \mathcal {A}_i: i \in  I \}\) be a family of \(L\)-\ForesterRef{BMT-d002}{structures}, and let \(\mathcal {U}\) be any \ForesterRef{BMT-d072}{ultrafilter} on \(\mathcal {P}(I)\). Then the ultraproduct is the \(L\)-structure \(\mathcal {A}_* :=  \prod \limits _{i \in  I} A_i / \mathcal {U}\). \par{In \(\mathcal {A}_*\), the elements of the universe of \(\mathcal {A}_*\) are functions \(\underline {a}\) with domain \(I\) and \(\underline {a}(i) \in  A_i\) under the equivalence class \(\sim _{ \mathcal {U}}\), where \[\underline {a} \sim _{ \mathcal {U}} \underline {b}  \text { if and only if } \{ i \in  I:  \underline {a}(i)= \underline {b}(i) \}   \in   \mathcal {U}.\]}\par{The constant symbols are interpreted by \(c^{ \mathcal {A}_*} :=  \prod \limits _{i \in  I} c^{ \mathcal {A}_i} / \mathcal {U}\). }\par{The function symbols are interpreted by \(f^{ \mathcal {A}_i}( \underline {a}_1, \dots ,  \underline {a}_n) :=  \prod \limits _{i \in  I} f^{ \mathcal {A}_i}( \underline {a}_1(i), \dots , \underline {a}_n(i)) /  \mathcal {U} \). }\par{The relation symbols are interpreted by \(\mathcal {A}_* \models  R^{ \mathcal {A}_*}( \underline {a}_1, \dots ,  \underline {a}_n)\) if and only if \(\{ i \in  I:  \mathcal {A}_i \models  R^{ \mathcal {A}_i}( \underline {a}_1(i), \dots ,  \underline {a}_n(i)) \} \in   \mathcal {U}\).}
 \end{tree}
 
-\begin{tree}{title={ŁOś's Theorem}, taxon={Theorem}, slug={BMT-t071}}
+\begin{tree}{title={ Łoś's Theorem}, taxon={Theorem}, slug={BMT-t071}}
 Let \(\mathcal {A}_* =  \prod \limits _{i \in  I}  \mathcal {A}_i /  \mathcal {U}\) be an \ForesterRef{BMT-d073}{ultraproduct}. Then for any \(L\)-formula \(\phi (x_1, \dots ,x_n)\), we have \[\mathcal {A}_* \models   \phi ( \underline {a}_1, \dots , \underline {a}_n)  \text { if and only if }  \{ i \in  I: A_i \models \phi ( \underline {a}_1(i), \dots ,  \underline {a}_n(i)) \} \in \mathcal {U}.\]
 \end{tree}
 
@@ -241,7 +247,7 @@ Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated
 \begin{tree}{title={DLO}, taxon={example}, slug={BMT-e030}}
 
     The \emph{dense linear order without endpoints} (DLO) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ < \}\)
-    consisting of the following (sentences)[BMT-d013].
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
     \begin{enumerate}
 \item{\(\forall  x \, \neg  x<x\)}
         \item{\(\forall  x \forall  y \, (x<y \rightarrow \neg (y<x))\)}
@@ -252,7 +258,7 @@ Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated
         \item{\(\forall  x \exists  z \, x<z\)}
 \end{enumerate}\par{
     The set of rationals \(\mathbb  Q\) with the usual ordering is a model of DLO, and DLO is \ForesterRef{BMT-d201}{\(\aleph _0\)-categorical},
-    so every countable model is isomorphic to \(( \Q ,<)\). DLO is also a \ForesterRef{BMT-d017}{complete theory} with
+    so every countable model is isomorphic to \(( \mathbb  Q,<)\). DLO is also a \ForesterRef{BMT-d017}{complete theory} with
     \ForesterRef{BMT-s003}{quantifier elimination}.
 }
 \end{tree}
@@ -260,7 +266,7 @@ Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated
 \begin{tree}{title={Algebraically Closed Fields}, taxon={example}, slug={BMT-e031}}
 
     The theory of \emph{algebraically closed fields} (ACF) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ 0,1,+, \cdot \}\)
-    consisting of the following (sentences)[BMT-d013].
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
     \begin{enumerate}
 \item{\(\forall  x \forall  y \forall  z \, (x+y)+z=x+(y+z)\).
         }

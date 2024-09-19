@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Vector Spaces}
+
+\date{September 12, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    The theory of vector spaces over a field \(F\) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ 0,+,( \times _f)_{f \in  F} \}\)
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \forall  y \forall  z \, (x+y)+z=x+(y+z)\).
+        }
+        \item{\(\forall  x \, x+0=x \land0 +x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x+y=0 \land  y+x=0\).
+        }
+        \item{\(\forall  x \forall  y \, x+y=y+x\).
+        }
+        \item{
+            For each \(f,g \in  F\), the sentence \(\forall  x \, \times _f( \times _g(x)) =  \times _{fg}(x)\), where \(fg\) is the product of \(f\) and \(g\) in \(F\).
+        }
+        \item{\(\forall  x \, \times _1(x) = x\) where \(1\) is the multiplicative identity in \(F\).
+        }
+        \item{
+            For each \(f \in  F\), the sentence \(\forall  x \forall  y \, \times _f(x+y) =  \times _f(x)+ \times _f(y)\).
+        }
+        \item{
+            For each \(f,g \in  F\), the sentence \(\forall  x \, \times _(f+g)(x) =  \times _f(x)+ \times _g(x)\), where \(f+g\) is the sum of \(f\) and \(g\) in \(F\).
+        }
+\end{enumerate}}
+\printbibliography
+\end{document}
