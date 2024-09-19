@@ -1,0 +1,15 @@
+\title{Elementary Substructures}
+\date{2024-09-19}
+\author{oscarc}
+\taxon{definition}
+
+\p{
+    Given two [structures](BMT-d002) #{\mathcal{A}} and #{\mathcal{B}} in a [language](BMT-d001) #{\mathcal{L}}
+    such that #{\mathcal A} is a [substructure](BMT-d006) of #{\mathcal B},
+    #{\mathcal A} is an \em{elementary substructure} of #{\mathcal B} when the inclusion map #{\mathcal A\hookrightarrow\mathcal B}
+    is an [elementary embedding](BMT-d030).
+    Conversely, #{\mathcal B} is called an elementary extension of #{\mathcal A}.
+}
+\p{
+    One writes #{\mathcal A\preceq\mathcal B} to mean #{\mathcal A} is an elementary substructure of #{\mathcal B}.
+}
