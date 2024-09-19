@@ -1,0 +1,12 @@
+\title{Saturated Model}
+\date{2024-09-12}
+\author{ruohan-hu}
+\taxon{definition}
+
+\p{
+    A [structure](BMT-d002) #{M} is #{\lambda}-homogeneous, for a cardinal #{\lambda}, 
+    when for every cardinal #{\eta<\lambda} and sequences #{(a_i\in M|i\in\eta),\{b_i\in M|i\in\eta\}} such that #{tp((a_i|i\in\eta)/\varnothing)=tp((b_i|i\in\eta)/\varnothing)}, 
+    for each #{c\in M} there is #{d\in M} such that #{tp((a_i\in M|i\in\eta),c/\varnothing)=tp((b_i\in M|i\in\eta),d/\varnothing)}. 
+
+    The definition here follows Chang & Keisler, and is equivalent to the definition in Shelah.
+}
