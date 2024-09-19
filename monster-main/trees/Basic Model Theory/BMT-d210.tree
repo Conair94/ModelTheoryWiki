@@ -5,8 +5,11 @@
 
 \p{
     A [structure](BMT-d002) #{M} is #{\lambda}-homogeneous, for a cardinal #{\lambda}, 
-    when for every cardinal #{\eta<\lambda} and sequences #{(a_i\in M|i\in\eta),\{b_i\in M|i\in\eta\}} such that #{tp((a_i|i\in\eta)/\varnothing)=tp((b_i|i\in\eta)/\varnothing)}, 
-    for each #{c\in M} there is #{d\in M} such that #{tp((a_i\in M|i\in\eta),c/\varnothing)=tp((b_i\in M|i\in\eta),d/\varnothing)}. 
+    when for every cardinal #{\eta<\lambda} and sequences #{(a_i\in M|i\in\eta),\{b_i\in M|i\in\eta\}} such that #{(M,(a_i)_{i<\eta})\equiv(M,(b_i)_{i<\eta})}, 
+    for each #{c\in M} there is #{d\in M} such that #{(M,(a_i)_{i<\eta},c)\equiv(M,(b_i)_{i<\eta},d)}. 
+
+    Here #{(M,(a_i)_{i<\eta}),(M,(b_i)_{i<\eta})} refers to #{M} with its language expanded by a constant #{C_i} for each #{i<\eta}, such that #{C_i} is interpreted as #{a_i}, #{b_i} respectively. 
+    #{(M,(a_i)_{i<\eta},c)} and #{(M,(b_i)_{i<\eta},d)} are further expansions, when the language is further expanded by a constant #{D} that is interpreted as #{c} or #{d} respectively.
 
     The definition here follows Chang & Keisler, and is equivalent to the definition in Shelah.
 }
