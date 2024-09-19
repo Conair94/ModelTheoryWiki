@@ -1,0 +1,11 @@
+\title{Elementary Embedding of #{L}-structures}
+\date{2024-09-19}
+\author{oscarc}
+\taxon{definition}
+
+\p{
+    Given two [structures](BMT-d002) #{\mathcal{A}} and #{\mathcal{B}} in a [language](BMT-d001) #{\mathcal{L}},
+    a [homomorphism](BMT-d003) #{\Phi\colon\mathcal{A} \to \mathcal{B}} is an \em{elementary embedding} when
+    for every #{\mathcal L}-formula #{\varphi(x_1,\dots,x_n)} and #{a_1,\dots,a_n\in A},
+    we have #{\mathcal A\vDash\varphi(a_1,\dots,a_n)} if and only if #{\mathcal B\vDash\varphi(\Phi(a_1),\dots,\Phi(a_n))}.
+}

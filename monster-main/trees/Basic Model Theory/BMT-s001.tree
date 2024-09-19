@@ -1,6 +1,6 @@
 \title{Structures, Isomorphisms, Substructures}
 \date{2024-02-08}
-\author{mbryant}
+\author{mbryant, oscarc}
 \taxon{section}
 
 \p{In this section we give the basic notions and theorems for structures, isomorphisms, and substructures}
@@ -11,3 +11,5 @@
 \transclude{BMT-d004}
 \transclude{BMT-d005}
 \transclude{BMT-d006}
+\transclude{BMT-d030}
+\transclude{BMT-d031}
