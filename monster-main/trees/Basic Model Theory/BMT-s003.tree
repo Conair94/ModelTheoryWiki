@@ -9,5 +9,14 @@
 \p{Frequently, we use the following lemma to simplify the task of showing that #{\Phi} is an elimination set}
 \transclude{BMT-d015}
 \p{The art of quantifier elimination lies in choosing an appropriate elimination set that allows the above lemma to be used with minimal obstructions. }
+\p{There are many examples of theories which have quantifier elimination for a relatively tame set of formulas: }
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-e031}
+}
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{BMT-e030}
+}
 
 
