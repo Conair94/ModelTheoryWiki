@@ -1,0 +1,26 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Elementary Substructures}
+
+\date{September 19, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\)
+    such that \(\mathcal  A\) is a \ForesterRef{BMT-d006}{substructure} of \(\mathcal  B\),
+    \(\mathcal  A\) is an \emph{elementary substructure} of \(\mathcal  B\) when the inclusion map \(\mathcal  A \hookrightarrow \mathcal  B\)
+    is an \ForesterRef{BMT-d030}{elementary embedding}.
+    Conversely, \(\mathcal  B\) is called an elementary extension of \(\mathcal  A\).
+}\par{
+    One writes \(\mathcal  A \preceq \mathcal  B\) to mean \(\mathcal  A\) is an elementary substructure of \(\mathcal  B\).
+}
+\printbibliography
+\end{document}

@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Morgan Bryant\thanks{With contributions from ruohan-hu, Connor Lockhart, Francis Westhead, Garrett Peters, Oscar Coppola.}}
+\author{Morgan Bryant\thanks{With contributions from Connor Lockhart, Francis Westhead, Garrett Peters, Oscar Coppola, Ruohan Hu.}}
 
 \begin{document}
 \maketitle
@@ -49,6 +49,27 @@ An \ForesterRef{BMT-d004}{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \m
 Given a \(\mathcal {L}\)-structure \(\mathcal {A}\), a subset \(B  \subseteq  A\) is called a \emph{substructure} of \(\mathcal {A}\) if:\par{For every constant \(c \in   \mathcal {L}\), \(c^{ \mathcal {A}}  \in  B\)}\par{For every n-ary function \(f \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), \(f^{ \mathcal {A}}(b_1, \dots ,b_n)  \in  B\)}\par{For every n-ary relation, \(R \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), we write \(R^B = R^{ \mathcal {A}} \cap   \mathcal {P}(B^n)\) and require that
 \(R^{B}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{B}\))  if and only if \(R^{ \mathcal {A}}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{ \mathcal {A}}\)) 
 Note that this condition is vacuously true, so only the first two conditions need to be checked when verifying a substructure.}
+\end{tree}
+
+\begin{tree}{title={Elementary Embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d030}}
+
+    Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\),
+    a \ForesterRef{BMT-d003}{homomorphism} \(\Phi \colon \mathcal {A}  \to   \mathcal {B}\) is an \emph{elementary embedding} when
+    for every \(\mathcal  L\)-formula \(\varphi (x_1, \dots ,x_n)\) and \(a_1, \dots ,a_n \in  A\),
+    we have \(\mathcal  A \vDash \varphi (a_1, \dots ,a_n)\) if and only if \(\mathcal  B \vDash \varphi ( \Phi (a_1), \dots , \Phi (a_n))\).
+
+\end{tree}
+
+\begin{tree}{title={Elementary Substructures}, taxon={definition}, slug={BMT-d031}}
+
+    Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\)
+    such that \(\mathcal  A\) is a \ForesterRef{BMT-d006}{substructure} of \(\mathcal  B\),
+    \(\mathcal  A\) is an \emph{elementary substructure} of \(\mathcal  B\) when the inclusion map \(\mathcal  A \hookrightarrow \mathcal  B\)
+    is an \ForesterRef{BMT-d030}{elementary embedding}.
+    Conversely, \(\mathcal  B\) is called an elementary extension of \(\mathcal  A\).
+\par{
+    One writes \(\mathcal  A \preceq \mathcal  B\) to mean \(\mathcal  A\) is an elementary substructure of \(\mathcal  B\).
+}
 \end{tree}
 
 \end{tree}
@@ -105,7 +126,69 @@ Let \(K\) be a class of \(L\) structures and \(\Phi\) be a set of \(L\)-formulas
 \end{enumerate}
   Then \(\Phi\) is an elimination set of \(K\)}
 \end{tree}
-\par{The art of quantifier elimination lies in choosing an appropriate elimination set that allows the above lemma to be used with minimal obstructions. }
+\par{The art of quantifier elimination lies in choosing an appropriate elimination set that allows the above lemma to be used with minimal obstructions. }\par{There are many examples of theories which have quantifier elimination for a relatively tame set of formulas: }
+  
+  
+\begin{tree}{title={Algebraically Closed Fields}, taxon={example}, slug={BMT-e031}}
+
+    The theory of \emph{algebraically closed fields} (ACF) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ 0,1,+, \cdot \}\)
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \forall  y \forall  z \, (x+y)+z=x+(y+z)\).
+        }
+        \item{\(\forall  x \, x+0=x \land0 +x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x+y=0 \land  y+x=0\).
+        }
+        \item{\(\forall  x \forall  y \, x+y=y+x\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, (x \cdot  y) \cdot  z=x \cdot  (y+ \cdot  z)\).
+        }
+        \item{\(\forall  x \, x \cdot1 =x \land1 \cdot  x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x \cdot  y=1 \land  y \cdot  x=1\).
+        }
+        \item{\(\forall  x \forall  y \, x+ \cdot  y=y \cdot  x\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, x \cdot (y+z)=(x \cdot  y)+(x \cdot  z)\).
+        }
+        \item{
+            For each \(n \in \mathbb  N\), a sentence \(\forall  y_1 \cdots \forall  y_n \exists  x \, (y_1 \cdot  x)+ \cdots +(y_n \cdot  x)=0\).
+        }
+\end{enumerate}\par{
+    The theory of algebraically closed fields of characteristic \(p\) (\(\text {ACF}_p\)) is ACF together with the sentence
+    \(1+ \cdots +1=0\), where \(1\) is being added \(p\) times. \(\text {ACF}_p\) is a \ForesterRef{BMT-d017}{complete theory} having
+    \ForesterRef{BMT-s003}{quantifier elimination}.
+}\par{
+    The theory of algebraically closed fields of characteristic \(0\) (\(\text {ACF}_0\)) is ACF together with the collection of sentences
+    of the form \(\neg (1+ \cdots +1=0)\), for any number of \(1\)s being added together. \(\text {ACF}_0\) is also a
+    \ForesterRef{BMT-d017}{complete theory} having \ForesterRef{BMT-s003}{quantifier elimination}.
+}
+\end{tree}
+
+
+  
+  
+\begin{tree}{title={DLO}, taxon={example}, slug={BMT-e030}}
+
+    The \emph{dense linear order without endpoints} (DLO) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ < \}\)
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \, \neg  x<x\)}
+        \item{\(\forall  x \forall  y \, (x<y \rightarrow \neg (y<x))\)}
+        \item{\(\forall  x \forall  y \forall  z \, ((x<y \land  y<z) \rightarrow  x<z)\)}
+        \item{\(\forall  x \forall  y \, (( \neg  x=y) \rightarrow (x<y \lor  y<x))\)}
+        \item{\(\forall  x \forall  y \, x<y \rightarrow ( \exists  z \, x<z \land  z<y)\)}
+        \item{\(\forall  x \exists  z \, z<x\)}
+        \item{\(\forall  x \exists  z \, x<z\)}
+\end{enumerate}\par{
+    The set of rationals \(\mathbb  Q\) with the usual ordering is a model of DLO, and DLO is \ForesterRef{BMT-d201}{\(\aleph _0\)-categorical},
+    so every countable model is isomorphic to \(( \mathbb  Q,<)\). DLO is also a \ForesterRef{BMT-d017}{complete theory} with
+    \ForesterRef{BMT-s003}{quantifier elimination}.
+}
+\end{tree}
+
+
 \end{tree}
 
 
@@ -208,7 +291,16 @@ Let \(L\) be any language, and \(T\) be any \(L\)-theory. Then \(T\) is satisfia
   
   
 \begin{tree}{title={Model Completeness}, taxon={Section}, slug={BMT-s008}}
-An \emph{Elimination Set} for a language \(\mathcal {L}\) and class \(K\) of \(\mathcal {L}\)-structures, then a set \(\Gamma\) of formulas \(\phi\) is an elimination set for \(K\) if for every formula \(\phi ( \bar {x})\) of \(\mathcal {L}\) there is a formula \(\phi ^*( \bar {x})\) which is a boolean combinations of formulas in \(\Gamma\) and \(\phi\) is equivalent to \(\phi ^*\) in every structure in \(K\)
+In many important examples of theories, typically originating in the field of algebra, all embeddings are elementary embeddings. We define this as follows
+\begin{tree}{title={Definition of Model Complete}, taxon={definition}, slug={BMT-d016}}
+A Theory \(T\) in a first order language \(L\) is \emph{Model-Complete} if  every 
+\begin{tree}{title={Embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
+Given two structures in a language \(\mathcal {L}\) \(\mathcal {A}\) and \(\mathcal {B}\), an \emph{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
+is a \ForesterRef{BMT-d003}{homomorphism} such that:\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Leftrightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{This is stronger than a homomorphism because we now require a two way implication in the above property.}
+\end{tree}
+ between \(L\)-structures which are models of \(T\) is an elementary embedding. 
+\end{tree}
+
 \end{tree}
 
 
@@ -293,6 +385,49 @@ Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated
     The theory of algebraically closed fields of characteristic \(0\) (\(\text {ACF}_0\)) is ACF together with the collection of sentences
     of the form \(\neg (1+ \cdots +1=0)\), for any number of \(1\)s being added together. \(\text {ACF}_0\) is also a
     \ForesterRef{BMT-d017}{complete theory} having \ForesterRef{BMT-s003}{quantifier elimination}.
+}
+\end{tree}
+
+\begin{tree}{title={Vector Spaces}, taxon={example}, slug={BMT-e032}}
+
+    The theory of vector spaces over a field \(F\) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ 0,+,( \times _f)_{f \in  F} \}\)
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \forall  y \forall  z \, (x+y)+z=x+(y+z)\).
+        }
+        \item{\(\forall  x \, x+0=x \land0 +x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x+y=0 \land  y+x=0\).
+        }
+        \item{\(\forall  x \forall  y \, x+y=y+x\).
+        }
+        \item{
+            For each \(f,g \in  F\), the sentence \(\forall  x \, \times _f( \times _g(x)) =  \times _{fg}(x)\), where \(fg\) is the product of \(f\) and \(g\) in \(F\).
+        }
+        \item{\(\forall  x \, \times _1(x) = x\) where \(1\) is the multiplicative identity in \(F\).
+        }
+        \item{
+            For each \(f \in  F\), the sentence \(\forall  x \forall  y \, \times _f(x+y) =  \times _f(x)+ \times _f(y)\).
+        }
+        \item{
+            For each \(f,g \in  F\), the sentence \(\forall  x \, \times _(f+g)(x) =  \times _f(x)+ \times _g(x)\), where \(f+g\) is the sum of \(f\) and \(g\) in \(F\).
+        }
+\end{enumerate}
+\end{tree}
+
+\begin{tree}{title={Equivalence Relation}, taxon={example}, slug={BMT-e033}}
+
+    The theory of an equivalence relation is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ E \}\),
+    where \(E\) is a binary relation, consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \, xEx\).
+        }
+        \item{\(\forall  x \forall  y \, xEy \rightarrow  yEx\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, (xEy \land  yEz) \rightarrow  xEz\).
+        }
+\end{enumerate}\par{
+    Being uncomplicated, this theory is usually shown as an example (or rather, counterexample) of various properties.
 }
 \end{tree}
 

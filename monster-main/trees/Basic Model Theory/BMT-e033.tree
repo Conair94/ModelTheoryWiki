@@ -1,0 +1,22 @@
+\title{Equivalence Relation}
+\date{2024-09-19}
+\author{oscarc}
+\taxon{example}
+\p{
+    The theory of an equivalence relation is a [theory](BMT-d017) in the [language](BMT-d001) #{\mathcal L=\{E\}},
+    where #{E} is a binary relation, consisting of the following [sentences](BMT-d013).
+    \ul{
+        \li{
+            #{\forall x\,xEx}.
+        }
+        \li{
+            #{\forall x\forall y\,xEy\rightarrow yEx}.
+        }
+        \li{
+            #{\forall x\forall y\forall z\,(xEy\land yEz)\rightarrow xEz}.
+        }
+    }
+}
+\p{
+    Being uncomplicated, this theory is usually shown as an example (or rather, counterexample) of various properties.
+}
