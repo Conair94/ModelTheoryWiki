@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Connor Lockhart}
+\author{Connor Lockhart\thanks{With contributions from Oscar Coppola.}}
 
 \begin{document}
 \maketitle
@@ -26,6 +26,68 @@ Let \(K\) be a class of \(L\) structures and \(\Phi\) be a set of \(L\)-formulas
 \end{enumerate}
   Then \(\Phi\) is an elimination set of \(K\)}
 \end{tree}
-\par{The art of quantifier elimination lies in choosing an appropriate elimination set that allows the above lemma to be used with minimal obstructions. }
+\par{The art of quantifier elimination lies in choosing an appropriate elimination set that allows the above lemma to be used with minimal obstructions. }\par{There are many examples of theories which have quantifier elimination for a relatively tame set of formulas: }
+  
+  
+\begin{tree}{title={Algebraically Closed Fields}, taxon={example}, slug={BMT-e031}}
+
+    The theory of \emph{algebraically closed fields} (ACF) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ 0,1,+, \cdot \}\)
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \forall  y \forall  z \, (x+y)+z=x+(y+z)\).
+        }
+        \item{\(\forall  x \, x+0=x \land0 +x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x+y=0 \land  y+x=0\).
+        }
+        \item{\(\forall  x \forall  y \, x+y=y+x\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, (x \cdot  y) \cdot  z=x \cdot  (y+ \cdot  z)\).
+        }
+        \item{\(\forall  x \, x \cdot1 =x \land1 \cdot  x=x\).
+        }
+        \item{\(\forall  x \exists  y \, x \cdot  y=1 \land  y \cdot  x=1\).
+        }
+        \item{\(\forall  x \forall  y \, x+ \cdot  y=y \cdot  x\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, x \cdot (y+z)=(x \cdot  y)+(x \cdot  z)\).
+        }
+        \item{
+            For each \(n \in \mathbb  N\), a sentence \(\forall  y_1 \cdots \forall  y_n \exists  x \, (y_1 \cdot  x)+ \cdots +(y_n \cdot  x)=0\).
+        }
+\end{enumerate}\par{
+    The theory of algebraically closed fields of characteristic \(p\) (\(\text {ACF}_p\)) is ACF together with the sentence
+    \(1+ \cdots +1=0\), where \(1\) is being added \(p\) times. \(\text {ACF}_p\) is a \ForesterRef{BMT-d017}{complete theory} having
+    \ForesterRef{BMT-s003}{quantifier elimination}.
+}\par{
+    The theory of algebraically closed fields of characteristic \(0\) (\(\text {ACF}_0\)) is ACF together with the collection of sentences
+    of the form \(\neg (1+ \cdots +1=0)\), for any number of \(1\)s being added together. \(\text {ACF}_0\) is also a
+    \ForesterRef{BMT-d017}{complete theory} having \ForesterRef{BMT-s003}{quantifier elimination}.
+}
+\end{tree}
+
+
+  
+  
+\begin{tree}{title={DLO}, taxon={example}, slug={BMT-e030}}
+
+    The \emph{dense linear order without endpoints} (DLO) is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ < \}\)
+    consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \, \neg  x<x\)}
+        \item{\(\forall  x \forall  y \, (x<y \rightarrow \neg (y<x))\)}
+        \item{\(\forall  x \forall  y \forall  z \, ((x<y \land  y<z) \rightarrow  x<z)\)}
+        \item{\(\forall  x \forall  y \, (( \neg  x=y) \rightarrow (x<y \lor  y<x))\)}
+        \item{\(\forall  x \forall  y \, x<y \rightarrow ( \exists  z \, x<z \land  z<y)\)}
+        \item{\(\forall  x \exists  z \, z<x\)}
+        \item{\(\forall  x \exists  z \, x<z\)}
+\end{enumerate}\par{
+    The set of rationals \(\mathbb  Q\) with the usual ordering is a model of DLO, and DLO is \ForesterRef{BMT-d201}{\(\aleph _0\)-categorical},
+    so every countable model is isomorphic to \(( \mathbb  Q,<)\). DLO is also a \ForesterRef{BMT-d017}{complete theory} with
+    \ForesterRef{BMT-s003}{quantifier elimination}.
+}
+\end{tree}
+
+
 \printbibliography
 \end{document}

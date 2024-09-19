@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Morgan Bryant}
+\author{mbryant, oscarc\thanks{With contributions from Morgan Bryant, Oscar Coppola.}}
 
 \begin{document}
 \maketitle
@@ -45,6 +45,27 @@ An \ForesterRef{BMT-d004}{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \m
 Given a \(\mathcal {L}\)-structure \(\mathcal {A}\), a subset \(B  \subseteq  A\) is called a \emph{substructure} of \(\mathcal {A}\) if:\par{For every constant \(c \in   \mathcal {L}\), \(c^{ \mathcal {A}}  \in  B\)}\par{For every n-ary function \(f \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), \(f^{ \mathcal {A}}(b_1, \dots ,b_n)  \in  B\)}\par{For every n-ary relation, \(R \in   \mathcal {L}\), for any \(b_1, \dots , b_n  \in  B\), we write \(R^B = R^{ \mathcal {A}} \cap   \mathcal {P}(B^n)\) and require that
 \(R^{B}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{B}\))  if and only if \(R^{ \mathcal {A}}(b_1, \dots , b_n)\) holds (i.e., \((b_1, \dots , b_n)  \in  R^{ \mathcal {A}}\)) 
 Note that this condition is vacuously true, so only the first two conditions need to be checked when verifying a substructure.}
+\end{tree}
+
+\begin{tree}{title={Elementary Embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d030}}
+
+    Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\),
+    a \ForesterRef{BMT-d003}{homomorphism} \(\Phi \colon \mathcal {A}  \to   \mathcal {B}\) is an \emph{elementary embedding} when
+    for every \(\mathcal  L\)-formula \(\varphi (x_1, \dots ,x_n)\) and \(a_1, \dots ,a_n \in  A\),
+    we have \(\mathcal  A \vDash \varphi (a_1, \dots ,a_n)\) if and only if \(\mathcal  B \vDash \varphi ( \Phi (a_1), \dots , \Phi (a_n))\).
+
+\end{tree}
+
+\begin{tree}{title={Elementary Substructures}, taxon={definition}, slug={BMT-d031}}
+
+    Given two \ForesterRef{BMT-d002}{structures} \(\mathcal {A}\) and \(\mathcal {B}\) in a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\)
+    such that \(\mathcal  A\) is a \ForesterRef{BMT-d006}{substructure} of \(\mathcal  B\),
+    \(\mathcal  A\) is an \emph{elementary substructure} of \(\mathcal  B\) when the inclusion map \(\mathcal  A \hookrightarrow \mathcal  B\)
+    is an \ForesterRef{BMT-d030}{elementary embedding}.
+    Conversely, \(\mathcal  B\) is called an elementary extension of \(\mathcal  A\).
+\par{
+    One writes \(\mathcal  A \preceq \mathcal  B\) to mean \(\mathcal  A\) is an elementary substructure of \(\mathcal  B\).
+}
 \end{tree}
 
 \printbibliography

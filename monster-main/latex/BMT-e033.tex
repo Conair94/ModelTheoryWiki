@@ -1,0 +1,30 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Equivalence Relation}
+
+\date{September 19, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    The theory of an equivalence relation is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ E \}\),
+    where \(E\) is a binary relation, consisting of the following \ForesterRef{BMT-d013}{sentences}.
+    \begin{enumerate}
+\item{\(\forall  x \, xEx\).
+        }
+        \item{\(\forall  x \forall  y \, xEy \rightarrow  yEx\).
+        }
+        \item{\(\forall  x \forall  y \forall  z \, (xEy \land  yEz) \rightarrow  xEz\).
+        }
+\end{enumerate}}\par{
+    Being uncomplicated, this theory is usually shown as an example (or rather, counterexample) of various properties.
+}
+\printbibliography
+\end{document}
