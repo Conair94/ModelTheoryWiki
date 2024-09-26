@@ -3,5 +3,5 @@
 \author{connor-lockhart}
 \taxon{definition}
 
-\p{A Theory #{T} in a first order language #{L} is \em{Model-Complete} if  every \transclude{BMT-d004} between #{L}-structures which are models of #{T} is an elementary embedding. }
+\p{A Theory #{T} in a first order language #{L} is \em{Model-Complete} if  every [#{L}-embedding](BMT-d004) between models of #{T} is an elementary embedding. }
 

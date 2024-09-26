@@ -18,5 +18,7 @@
   \put\transclude/expanded{false}
   \transclude{BMT-e030}
 }
+\p{Furthermore, if one is willing to accept arbitrary expansions of the language, we can always force a theory to have quantifier elimination. This is done as follows:}
+\transclude{BMT-d026}
 
 
