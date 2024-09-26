@@ -6,5 +6,5 @@
 \p{
     A countable [structure](BMT-d002) #{M} is ultrahomogeneous, per Hodges, when every [isomorphism](BMT-d005) between two finite [substructure](BMT-d006) of #{M} extends to a global [automorphism](BMT-d005).
 
-    Ultrahomogeneous is strictly stronger than #{\omega}-[homogeneous](BMT-d210). For an #{\omega}-[homogeneous](BMT-d210) structure that is not ultrahomogeneous, consider the disjoint union of a countable random graph and a countable triangle-free random graph.
+    Ultrahomogeneous is strictly stronger than #{\omega}-[homogeneous](BMT-d210). For an #{\omega}-[homogeneous](BMT-d210) structure that is not ultrahomogeneous, consider the disjoint union of a countable [random graph](Fra-e001) and a countable triangle-free random graph.
 }
