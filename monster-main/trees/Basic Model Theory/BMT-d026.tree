@@ -1,0 +1,7 @@
+\title{Morleyisation}
+\date{2024-09-26}
+\author{connor-lockhart}
+\taxon{definition}
+\p{ The Morleyisation of an #{L}-theory #{T} is the theory #{T^m} in the language #{L^m\supset L}. The expanded language #{L^m} is formed by taking every #{L}-formula #{\phi(x_1,...,x_n)} and adding an #{n}-placed relation symbol #{R_\phi}. To #{T} we add the axioms }
+\p{#{\forall x_1,...,x_n (R_\phi (x_1,...,x_n)\leftrightarrow\phi(x_1,...,x_n)) }}
+\p{Morleyisation preserves many properties such as [#{\kappa}-categoricity](BMT-d201), though the relations #{R_\phi} and the corresponding definable sets may be quite hard to understand. }
