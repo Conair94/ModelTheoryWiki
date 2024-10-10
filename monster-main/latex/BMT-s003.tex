@@ -88,6 +88,10 @@ Let \(K\) be a class of \(L\) structures and \(\Phi\) be a set of \(L\)-formulas
 }
 \end{tree}
 
+\par{Furthermore, if one is willing to accept arbitrary expansions of the language, we can always force a theory to have quantifier elimination. This is done as follows:}
+\begin{tree}{title={Morleyisation}, taxon={definition}, slug={BMT-d026}}
+ The Morleyisation of an \(L\)-theory \(T\) is the theory \(T^m\) in the language \(L^m \supset  L\). The expanded language \(L^m\) is formed by taking every \(L\)-formula \(\phi (x_1,...,x_n)\) and adding an \(n\)-placed relation symbol \(R_ \phi\). To \(T\) we add the axioms \par{\(\forall  x_1,...,x_n (R_ \phi  (x_1,...,x_n) \leftrightarrow \phi (x_1,...,x_n)) \)}\par{Morleyisation preserves many properties such as \ForesterRef{BMT-d201}{\(\kappa\)-categoricity}, though the relations \(R_ \phi\) and the corresponding definable sets may be quite hard to understand. }
+\end{tree}
 
 \printbibliography
 \end{document}

@@ -47,6 +47,9 @@ is a \ForesterRef{BMT-d003}{homomorphism} such that:\par{For every n-ary relatio
 
 \begin{tree}{title={Isomorphism}, taxon={definition}, slug={BMT-d005}}
 An \ForesterRef{BMT-d004}{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\) between \(\mathcal {L}\)-structures is a \emph{isomorphism} if it is surjective.
+
+An automorphism of a \ForesterRef{BMT-d002}{structure} \(\mathcal {A}\) is an isomorphism to itself.
+
 \end{tree}
 
 \begin{tree}{title={Substructure}, taxon={definition}, slug={BMT-d006}}
@@ -192,6 +195,10 @@ Let \(K\) be a class of \(L\) structures and \(\Phi\) be a set of \(L\)-formulas
 }
 \end{tree}
 
+\par{Furthermore, if one is willing to accept arbitrary expansions of the language, we can always force a theory to have quantifier elimination. This is done as follows:}
+\begin{tree}{title={Morleyisation}, taxon={definition}, slug={BMT-d026}}
+ The Morleyisation of an \(L\)-theory \(T\) is the theory \(T^m\) in the language \(L^m \supset  L\). The expanded language \(L^m\) is formed by taking every \(L\)-formula \(\phi (x_1,...,x_n)\) and adding an \(n\)-placed relation symbol \(R_ \phi\). To \(T\) we add the axioms \par{\(\forall  x_1,...,x_n (R_ \phi  (x_1,...,x_n) \leftrightarrow \phi (x_1,...,x_n)) \)}\par{Morleyisation preserves many properties such as \ForesterRef{BMT-d201}{\(\kappa\)-categoricity}, though the relations \(R_ \phi\) and the corresponding definable sets may be quite hard to understand. }
+\end{tree}
 
 \end{tree}
 
@@ -297,12 +304,7 @@ Let \(L\) be any language, and \(T\) be any \(L\)-theory. Then \(T\) is satisfia
 \begin{tree}{title={Model Completeness}, taxon={Section}, slug={BMT-s008}}
 In many important examples of theories, typically originating in the field of algebra, all embeddings are elementary embeddings. We define this as follows
 \begin{tree}{title={Definition of Model Complete}, taxon={definition}, slug={BMT-d016}}
-A Theory \(T\) in a first order language \(L\) is \emph{Model-Complete} if  every 
-\begin{tree}{title={Embedding of \(L\)-structures}, taxon={definition}, slug={BMT-d004}}
-Given two structures in a language \(\mathcal {L}\) \(\mathcal {A}\) and \(\mathcal {B}\), an \emph{embedding} \(\varphi :  \mathcal {A}  \rightarrow   \mathcal {B}\)
-is a \ForesterRef{BMT-d003}{homomorphism} such that:\par{For every n-ary relation \(R \in   \mathcal {L}\), for all \(a_1, \dots , a_n  \in  A\), \(\varphi (R^{ \mathcal {A}}(a_1, \dots , a_n))  \text { holds }  \Leftrightarrow  R^{ \mathcal {B}}( \varphi (a_1),  \dots ,  \varphi (a_n))\) holds}\par{This is stronger than a homomorphism because we now require a two way implication in the above property.}
-\end{tree}
- between \(L\)-structures which are models of \(T\) is an elementary embedding. 
+A Theory \(T\) in a first order language \(L\) is \emph{Model-Complete} if  every \ForesterRef{BMT-d004}{\(L\)-embedding} between models of \(T\) is an elementary embedding. 
 \end{tree}
 
 \end{tree}
