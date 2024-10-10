@@ -1,5 +1,5 @@
 \title{Equivalence Relation}
-\date{2024-09-19}
+\date{2024-10-10}
 \author{oscarc}
 \taxon{example}
 \p{
@@ -18,5 +18,23 @@
     }
 }
 \p{
-    Being uncomplicated, this theory is usually shown as an example (or rather, counterexample) of various properties.
+    Being uncomplicated, this theory is usually shown as an initial example (or rather, counterexample) of various properties.
+    It is straightforward to add more restrictions, such as stating that there are only #{n} equivalence classes:
+    \ul{
+        \li{
+            #{\exists x_1\cdots\exists x_n\forall y\,\bigvee_{i=1}^nx_iEy}.
+        }
+    }
+    Or, that each equivalence class has at most #{k} elements:
+    \ul{
+        \li{
+            #{\forall x\exists y_1\cdots\exists y_k\forall z\,(x=z)\rightarrow\bigvee_{i=1}^ny_iEz}.
+        }
+    }
+    Or, that each equivalence class has infinitely many elements:
+    \ul{
+        \li{
+            For each #{k}, the sentence #{\forall x_1\cdots\forall x_k\exists y\,\bigwedge_{i=1}^n\neg(x_iEy)}.
+        }
+    }
 }
