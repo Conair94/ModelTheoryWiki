@@ -1,0 +1,7 @@
+\title{Existentially Closed Model}
+\date{2024-09-19}
+\author{connor-lockhart}
+\taxon{definition}
+
+\p{ A model #{M} with theory #{T} is existentially closed if for every primitive formula #{\phi(\overline{x})} of #{L} and every tuple #{\overline{a}} in #{M} 
+   }
