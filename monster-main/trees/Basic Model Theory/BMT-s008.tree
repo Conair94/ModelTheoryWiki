@@ -5,3 +5,5 @@
 
 \p{In many important examples of theories, typically originating in the field of algebra, all embeddings are elementary embeddings. We define this as follows}
 \transclude{BMT-d016}
+\p{Here we provide a simple test for for determining if something is model complete:}
+\transclude{BMT-l001}
