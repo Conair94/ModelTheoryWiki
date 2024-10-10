@@ -1,0 +1,20 @@
+\title{Graphs (Rado Graph)}
+\date{2024-10-10}
+\author{oscarc}
+\taxon{example}
+\p{
+    The theory of a graph is a [theory](BMT-d017) in the [language](BMT-d001) #{\mathcal L=\{R\}}, where #{R} is a binary relation.
+    Depending on the author, the theory may only demand symmetry, #{\forall x\forall y\,xRy\rightarrow yRx},
+    or additionally include irreflexivity: #{\forall x\,\neg xRx}.
+}
+\p{
+    The theory of the \it{Rado graph} (also called the random graph) is an extension of the theory of the graph by the extension axiom schema:
+    \ul{
+        \li{
+            For each #{n} and #{m}, the sentence
+            #{\forall x_1\cdots\forall x_n\forall y_1\cdots\forall y_m\exists z\,\bigwedge_{i=1}^nzRx_i\land\bigwedge_{j=1}^m\neg zRy_j}.
+        }
+    }
+    This ``single'' schema is enough to make the theory [complete](BMT-d017),
+    and in fact the theory of the Rado graph is [#{\aleph_0}-categorical](BMT-d201).
+}
