@@ -5,6 +5,13 @@
 
 \p{ Let #{T} be a theory. Then the following are equivalent:}
 \ol{
-    \li{}
-    \li{}
+    \li{#{T} is model complete.}
+    \li{For all models #{M\subseteq M'} of #{T} and all existential setnences #{\phi} from #{L(M)}, then #{M'\vDash \phi \implies M \vDash \phi}}
+    \li{Each formula is, modulo #{T}, equivalent to a universal formula. }
+}
+\p{Proof: }
+\ul{
+    \li{#{1\implies 2}, Given that the definition of [model complete](BMT-d016) implies that every embedding of models is an [elementary emedding](BMT-d030),then condition 2 above is actually true for all sentences, in particular existential sentences. }
+    \li{#{2\implies 3}, Given an existential formula $\phi$,  }
+    \li{#{3\implies 1}}
 }
