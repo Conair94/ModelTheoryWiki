@@ -1,5 +1,5 @@
-\title{Saturated Model}
-\date{2024-09-12}
+\title{Homogeneous Model}
+\date{2024-09-19}
 \author{ruohan-hu}
 \taxon{definition}
 
@@ -11,5 +11,7 @@
     Here #{(M,(a_i)_{i<\eta}),(M,(b_i)_{i<\eta})} refers to #{M} with its language expanded by a constant #{C_i} for each #{i<\eta}, such that #{C_i} is interpreted as #{a_i}, #{b_i} respectively. 
     #{(M,(a_i)_{i<\eta},c)} and #{(M,(b_i)_{i<\eta},d)} are further expansions, when the language is further expanded by a constant #{D} that is interpreted as #{c} or #{d} respectively.
 
-    The definition here follows Chang & Keisler, and is equivalent to the definition in Shelah.
+    Equivalently, #{M} is #{\lambda}-homogeneous if every partial elementary embedding #{\Phi:M\to M} such that #{|dom\Phi|<\lambda} extends to another partial elementary mapping of #{M} to itself with a larger domain.
+
+    The first definition follows Chang & Keisler, and the second follows Shelah. The two definitions are equivalent.
 }

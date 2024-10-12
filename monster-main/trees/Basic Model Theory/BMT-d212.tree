@@ -1,0 +1,12 @@
+\title{Strongly Homogeneous Model}
+\date{2024-10-10}
+\author{ruohan-hu}
+\taxon{definition}
+
+\p{
+    A model #{M} is strongly #{\lambda}-homogeneous, if for every partial elementary embedding #{\Phi:M\to M} extends to an automorphism of #{M}. Clearly strongly # 
+
+    Clearly, strongly #{\lambda}-homogeneous implies [#{\lambda}-homogeneous](BMT-d210). 
+    
+    Also, [ultrahomogeneous](BMT-d211) is strictly stronger than strongly #{\omega}-homogeneous. For a strongly #{\omega}-homogeneous structure that is not ultrahomogeneous, consider the disjoint union of a countable [random graph](Fra-e001) and a countable triangle-free random graph. This structure is #{\omega}-homogenous but not ultrahomogeneous.
+}
