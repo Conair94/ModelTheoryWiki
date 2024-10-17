@@ -1,0 +1,17 @@
+\title{Saturation is Equivalent to Universality and Homogeneity}
+\date{2024-10-17}
+\author{ruohan-hu}
+\taxon{theorem}
+
+\p{
+    The following are equal, given a model #{M} and a cardinal #{\lambda}.
+}
+\p{
+    1: #{M} is #{\lambda}-saturated.
+}
+\p{
+    2: #{M} is #{\lambda}-universal and #{\lambda}-homogeneous.
+}
+\p{
+    3: #{M} is #{<\aleph_0}-universal and #{\lambda}-homogeneous.
+}

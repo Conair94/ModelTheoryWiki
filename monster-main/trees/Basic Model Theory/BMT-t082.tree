@@ -1,7 +1,15 @@
 \title{Saturated elementarily equivalent models of the same cardinality are isomorphic.}
 \date{2024-04-10}
 \author{francis-westhead}
+\author{ruohan-hu}
 \taxon{theorem}
 
-\p{If #{\mathcal{M}} and #{\mathcal{N}} are each saturated, #{|\mathcal{M}|=|\mathcal{N}|} and #{Th(\mathcal{M})=Th(\mathcal{N})}
-, then #{\mathcal{M}} and #{\mathcal{N}} are isomorphic.}
+\p{
+    If #{\mathcal{M}} and #{\mathcal{N}} are each saturated, #{|\mathcal{M}|=|\mathcal{N}|} and #{Th(\mathcal{M})=Th(\mathcal{N})}
+, then #{\mathcal{M}} and #{\mathcal{N}} are isomorphic.
+}
+\p{
+    Moreover, every partial elementary embedding #{f:M\to N} extends to an isomorphism. 
+    Therefore, for every saturated model #{M}, a subset #{A\subseteq M}, and two elements #{x,y\in M} of the same [type](BMT-d019) over #{A}, there is an automorphism of #{M} fixing #{A} pointwise and takes #{x} to #{y}.
+    This is sometimes known as the Model-Theoretic Galois Theory.
+}

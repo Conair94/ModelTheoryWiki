@@ -8,5 +8,4 @@
 
     Clearly, strongly #{\lambda}-homogeneous implies [#{\lambda}-homogeneous](BMT-d210). 
     
-    Also, [ultrahomogeneous](BMT-d211) is strictly stronger than strongly #{\omega}-homogeneous. For a strongly #{\omega}-homogeneous structure that is not ultrahomogeneous, consider the disjoint union of a countable [random graph](Fra-e001) and a countable triangle-free random graph. This structure is #{\omega}-homogenous but not ultrahomogeneous.
-}
+    }

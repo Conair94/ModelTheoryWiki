@@ -1,19 +1,19 @@
 \title{Universal Model}
-\date{2024-10-10}
+\date{2024-10-17}
 \author{ruohan-hu}
 \taxon{definition}
 
 \p{
-    A model #{M} is #{\lambda}-Universal, per Chang & Keisler, when for every model #{N} such that #{|N|\leq\lambda} that is elementarily equivalent to #{M} can [elementarily embeds](BMT-d030) into #{M}. 
+    A model #{M} is #{\lambda}-Universal, per Chang & Keisler, when for every model #{N} such that #{|N|<\lambda} that is elementarily equivalent to #{M} can [elementarily embeds](BMT-d030) into #{M}. 
 }
 \p{
-    A model #{M} is #{\lambda}-Universal, per Shelah, when for every model #{N} that is elementarily equivalent to #{M}, and a set #{A\subseteq N} such that #{|A|\leq\lambda}, there is a [partial elementary embedding](BMT-d030) #{f:M\to N} such that #{dom(f)=A}. 
+    A model #{M} is #{\lambda}-Universal, per Shelah, when for every model #{N} that is elementarily equivalent to #{M}, and a set #{A\subseteq N} such that #{|A|\leq\lambda}, there is a [partial elementary embedding](BMT-d030) #{f:M\to N} such that #{dom(f)=A}.
+    (In Shelah's termology, #{\lambda}-universality per Chang & Keisler is called #{<\lambda}-universality.) 
 }
 \p{
-    #{\lambda}-universality per Shelah implies #{\lambda}-universality per Chang & Keisler.
-    By the Lowenheim-Skolem Theorem, if the language #{|L|\leq \lambda}, then the two definitions are equivalent.
+    #{\lambda}-universality per Shelah implies #{\lambda^+}-universality per Chang & Keisler.
+    By the Lowenheim-Skolem Theorem, if the language #{|L|\leq \lambda}, then #{\lambda^+} are equivalent.
 }
 \p{
-    A model #{M} simply said to be universal if it is #{|M|}-universal. 
-    A model #{M} is said to be #{<\lambda}-universal if it is #{\mu}-universal for all #{\mu<\lambda}.
+    A model #{M} simply said to be universal if it is #{|M|}-universal per Shelah, or #{|M|^+}-universal per Chang & Keisler. 
 }
