@@ -4,8 +4,7 @@
 \taxon{definition}
 
 \p{
-    A model #{M} is strongly #{\lambda}-homogeneous, if for every partial elementary embedding #{\Phi:M\to M} extends to an automorphism of #{M}. Clearly strongly # 
+    A model #{M} is strongly #{\lambda}-homogeneous, if for every partial elementary embedding #{\Phi:M\to M} extends to an automorphism of #{M}. 
 
     Clearly, strongly #{\lambda}-homogeneous implies [#{\lambda}-homogeneous](BMT-d210). 
-    
-    }
+}
