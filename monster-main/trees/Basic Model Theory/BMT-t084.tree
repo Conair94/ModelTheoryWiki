@@ -4,7 +4,7 @@
 \taxon{theorem}
 
 \p{
-    The following are equal, given a model #{M} and a cardinal #{\lambda}.
+    The following are equivalent, given a model #{M} and a cardinal #{\lambda}.
 }
 \p{
     1: #{M} is #{\lambda}-saturated.
