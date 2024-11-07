@@ -1,0 +1,16 @@
+
+\title{Dividing}
+\date{2024-11-07}
+\taxon{definition}
+\author{ruohan-hu}
+
+\p{
+The formula #{\varphi(\overline{x},\overline{a})} (with parameter #{\overline{a}}) \em{divides} over #{A}, if there are #{n<\omega} and sequence #{\{\overline{a_i}:i<\omega\}} such that:
+\ul{
+    \li{#{tp(\overline{a},A)=tp(\overline{a_i},A)};}
+    \li{#{\{\varphi(x,\overline{a_i}):i<\omega\}} is #{n}-inconsistent.}
+}
+Usually we have #{\bar{a}\not\subset A}, because obviously #{\varphi(\bar{x},\bar{a})} does not divide over #{A} if #{\bar{a}\subseteq A}.
+
+We say a type #{\mathfrak{p}} divides over #{A}, if it implies a formula dividing over #{A}.
+}

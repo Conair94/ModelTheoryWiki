@@ -1,0 +1,13 @@
+
+\title{Forking}
+\date{2024-11-07}
+\taxon{definition}
+\author{ruohan-hu}
+
+\p{
+    [Type](BMT-d019) #{\mathfrak{p}\in S(B)} forks over #{A} if for some finite #{n}, and formulas #{\varphi_k(\overline{x},\overline{a_{k}})} where #{\overline{a_k}\subset B}, we have #{\mathfrak{p}\vdash\bigvee_{k<n}\varphi_k(\overline{x},\overline{a_{k}})} where each #{\varphi_k(\overline{x},\overline{a_{k}})} divides over #{A}, and #{\bar{x}} consist of some of the variables in #{\mathfrak{p}}/
+
+Usually, we have ${\mathfrak{p}\in S(B)} when #{B\not\subseteq A}, because if #{B\subseteq A} then we will see that that #{\mathfrak{p}} does not fork over #{A}. Moreover, we often takes #{A\subseteq B}.
+
+Notice that forking can also be defined for types over infinitely many variables.
+}
