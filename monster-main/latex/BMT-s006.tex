@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Connor Lockhart \and Ruohan Hu}
+\author{Connor Lockhart \and Ruohan Hu\thanks{With contributions from Francis Westhead.}}
 
 \begin{document}
 \maketitle
@@ -20,7 +20,7 @@
 
 \end{tree}
 
-\begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d210}}
+\begin{tree}{title={Homogeneous Model}, taxon={definition}, slug={BMT-d210}}
 
     A \ForesterRef{BMT-d002}{structure} \(M\) is \(\lambda\)-homogeneous, for a cardinal \(\lambda\), 
     when for every cardinal \(\eta < \lambda\) and sequences \((a_i \in  M|i \in \eta ), \{ b_i \in  M|i \in \eta \}\) such that \((M,(a_i)_{i< \eta }) \equiv (M,(b_i)_{i< \eta })\), 
@@ -29,24 +29,80 @@
     Here \((M,(a_i)_{i< \eta }),(M,(b_i)_{i< \eta })\) refers to \(M\) with its language expanded by a constant \(C_i\) for each \(i< \eta\), such that \(C_i\) is interpreted as \(a_i\), \(b_i\) respectively. 
     \((M,(a_i)_{i< \eta },c)\) and \((M,(b_i)_{i< \eta },d)\) are further expansions, when the language is further expanded by a constant \(D\) that is interpreted as \(c\) or \(d\) respectively.
 
-    The definition here follows Chang & Keisler, and is equivalent to the definition in Shelah.
+    Equivalently, \(M\) is \(\lambda\)-homogeneous if every partial elementary embedding \(\Phi :M \to  M\) such that \(|dom \Phi |< \lambda\) extends to another partial elementary mapping of \(M\) to itself with a larger domain.
+
+    The first definition follows Chang & Keisler, and the second follows Shelah. The two definitions are equivalent.
 
 \end{tree}
 
-\begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d211}}
+\begin{tree}{title={Strongly Homogeneous Model}, taxon={definition}, slug={BMT-d212}}
 
-    A countable \ForesterRef{BMT-d002}{structure} \(M\) is ultrahomogeneous, per Hodges, when every \ForesterRef{BMT-d005}{isomorphism} between two finite \ForesterRef{BMT-d006}{substructure} of \(M\) extends to a global \ForesterRef{BMT-d005}{automorphism}.
+    A model \(M\) is strongly \(\lambda\)-homogeneous, if for every partial elementary embedding \(\Phi :M \to  M\) extends to an automorphism of \(M\). 
 
-    Ultrahomogeneous is strictly stronger than \(\omega\)-\ForesterRef{BMT-d210}{homogeneous}. For an \(\omega\)-\ForesterRef{BMT-d210}{homogeneous} structure that is not ultrahomogeneous, consider the disjoint union of a countable \ForesterRef{Fra-e001}{random graph} and a countable triangle-free random graph.
-
-\end{tree}
-
-\begin{tree}{title={}, taxon={}, slug={BMT-d212}}
+    Clearly, strongly \(\lambda\)-homogeneous implies \ForesterRef{BMT-d210}{\(\lambda\)-homogeneous}. 
 
 \end{tree}
 
-\begin{tree}{title={}, taxon={}, slug={BMT-d213}}
+\begin{tree}{title={Ultrahomogeneous Model}, taxon={definition}, slug={BMT-d211}}
 
+    A countable \ForesterRef{BMT-d002}{structure} \(M\) is ultrahomogeneous, per Hodges, when every \ForesterRef{BMT-d005}{isomorphism} between two finite \ForesterRef{BMT-d006}{substructures} of \(M\) extends to a global \ForesterRef{BMT-d005}{automorphism}.
+
+    Also, ultrahomogeneous is strictly stronger than strongly \(\omega\)-homogeneous. For a strongly \(\omega\)-homogeneous structure that is not ultrahomogeneous, consider the disjoint union of a countable \ForesterRef{Fra-e001}{random graph} and a countable triangle-free random graph. This structure is \(\omega\)-homogenous but not ultrahomogeneous.
+
+\end{tree}
+
+\begin{tree}{title={Strongly Saturated Model}, taxon={definition}, slug={BMT-d213}}
+{
+
+
+
+}\par{
+    A structure \(M\) is strongly \(\lambda\)-saturated if it is \ForesterRef{BMT-d209}{\(\lambda\)-saturated} and \ForesterRef{BMT-d212}{strongly \(\lambda\)-homogeneous}.
+}
+\end{tree}
+
+\begin{tree}{title={Universal Model}, taxon={definition}, slug={BMT-d214}}
+
+    A model \(M\) is \(\lambda\)-Universal, per Chang & Keisler, when for every model \(N\) such that \(|N|< \lambda\) that is elementarily equivalent to \(M\) can \ForesterRef{BMT-d030}{elementarily embeds} into \(M\). 
+\par{
+    A model \(M\) is \(\lambda\)-Universal, per Shelah, when for every model \(N\) that is elementarily equivalent to \(M\), and a set \(A \subseteq  N\) such that \(|A| \leq \lambda\), there is a \ForesterRef{BMT-d030}{partial elementary embedding} \(f:M \to  N\) such that \(dom(f)=A\).
+}\par{\(\lambda\)-universality per Shelah implies \(\lambda ^+\)-universality per Chang & Keisler.
+    By the Lowenheim-Skolem Theorem, if the language \(|L| \leq   \lambda\), then \(\lambda\)-universality per Shelah and \(\lambda ^+\)-universality per Chang & Keisler are equivalent.
+}\par{
+    Per Shelah, a model \(M\) is \(< \lambda\)-universal if it is \(\mu\)-universal for all \(\mu < \lambda\), and a model \(M\) simply said to be universal if it is \(|M|\)-universal. 
+}
+\end{tree}
+
+\begin{tree}{title={A model is homogeneous if and only if it is strongly homogeneous}, taxon={theorem}, slug={BMT-t081}}
+A back-and-forth argument establishes that if \(\mathcal {M}\) has infinite cardinality, then \(\mathcal {M}\) is homogeneous
+if and only if \(\mathcal {M}\) is strongly homogeneous.
+\end{tree}
+
+\begin{tree}{title={Saturated elementarily equivalent models of the same cardinality are isomorphic.}, taxon={theorem}, slug={BMT-t082}}
+
+    If \(\mathcal {M}\) and \(\mathcal {N}\) are each saturated, \(| \mathcal {M}|=| \mathcal {N}|\) and \(Th( \mathcal {M})=Th( \mathcal {N})\)
+, then \(\mathcal {M}\) and \(\mathcal {N}\) are isomorphic.
+\par{
+    Moreover, every partial elementary embedding \(f:M \to  N\) extends to an isomorphism. 
+    Therefore, for every saturated model \(M\), a subset \(A \subseteq  M\), and two elements \(x,y \in  M\) of the same \ForesterRef{BMT-d019}{type} over \(A\), there is an automorphism of \(M\) fixing \(A\) pointwise and takes \(x\) to \(y\).
+    This is sometimes known as the Model-Theoretic Galois Theory.
+}
+\end{tree}
+
+\begin{tree}{title={\(\kappa\)-saturated models are \(\kappa ^+\)-universal}, taxon={theorem}, slug={BMT-t083}}
+If \(\mathcal {M}\) is \(\kappa\)-saturated, then \(\mathcal {M}\) is \(\kappa ^+\)-universal.
+\end{tree}
+
+\begin{tree}{title={Saturation is Equivalent to Universality and Homogeneity}, taxon={theorem}, slug={BMT-t084}}
+
+    The following are equivalent, given a model \(M\) and a cardinal \(\lambda\).
+\par{
+    1: \(M\) is \(\lambda\)-saturated.
+}\par{
+    2: \(M\) is \(\lambda\)-universal and \(\lambda\)-homogeneous.
+}\par{
+    3: \(M\) is \(< \aleph _0\)-universal and \(\lambda\)-homogeneous.
+}
 \end{tree}
 
 \printbibliography
