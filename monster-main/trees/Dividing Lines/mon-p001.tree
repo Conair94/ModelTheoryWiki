@@ -13,3 +13,7 @@
     \put\transclude/expanded{false}
     \transclude{mon-s001}
 }
+\scope{
+    \put\transclude/expanded{false}
+    \transclude{mon-s004}
+}
