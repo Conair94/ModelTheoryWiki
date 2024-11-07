@@ -1,0 +1,10 @@
+\title{Elimination of Imaginaries}
+\date{2024-11-07}
+\taxon{definition}
+\author{ruohan-hu}
+
+\p{
+    A model #{M} has elimination of imaginaries, when given a formula #{\theta(\bar{x},\bar{y})} where #{l(\bar{x})=l(\bar{y})=n} that defines an equivalence relation on #{M^n}, for every equivalence class #{\bar{a}/\theta} represented by #{\bar{a}}, there is a formula ${\phi}, such that the equivalence class #{\bar{a}/\theta} is defined by #{\phi(\bar{x},\bar{b})}, where #{\bar{b}} is unique given #{\phi#} and #{\bar{a}/\theta}.
+
+    A theory #{T} is said to have elimination of imaginaries, if every model #{M} of #{T} has elimination of imaginaries.
+}

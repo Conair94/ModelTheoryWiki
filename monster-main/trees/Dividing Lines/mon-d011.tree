@@ -1,0 +1,10 @@
+\title{Weak Elimination of Imaginaries}
+\date{2024-11-07}
+\taxon{definition}
+\author{ruohan-hu}
+
+\p{  
+    A model #{M} has weak elimination of imaginaries, when given a formula #{\theta(\bar{x},\bar{y})} where #{l(\bar{x})=l(\bar{y})=n} that defines an equivalence relation on #{M^n}, for every equivalence class #{\bar{a}/\theta}, there is a formula #{\phi}, and a finite set of tuples #{X} in #{M} such that the equivalence class #{\bar{a}/\theta} is defined by #{\phi(\bar{x},\bar{b})} if and only if #{\bar{b}\in X}.
+    
+    A theory #{T} is said to have weak elimination of imaginaries, if every model #{M} of #{T} has weak elimination of imaginaries.
+}

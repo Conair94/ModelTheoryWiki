@@ -1,0 +1,10 @@
+\title{Uniform Elimination of Imaginaries}
+\date{2024-11-07}
+\taxon{definition}
+\author{ruohan-hu}
+
+\p{
+    A model #{M} has uniform elimination of imaginaries, if, in addition to having elimination of imaginaries, the formula #{\phi} is independent of #{\bar{a}} and is dependent only on #{\theta}. 
+    
+    Equivalently, we can say $M$ has uniform elimination of imaginaries if there is a $0$-definable function #{f}, such that #{f(\bar{a})=\bar{b}} where #{\bar{b}} is the unique tuple that defines #{\bar{a}/\theta}.
+}
