@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Morgan Bryant}
+\author{Morgan Bryant\thanks{With contributions from Francis Westhead, Oscar Coppola.}}
 
 \begin{document}
 \maketitle
@@ -40,6 +40,16 @@ Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined induct
             where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}.
         }
 \end{enumerate}}
+\end{tree}
+
+\begin{tree}{title={Definition of an \(\mathcal {L}\)-theory}, taxon={definition}, slug={BMT-d017}}
+
+    Given a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), a \emph{\(\mathcal {L}\)-theory} is a set of \ForesterRef{BMT-d013}{\(\mathcal {L}\)-sentences}.
+    Sometimes it is notationally convenient to assume that theories are deductively closed.
+\par{
+    An \(\mathcal  L\)-theory is \emph{complete} when for every \ForesterRef{BMT-d009}{\(\mathcal  L\)-formula} \(\phi\) we have that
+    \(\phi\) may be deduced from \(T\) or \(\neg \phi\) may be deduced from \(T\).
+}
 \end{tree}
 
 \printbibliography

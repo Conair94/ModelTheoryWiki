@@ -12,6 +12,6 @@
 \p{Proof: }
 \ul{
     \li{#{1\implies 2}, Given that the definition of [model complete](BMT-d016) implies that every embedding of models is an [elementary emedding](BMT-d030),then condition 2 above is actually true for all sentences, in particular existential sentences. }
-    \li{#{2\implies 3}, Given an existential formula $\phi$,  }
+    \li{#{2\implies 3}, Given an existential formula #{\phi},  }
     \li{#{3\implies 1}}
 }

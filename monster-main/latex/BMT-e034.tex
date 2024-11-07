@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Graphs (Rado Graph)}
+
+\date{October 10, 2024}
+
+\author{Oscar Coppola}
+
+\begin{document}
+\maketitle
+\par{
+    The theory of a graph is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ R \}\), where \(R\) is a binary relation.
+    Depending on the author, the theory may only demand symmetry, \(\forall  x \forall  y \, xRy \rightarrow  yRx\),
+    or additionally include irreflexivity: \(\forall  x \, \neg  xRx\).
+}\par{
+    The theory of the \emph{Rado graph} (also called the random graph) is an extension of the theory of the graph by the extension axiom schema:
+    \begin{enumerate}
+\item{
+            For each \(n\) and \(m\), the sentence
+            \(\forall  x_1 \cdots \forall  x_n \forall  y_1 \cdots \forall  y_m \exists  z \, \bigwedge _{i=1}^nzRx_i \land \bigwedge _{j=1}^m \neg  zRy_j\).
+        }
+\end{enumerate}
+    This ``single'' schema is enough to make the theory \ForesterRef{BMT-d017}{complete},
+    and in fact the theory of the Rado graph is \ForesterRef{BMT-d201}{\(\aleph _0\)-categorical}.
+}
+\printbibliography
+\end{document}

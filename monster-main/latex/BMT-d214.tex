@@ -1,0 +1,26 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Universal Model}
+
+\date{October 17, 2024}
+
+\author{Ruohan Hu}
+
+\begin{document}
+\maketitle
+\par{
+    A model \(M\) is \(\lambda\)-Universal, per Chang & Keisler, when for every model \(N\) such that \(|N|< \lambda\) that is elementarily equivalent to \(M\) can \ForesterRef{BMT-d030}{elementarily embeds} into \(M\). 
+}\par{
+    A model \(M\) is \(\lambda\)-Universal, per Shelah, when for every model \(N\) that is elementarily equivalent to \(M\), and a set \(A \subseteq  N\) such that \(|A| \leq \lambda\), there is a \ForesterRef{BMT-d030}{partial elementary embedding} \(f:M \to  N\) such that \(dom(f)=A\).
+}\par{\(\lambda\)-universality per Shelah implies \(\lambda ^+\)-universality per Chang & Keisler.
+    By the Lowenheim-Skolem Theorem, if the language \(|L| \leq   \lambda\), then \(\lambda\)-universality per Shelah and \(\lambda ^+\)-universality per Chang & Keisler are equivalent.
+}\par{
+    Per Shelah, a model \(M\) is \(< \lambda\)-universal if it is \(\mu\)-universal for all \(\mu < \lambda\), and a model \(M\) simply said to be universal if it is \(|M|\)-universal. 
+}
+\printbibliography
+\end{document}

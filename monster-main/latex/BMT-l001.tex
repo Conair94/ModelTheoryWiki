@@ -14,8 +14,13 @@
 \begin{document}
 \maketitle
 \par{ Let \(T\) be a theory. Then the following are equivalent:}\begin{enumerate}
-\item{}
-    \item{}
+\item{\(T\) is model complete.}
+    \item{For all models \(M \subseteq  M'\) of \(T\) and all existential setnences \(\phi\) from \(L(M)\), then \(M' \vDash   \phi   \implies  M  \vDash   \phi\)}
+    \item{Each formula is, modulo \(T\), equivalent to a universal formula. }
+\end{enumerate}\par{Proof: }\begin{enumerate}
+\item{\(1 \implies  2\), Given that the definition of \ForesterRef{BMT-d016}{model complete} implies that every embedding of models is an \ForesterRef{BMT-d030}{elementary emedding},then condition 2 above is actually true for all sentences, in particular existential sentences. }
+    \item{\(2 \implies  3\), Given an existential formula \(\phi\),  }
+    \item{\(3 \implies  1\)}
 \end{enumerate}
 \printbibliography
 \end{document}

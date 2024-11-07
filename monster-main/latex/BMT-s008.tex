@@ -14,14 +14,19 @@
 \begin{document}
 \maketitle
 \par{In many important examples of theories, typically originating in the field of algebra, all embeddings are elementary embeddings. We define this as follows}
-\begin{tree}{title={Model Complete THeory}, taxon={definition}, slug={BMT-d016}}
+\begin{tree}{title={Model Complete Theory}, taxon={definition}, slug={BMT-d016}}
 A Theory \(T\) in a first order language \(L\) is \emph{Model-Complete} if  every \ForesterRef{BMT-d004}{\(L\)-embedding} between models of \(T\) is an elementary embedding. 
 \end{tree}
 \par{Here we provide a simple test for for determining if something is model complete:}
 \begin{tree}{title={Robinson's Test}, taxon={lemma}, slug={BMT-l001}}
  Let \(T\) be a theory. Then the following are equivalent:\begin{enumerate}
-\item{}
-    \item{}
+\item{\(T\) is model complete.}
+    \item{For all models \(M \subseteq  M'\) of \(T\) and all existential setnences \(\phi\) from \(L(M)\), then \(M' \vDash   \phi   \implies  M  \vDash   \phi\)}
+    \item{Each formula is, modulo \(T\), equivalent to a universal formula. }
+\end{enumerate}\par{Proof: }\begin{enumerate}
+\item{\(1 \implies  2\), Given that the definition of \ForesterRef{BMT-d016}{model complete} implies that every embedding of models is an \ForesterRef{BMT-d030}{elementary emedding},then condition 2 above is actually true for all sentences, in particular existential sentences. }
+    \item{\(2 \implies  3\), Given an existential formula \(\phi\),  }
+    \item{\(3 \implies  1\)}
 \end{enumerate}
 \end{tree}
 

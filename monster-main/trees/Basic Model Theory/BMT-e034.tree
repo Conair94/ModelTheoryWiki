@@ -8,7 +8,7 @@
     or additionally include irreflexivity: #{\forall x\,\neg xRx}.
 }
 \p{
-    The theory of the \it{Rado graph} (also called the random graph) is an extension of the theory of the graph by the extension axiom schema:
+    The theory of the \em{Rado graph} (also called the random graph) is an extension of the theory of the graph by the extension axiom schema:
     \ul{
         \li{
             For each #{n} and #{m}, the sentence
