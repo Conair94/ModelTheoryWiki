@@ -111,7 +111,40 @@
         \item{\(\forall  x \forall  y \forall  z \, (xEy \land  yEz) \rightarrow  xEz\).
         }
 \end{enumerate}\par{
-    Being uncomplicated, this theory is usually shown as an example (or rather, counterexample) of various properties.
+    Being uncomplicated, this theory is usually shown as an initial example (or rather, counterexample) of various properties.
+    It is straightforward to add more restrictions, such as stating that there are only \(n\) equivalence classes:
+    \begin{enumerate}
+\item{\(\exists  x_1 \cdots \exists  x_n \forall  y \, \bigvee _{i=1}^nx_iEy\).
+        }
+\end{enumerate}
+    Or, that each equivalence class has at most \(k\) elements:
+    \begin{enumerate}
+\item{\(\forall  x \exists  y_1 \cdots \exists  y_k \forall  z \, (x=z) \rightarrow \bigvee _{i=1}^ny_iEz\).
+        }
+\end{enumerate}
+    Or, that each equivalence class has infinitely many elements:
+    \begin{enumerate}
+\item{
+            For each \(k\), the sentence \(\forall  x_1 \cdots \forall  x_k \exists  y \, \bigwedge _{i=1}^n \neg (x_iEy)\).
+        }
+\end{enumerate}}
+\end{tree}
+
+\begin{tree}{title={Graphs (Rado Graph)}, taxon={example}, slug={BMT-e034}}
+
+    The theory of a graph is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ R \}\), where \(R\) is a binary relation.
+    Depending on the author, the theory may only demand symmetry, \(\forall  x \forall  y \, xRy \rightarrow  yRx\),
+    or additionally include irreflexivity: \(\forall  x \, \neg  xRx\).
+\par{
+    The theory of the \emph{Rado graph} (also called the random graph) is an extension of the theory of the graph by the extension axiom schema:
+    \begin{enumerate}
+\item{
+            For each \(n\) and \(m\), the sentence
+            \(\forall  x_1 \cdots \forall  x_n \forall  y_1 \cdots \forall  y_m \exists  z \, \bigwedge _{i=1}^nzRx_i \land \bigwedge _{j=1}^m \neg  zRy_j\).
+        }
+\end{enumerate}
+    This ``single'' schema is enough to make the theory \ForesterRef{BMT-d017}{complete},
+    and in fact the theory of the Rado graph is \ForesterRef{BMT-d201}{\(\aleph _0\)-categorical}.
 }
 \end{tree}
 

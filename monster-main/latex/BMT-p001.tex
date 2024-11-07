@@ -61,6 +61,12 @@ Note that this condition is vacuously true, so only the first two conditions nee
     for every \(\mathcal  L\)-formula \(\varphi (x_1, \dots ,x_n)\) and \(a_1, \dots ,a_n \in  A\),
     we have \(\mathcal  A \vDash \varphi (a_1, \dots ,a_n)\) if and only if \(\mathcal  B \vDash \varphi ( \Phi (a_1), \dots , \Phi (a_n))\).
 
+    A partial homomorphism \(\Phi : \mathcal {A} \to \mathcal {B}\) can also be said to be an elementary embedding when
+    for every \(\mathcal  L\)-formula \(\varphi (x_1, \dots ,x_n)\) and \(a_1, \dots ,a_n \in  dom \Phi\),
+    we have \(\mathcal  A \vDash \varphi (a_1, \dots ,a_n)\) if and only if \(\mathcal  B \vDash \varphi ( \Phi (a_1), \dots , \Phi (a_n))\).
+
+
+
 \end{tree}
 
 \begin{tree}{title={Elementary Substructures}, taxon={definition}, slug={BMT-d031}}
@@ -108,6 +114,16 @@ Given a language \(\mathcal {L}\), an \(\mathcal {L}\)-formula is defined induct
             where \(\exists\) and \(\forall\) are \ForesterRef{BMT-d011}{quantifiers}.
         }
 \end{enumerate}}
+\end{tree}
+
+\begin{tree}{title={Definition of an \(\mathcal {L}\)-theory}, taxon={definition}, slug={BMT-d017}}
+
+    Given a \ForesterRef{BMT-d001}{language} \(\mathcal {L}\), a \emph{\(\mathcal {L}\)-theory} is a set of \ForesterRef{BMT-d013}{\(\mathcal {L}\)-sentences}.
+    Sometimes it is notationally convenient to assume that theories are deductively closed.
+\par{
+    An \(\mathcal  L\)-theory is \emph{complete} when for every \ForesterRef{BMT-d009}{\(\mathcal  L\)-formula} \(\phi\) we have that
+    \(\phi\) may be deduced from \(T\) or \(\neg \phi\) may be deduced from \(T\).
+}
 \end{tree}
 
 \end{tree}
@@ -257,6 +273,35 @@ In this section we give the basic definitions and theorems for saturation of mod
 
 \end{tree}
 
+\begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d210}}
+
+    A \ForesterRef{BMT-d002}{structure} \(M\) is \(\lambda\)-homogeneous, for a cardinal \(\lambda\), 
+    when for every cardinal \(\eta < \lambda\) and sequences \((a_i \in  M|i \in \eta ), \{ b_i \in  M|i \in \eta \}\) such that \((M,(a_i)_{i< \eta }) \equiv (M,(b_i)_{i< \eta })\), 
+    for each \(c \in  M\) there is \(d \in  M\) such that \((M,(a_i)_{i< \eta },c) \equiv (M,(b_i)_{i< \eta },d)\). 
+
+    Here \((M,(a_i)_{i< \eta }),(M,(b_i)_{i< \eta })\) refers to \(M\) with its language expanded by a constant \(C_i\) for each \(i< \eta\), such that \(C_i\) is interpreted as \(a_i\), \(b_i\) respectively. 
+    \((M,(a_i)_{i< \eta },c)\) and \((M,(b_i)_{i< \eta },d)\) are further expansions, when the language is further expanded by a constant \(D\) that is interpreted as \(c\) or \(d\) respectively.
+
+    The definition here follows Chang & Keisler, and is equivalent to the definition in Shelah.
+
+\end{tree}
+
+\begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d211}}
+
+    A countable \ForesterRef{BMT-d002}{structure} \(M\) is ultrahomogeneous, per Hodges, when every \ForesterRef{BMT-d005}{isomorphism} between two finite \ForesterRef{BMT-d006}{substructure} of \(M\) extends to a global \ForesterRef{BMT-d005}{automorphism}.
+
+    Ultrahomogeneous is strictly stronger than \(\omega\)-\ForesterRef{BMT-d210}{homogeneous}. For an \(\omega\)-\ForesterRef{BMT-d210}{homogeneous} structure that is not ultrahomogeneous, consider the disjoint union of a countable \ForesterRef{Fra-e001}{random graph} and a countable triangle-free random graph.
+
+\end{tree}
+
+\begin{tree}{title={}, taxon={}, slug={BMT-d212}}
+
+\end{tree}
+
+\begin{tree}{title={}, taxon={}, slug={BMT-d213}}
+
+\end{tree}
+
 \end{tree}
 
 
@@ -299,14 +344,19 @@ Let \(L\) be any language, and \(T\) be any \(L\)-theory. Then \(T\) is satisfia
   
 \begin{tree}{title={Model Completeness}, taxon={Section}, slug={BMT-s008}}
 In many important examples of theories, typically originating in the field of algebra, all embeddings are elementary embeddings. We define this as follows
-\begin{tree}{title={Model Complete THeory}, taxon={definition}, slug={BMT-d016}}
+\begin{tree}{title={Model Complete Theory}, taxon={definition}, slug={BMT-d016}}
 A Theory \(T\) in a first order language \(L\) is \emph{Model-Complete} if  every \ForesterRef{BMT-d004}{\(L\)-embedding} between models of \(T\) is an elementary embedding. 
 \end{tree}
 \par{Here we provide a simple test for for determining if something is model complete:}
 \begin{tree}{title={Robinson's Test}, taxon={lemma}, slug={BMT-l001}}
  Let \(T\) be a theory. Then the following are equivalent:\begin{enumerate}
-\item{}
-    \item{}
+\item{\(T\) is model complete.}
+    \item{For all models \(M \subseteq  M'\) of \(T\) and all existential setnences \(\phi\) from \(L(M)\), then \(M' \vDash   \phi   \implies  M  \vDash   \phi\)}
+    \item{Each formula is, modulo \(T\), equivalent to a universal formula. }
+\end{enumerate}\par{Proof: }\begin{enumerate}
+\item{\(1 \implies  2\), Given that the definition of \ForesterRef{BMT-d016}{model complete} implies that every embedding of models is an \ForesterRef{BMT-d030}{elementary emedding},then condition 2 above is actually true for all sentences, in particular existential sentences. }
+    \item{\(2 \implies  3\), Given an existential formula \(\phi\),  }
+    \item{\(3 \implies  1\)}
 \end{enumerate}
 \end{tree}
 
@@ -436,7 +486,40 @@ Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated
         \item{\(\forall  x \forall  y \forall  z \, (xEy \land  yEz) \rightarrow  xEz\).
         }
 \end{enumerate}\par{
-    Being uncomplicated, this theory is usually shown as an example (or rather, counterexample) of various properties.
+    Being uncomplicated, this theory is usually shown as an initial example (or rather, counterexample) of various properties.
+    It is straightforward to add more restrictions, such as stating that there are only \(n\) equivalence classes:
+    \begin{enumerate}
+\item{\(\exists  x_1 \cdots \exists  x_n \forall  y \, \bigvee _{i=1}^nx_iEy\).
+        }
+\end{enumerate}
+    Or, that each equivalence class has at most \(k\) elements:
+    \begin{enumerate}
+\item{\(\forall  x \exists  y_1 \cdots \exists  y_k \forall  z \, (x=z) \rightarrow \bigvee _{i=1}^ny_iEz\).
+        }
+\end{enumerate}
+    Or, that each equivalence class has infinitely many elements:
+    \begin{enumerate}
+\item{
+            For each \(k\), the sentence \(\forall  x_1 \cdots \forall  x_k \exists  y \, \bigwedge _{i=1}^n \neg (x_iEy)\).
+        }
+\end{enumerate}}
+\end{tree}
+
+\begin{tree}{title={Graphs (Rado Graph)}, taxon={example}, slug={BMT-e034}}
+
+    The theory of a graph is a \ForesterRef{BMT-d017}{theory} in the \ForesterRef{BMT-d001}{language} \(\mathcal  L= \{ R \}\), where \(R\) is a binary relation.
+    Depending on the author, the theory may only demand symmetry, \(\forall  x \forall  y \, xRy \rightarrow  yRx\),
+    or additionally include irreflexivity: \(\forall  x \, \neg  xRx\).
+\par{
+    The theory of the \emph{Rado graph} (also called the random graph) is an extension of the theory of the graph by the extension axiom schema:
+    \begin{enumerate}
+\item{
+            For each \(n\) and \(m\), the sentence
+            \(\forall  x_1 \cdots \forall  x_n \forall  y_1 \cdots \forall  y_m \exists  z \, \bigwedge _{i=1}^nzRx_i \land \bigwedge _{j=1}^m \neg  zRy_j\).
+        }
+\end{enumerate}
+    This ``single'' schema is enough to make the theory \ForesterRef{BMT-d017}{complete},
+    and in fact the theory of the Rado graph is \ForesterRef{BMT-d201}{\(\aleph _0\)-categorical}.
 }
 \end{tree}
 

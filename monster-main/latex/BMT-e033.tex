@@ -7,7 +7,7 @@
 
 \title{Equivalence Relation}
 
-\date{September 19, 2024}
+\date{October 10, 2024}
 
 \author{Oscar Coppola}
 
@@ -24,7 +24,22 @@
         \item{\(\forall  x \forall  y \forall  z \, (xEy \land  yEz) \rightarrow  xEz\).
         }
 \end{enumerate}}\par{
-    Being uncomplicated, this theory is usually shown as an example (or rather, counterexample) of various properties.
-}
+    Being uncomplicated, this theory is usually shown as an initial example (or rather, counterexample) of various properties.
+    It is straightforward to add more restrictions, such as stating that there are only \(n\) equivalence classes:
+    \begin{enumerate}
+\item{\(\exists  x_1 \cdots \exists  x_n \forall  y \, \bigvee _{i=1}^nx_iEy\).
+        }
+\end{enumerate}
+    Or, that each equivalence class has at most \(k\) elements:
+    \begin{enumerate}
+\item{\(\forall  x \exists  y_1 \cdots \exists  y_k \forall  z \, (x=z) \rightarrow \bigvee _{i=1}^ny_iEz\).
+        }
+\end{enumerate}
+    Or, that each equivalence class has infinitely many elements:
+    \begin{enumerate}
+\item{
+            For each \(k\), the sentence \(\forall  x_1 \cdots \forall  x_k \exists  y \, \bigwedge _{i=1}^n \neg (x_iEy)\).
+        }
+\end{enumerate}}
 \printbibliography
 \end{document}

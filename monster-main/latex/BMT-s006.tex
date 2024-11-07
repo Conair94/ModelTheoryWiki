@@ -9,7 +9,7 @@
 
 \date{February 8, 2024}
 
-\author{Connor Lockhart\thanks{With contributions from Ruohan Hu.}}
+\author{Connor Lockhart \and Ruohan Hu}
 
 \begin{document}
 \maketitle
@@ -17,6 +17,35 @@
 \begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d209}}
 
     A \ForesterRef{BMT-d002}{structure} \(M\) is \(\lambda\)-saturated, for a cardinal \(\lambda\), when for every \(A \subseteq  M\) such that \(|A|< \lambda\), every \ForesterRef{BMT-d019}{type} over \(A\) is realized in \(M\). \(M\) is simply said to be saturated if \(M\) is \(|M|\)-saturated.
+
+\end{tree}
+
+\begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d210}}
+
+    A \ForesterRef{BMT-d002}{structure} \(M\) is \(\lambda\)-homogeneous, for a cardinal \(\lambda\), 
+    when for every cardinal \(\eta < \lambda\) and sequences \((a_i \in  M|i \in \eta ), \{ b_i \in  M|i \in \eta \}\) such that \((M,(a_i)_{i< \eta }) \equiv (M,(b_i)_{i< \eta })\), 
+    for each \(c \in  M\) there is \(d \in  M\) such that \((M,(a_i)_{i< \eta },c) \equiv (M,(b_i)_{i< \eta },d)\). 
+
+    Here \((M,(a_i)_{i< \eta }),(M,(b_i)_{i< \eta })\) refers to \(M\) with its language expanded by a constant \(C_i\) for each \(i< \eta\), such that \(C_i\) is interpreted as \(a_i\), \(b_i\) respectively. 
+    \((M,(a_i)_{i< \eta },c)\) and \((M,(b_i)_{i< \eta },d)\) are further expansions, when the language is further expanded by a constant \(D\) that is interpreted as \(c\) or \(d\) respectively.
+
+    The definition here follows Chang & Keisler, and is equivalent to the definition in Shelah.
+
+\end{tree}
+
+\begin{tree}{title={Saturated Model}, taxon={definition}, slug={BMT-d211}}
+
+    A countable \ForesterRef{BMT-d002}{structure} \(M\) is ultrahomogeneous, per Hodges, when every \ForesterRef{BMT-d005}{isomorphism} between two finite \ForesterRef{BMT-d006}{substructure} of \(M\) extends to a global \ForesterRef{BMT-d005}{automorphism}.
+
+    Ultrahomogeneous is strictly stronger than \(\omega\)-\ForesterRef{BMT-d210}{homogeneous}. For an \(\omega\)-\ForesterRef{BMT-d210}{homogeneous} structure that is not ultrahomogeneous, consider the disjoint union of a countable \ForesterRef{Fra-e001}{random graph} and a countable triangle-free random graph.
+
+\end{tree}
+
+\begin{tree}{title={}, taxon={}, slug={BMT-d212}}
+
+\end{tree}
+
+\begin{tree}{title={}, taxon={}, slug={BMT-d213}}
 
 \end{tree}
 
