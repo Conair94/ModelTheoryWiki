@@ -1,0 +1,10 @@
+\title{Strongly Homogeneous Model}
+\date{2024-10-10}
+\author{ruohan-hu}
+\taxon{definition}
+
+\p{
+    A model #{M} is strongly #{\lambda}-homogeneous, if for every partial elementary embedding #{\Phi:M\to M} extends to an automorphism of #{M}. 
+
+    Clearly, strongly #{\lambda}-homogeneous implies [#{\lambda}-homogeneous](BMT-d210). 
+}

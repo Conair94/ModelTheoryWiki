@@ -1,0 +1,8 @@
+{\title{Strongly Saturated Model}
+\date{2024-10-10}
+\author{ruohan-hu}
+\taxon{definition}
+}
+\p{
+    A structure #{M} is strongly #{\lambda}-saturated if it is [#{\lambda}-saturated](BMT-d209) and [strongly #{\lambda}-homogeneous](BMT-d212).
+}
