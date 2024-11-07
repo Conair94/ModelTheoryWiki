@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Elimination of Imaginaries}
+
+\date{November 7, 2024}
+
+\author{Ruohan Hu}
+
+\begin{document}
+\maketitle
+
+\begin{tree}{title={Elimination of Imaginaries}, taxon={definition}, slug={mon-d009}}
+
+    A model \(M\) has elimination of imaginaries, when given a formula \(\theta ( \bar {x}, \bar {y})\) where \(l( \bar {x})=l( \bar {y})=n\) that defines an equivalence relation on \(M^n\), for every equivalence class \(\bar {a}/ \theta\) represented by \(\bar {a}\), there is a formula \(\phi\), such that the equivalence class \(\bar {a}/ \theta\) is defined by \(\phi ( \bar {x}, \bar {b})\), where \(\bar {b}\) is unique given \(\phi\) and \(\bar {a}/ \theta\).
+
+    A theory \(T\) is said to have elimination of imaginaries, if every model \(M\) of \(T\) has elimination of imaginaries.
+
+\end{tree}
+
+\begin{tree}{title={Uniform Elimination of Imaginaries}, taxon={definition}, slug={mon-d010}}
+
+    A model \(M\) has uniform elimination of imaginaries, if, in addition to having elimination of imaginaries, the formula \(\phi\) is independent of \(\bar {a}\) and is dependent only on \(\theta\). 
+    
+    Equivalently, we can say $M$ has uniform elimination of imaginaries if there is a $0$-definable function \(f\), such that \(f( \bar {a})= \bar {b}\) where \(\bar {b}\) is the unique tuple that defines \(\bar {a}/ \theta\).
+
+\end{tree}
+
+\begin{tree}{title={Weak Elimination of Imaginaries}, taxon={definition}, slug={mon-d011}}
+  
+    A model \(M\) has weak elimination of imaginaries, when given a formula \(\theta ( \bar {x}, \bar {y})\) where \(l( \bar {x})=l( \bar {y})=n\) that defines an equivalence relation on \(M^n\), for every equivalence class \(\bar {a}/ \theta\), there is a formula \(\phi\), and a finite set of tuples \(X\) in \(M\) such that the equivalence class \(\bar {a}/ \theta\) is defined by \(\phi ( \bar {x}, \bar {b})\) if and only if \(\bar {b} \in  X\).
+    
+    A theory \(T\) is said to have weak elimination of imaginaries, if every model \(M\) of \(T\) has weak elimination of imaginaries.
+
+\end{tree}
+
+\printbibliography
+\end{document}
