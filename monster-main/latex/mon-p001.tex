@@ -9,7 +9,7 @@
 
 \date{February 2, 2024}
 
-\author{Adam Melrod\thanks{With contributions from Connor Lockhart.}}
+\author{Adam Melrod\thanks{With contributions from Connor Lockhart, Ruohan Hu.}}
 
 \begin{document}
 \maketitle
@@ -20,6 +20,28 @@
 \textbf{Stable theories}
 \begin{tree}{title={Forking and Dividing}, taxon={subsection}, slug={mon-s003}}
 \textbf{Forking and Dividing}
+\begin{tree}{title={Dividing}, taxon={definition}, slug={mon-d012}}
+
+The formula \(\varphi ( \overline {x}, \overline {a})\) (with parameter \(\overline {a}\)) \emph{divides} over \(A\), if there are \(n< \omega\) and sequence \(\{ \overline {a_i}:i< \omega \}\) such that:
+\begin{enumerate}
+\item{\(tp( \overline {a},A)=tp( \overline {a_i},A)\);}
+    \item{\(\{ \varphi (x, \overline {a_i}):i< \omega \}\) is \(n\)-inconsistent.}
+\end{enumerate}
+Usually we have \(\bar {a} \not \subset  A\), because obviously \(\varphi ( \bar {x}, \bar {a})\) does not divide over \(A\) if \(\bar {a} \subseteq  A\).
+
+We say a type \(\mathfrak {p}\) divides over \(A\), if it implies a formula dividing over \(A\).
+
+\end{tree}
+
+\begin{tree}{title={Forking}, taxon={definition}, slug={mon-d013}}
+\ForesterRef{BMT-d019}{Type} \(p \in  S(B)\) forks over \(A\) if for some finite \(n\), and formulas \(\varphi _k( \overline {x}, \overline {a_{k}})\) where \(\overline {a_k} \subset  B\), we have \(p \vdash \bigvee _{k<n} \varphi _k( \overline {x}, \overline {a_{k}})\) where each \(\varphi _k( \overline {x}, \overline {a_{k}})\) divides over \(A\), and \(\bar {x}\) consist of some of the variables in \(p\)/
+
+Usually, we have \(p \in  S(B)\) when \(B \not \subseteq  A\), because if \(B \subseteq  A\) then we will see that that \(p\) does not fork over \(A\). Moreover, we often takes \(A \subseteq  B\).
+
+Notice that forking can also be defined for types over infinitely many variables.
+
+\end{tree}
+
 \end{tree}
 
 \end{tree}
@@ -65,6 +87,37 @@ The \emph{alternation number} of a formula \(\varphi (x;y)\), denoted \(\operato
 \begin{tree}{title={Alternation Lemma}, taxon={lemma}, slug={mon-d008}}
 A formula \(\varphi (x;y)\) is NIP if and only if \(\operatorname {alt}( \varphi (x;y)) <  \infty\).
 \end{tree}
+
+\end{tree}
+
+\end{tree}
+
+
+    
+    
+\begin{tree}{title={Elimination of Imaginaries}, taxon={section}, slug={mon-s004}}
+
+\begin{tree}{title={Elimination of Imaginaries}, taxon={definition}, slug={mon-d009}}
+
+    A model \(M\) has elimination of imaginaries, when given a formula \(\theta ( \bar {x}, \bar {y})\) where \(l( \bar {x})=l( \bar {y})=n\) that defines an equivalence relation on \(M^n\), for every equivalence class \(\bar {a}/ \theta\) represented by \(\bar {a}\), there is a formula \(\phi\), such that the equivalence class \(\bar {a}/ \theta\) is defined by \(\phi ( \bar {x}, \bar {b})\), where \(\bar {b}\) is unique given \(\phi\) and \(\bar {a}/ \theta\).
+
+    A theory \(T\) is said to have elimination of imaginaries, if every model \(M\) of \(T\) has elimination of imaginaries.
+
+\end{tree}
+
+\begin{tree}{title={Uniform Elimination of Imaginaries}, taxon={definition}, slug={mon-d010}}
+
+    A model \(M\) has uniform elimination of imaginaries, if, in addition to having elimination of imaginaries, the formula \(\phi\) is independent of \(\bar {a}\) and is dependent only on \(\theta\). 
+    
+    Equivalently, we can say $M$ has uniform elimination of imaginaries if there is a $0$-definable function \(f\), such that \(f( \bar {a})= \bar {b}\) where \(\bar {b}\) is the unique tuple that defines \(\bar {a}/ \theta\).
+
+\end{tree}
+
+\begin{tree}{title={Weak Elimination of Imaginaries}, taxon={definition}, slug={mon-d011}}
+  
+    A model \(M\) has weak elimination of imaginaries, when given a formula \(\theta ( \bar {x}, \bar {y})\) where \(l( \bar {x})=l( \bar {y})=n\) that defines an equivalence relation on \(M^n\), for every equivalence class \(\bar {a}/ \theta\), there is a formula \(\phi\), and a finite set of tuples \(X\) in \(M\) such that the equivalence class \(\bar {a}/ \theta\) is defined by \(\phi ( \bar {x}, \bar {b})\) if and only if \(\bar {b} \in  X\).
+    
+    A theory \(T\) is said to have weak elimination of imaginaries, if every model \(M\) of \(T\) has weak elimination of imaginaries.
 
 \end{tree}
 

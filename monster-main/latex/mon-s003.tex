@@ -9,10 +9,32 @@
 
 \date{February 10, 2024}
 
-\author{Connor Lockhart}
+\author{Connor Lockhart\thanks{With contributions from Ruohan Hu.}}
 
 \begin{document}
 \maketitle
 \par{\textbf{Forking and Dividing}}
+\begin{tree}{title={Dividing}, taxon={definition}, slug={mon-d012}}
+
+The formula \(\varphi ( \overline {x}, \overline {a})\) (with parameter \(\overline {a}\)) \emph{divides} over \(A\), if there are \(n< \omega\) and sequence \(\{ \overline {a_i}:i< \omega \}\) such that:
+\begin{enumerate}
+\item{\(tp( \overline {a},A)=tp( \overline {a_i},A)\);}
+    \item{\(\{ \varphi (x, \overline {a_i}):i< \omega \}\) is \(n\)-inconsistent.}
+\end{enumerate}
+Usually we have \(\bar {a} \not \subset  A\), because obviously \(\varphi ( \bar {x}, \bar {a})\) does not divide over \(A\) if \(\bar {a} \subseteq  A\).
+
+We say a type \(\mathfrak {p}\) divides over \(A\), if it implies a formula dividing over \(A\).
+
+\end{tree}
+
+\begin{tree}{title={Forking}, taxon={definition}, slug={mon-d013}}
+\ForesterRef{BMT-d019}{Type} \(p \in  S(B)\) forks over \(A\) if for some finite \(n\), and formulas \(\varphi _k( \overline {x}, \overline {a_{k}})\) where \(\overline {a_k} \subset  B\), we have \(p \vdash \bigvee _{k<n} \varphi _k( \overline {x}, \overline {a_{k}})\) where each \(\varphi _k( \overline {x}, \overline {a_{k}})\) divides over \(A\), and \(\bar {x}\) consist of some of the variables in \(p\)/
+
+Usually, we have \(p \in  S(B)\) when \(B \not \subseteq  A\), because if \(B \subseteq  A\) then we will see that that \(p\) does not fork over \(A\). Moreover, we often takes \(A \subseteq  B\).
+
+Notice that forking can also be defined for types over infinitely many variables.
+
+\end{tree}
+
 \printbibliography
 \end{document}

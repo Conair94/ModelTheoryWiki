@@ -1,0 +1,23 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Forking}
+
+\date{November 7, 2024}
+
+\author{Ruohan Hu}
+
+\begin{document}
+\maketitle
+\par{\ForesterRef{BMT-d019}{Type} \(p \in  S(B)\) forks over \(A\) if for some finite \(n\), and formulas \(\varphi _k( \overline {x}, \overline {a_{k}})\) where \(\overline {a_k} \subset  B\), we have \(p \vdash \bigvee _{k<n} \varphi _k( \overline {x}, \overline {a_{k}})\) where each \(\varphi _k( \overline {x}, \overline {a_{k}})\) divides over \(A\), and \(\bar {x}\) consist of some of the variables in \(p\)/
+
+Usually, we have \(p \in  S(B)\) when \(B \not \subseteq  A\), because if \(B \subseteq  A\) then we will see that that \(p\) does not fork over \(A\). Moreover, we often takes \(A \subseteq  B\).
+
+Notice that forking can also be defined for types over infinitely many variables.
+}
+\printbibliography
+\end{document}

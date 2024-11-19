@@ -1,0 +1,27 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Dividing}
+
+\date{November 7, 2024}
+
+\author{Ruohan Hu}
+
+\begin{document}
+\maketitle
+\par{
+The formula \(\varphi ( \overline {x}, \overline {a})\) (with parameter \(\overline {a}\)) \emph{divides} over \(A\), if there are \(n< \omega\) and sequence \(\{ \overline {a_i}:i< \omega \}\) such that:
+\begin{enumerate}
+\item{\(tp( \overline {a},A)=tp( \overline {a_i},A)\);}
+    \item{\(\{ \varphi (x, \overline {a_i}):i< \omega \}\) is \(n\)-inconsistent.}
+\end{enumerate}
+Usually we have \(\bar {a} \not \subset  A\), because obviously \(\varphi ( \bar {x}, \bar {a})\) does not divide over \(A\) if \(\bar {a} \subseteq  A\).
+
+We say a type \(\mathfrak {p}\) divides over \(A\), if it implies a formula dividing over \(A\).
+}
+\printbibliography
+\end{document}
