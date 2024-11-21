@@ -40,4 +40,20 @@ is a subset <tex>M^n</tex></p><p>Often, we are interested in the cardinality of 
     A countable <link href="BMT-d002.xml" type="local" title="Structure">structure</link> <tex>M</tex> is ultrahomogeneous, per Hodges, when every <link href="BMT-d005.xml" type="local" title="Isomorphism">isomorphism</link> between two finite <link href="BMT-d006.xml" type="local" title="Substructure">substructures</link> of <tex>M</tex> extends to a global <link href="BMT-d005.xml" type="local" title="Isomorphism">automorphism</link>.
 
     Also, ultrahomogeneous is strictly stronger than strongly <tex>\omega</tex>-homogeneous. For a strongly <tex>\omega</tex>-homogeneous structure that is not ultrahomogeneous, consider the disjoint union of a countable <link href="Fra-e001.xml" type="local" title="The Random Graph">random graph</link> and a countable triangle-free random graph. This structure is <tex>\omega</tex>-homogenous but not ultrahomogeneous.
-</p></mainmatter> </tree></backlinks> <references/></backmatter></tree>
+</p></mainmatter> </tree><tree expanded="false" show-heading="true" show-metadata="true" toc="false" root="false"><frontmatter> <anchor>225</anchor>  <taxon>Theorem</taxon> <addr>BMT-t003</addr> <source-path>/Users/connorlockhart/Documents/GitHub/ModelTheoryWiki/monster-main/trees/Basic Model Theory/BMT-t003.tree</source-path> <route>BMT-t003.xml</route> <date><year>2024</year> <month>4</month> <day>10</day></date> <authors><author><link href="francis-westhead.xml" type="local">Francis Westhead</link></author> </authors> <title>(Ryll-Nardjewski) Characterisations of <tex>\omega</tex>-categoricity</title> </frontmatter> <mainmatter><p>For <tex>\aleph _0</tex>-categoricity, there are a number of useful characterisations. The following are due to Ryll-Nardjewski.</p><p>Given a <link href="BMT-d001.xml" type="local" title="Language">language</link>, <tex>\mathcal {L}</tex>, and an <link href="BMT-d017.xml" type="local" title="Definition of an {L}-theory"><tex>\mathcal {L}</tex>-theory</link> <tex>T</tex>, the following are equivalent:</p><p><ul><li><tex>T</tex> is <tex>\aleph _0</tex>-categorical.
+    </li>
+   <li>
+        For every <tex>n \in   \omega</tex>, there are finitely many <link href="BMT-d009.xml" type="local" title="{L}-Formula"><tex>\mathcal {L}</tex>-formulas</link> in <tex>n</tex>-variables up to <link href="BMT-d018.xml" type="local" title="Definition of T-equivalence of formulas"><tex>T</tex>-equivalence</link>.
+   </li>
+    <li>
+        For every <tex>n \in   \omega</tex>, the <link href="BMT-d202.xml" type="local" title="Tarski-Lindenbaum Algebra"><tex>n</tex>'th Tarski-Lindenbaum algebra of <tex>T</tex></link> is finite. 
+    </li>
+    <li>
+        Every <link href="BMT-d019.xml" type="local" title="Definition of a type">type</link> over <tex>T</tex> is <link href="BMT-d020.xml" type="local" title="Definition of an isolated/principal type">isolated</link>. 
+    </li>
+    <li>
+        For some/any countable model <tex>M</tex> of <tex>T</tex>, the <link href="BMT-d005.xml" type="local" title="Isomorphism">automorphism</link> group <tex>Aut(M)</tex> is oligomorphic, meaning that for each <tex>n</tex>, the action of <tex>Aut(M)</tex> on <tex>M^n</tex> has finitely mant orbits.
+    </li>
+    <li>
+        For all <tex>n</tex>, <tex>S_n(T)</tex> is finite.
+    </li></ul></p></mainmatter> </tree></backlinks> <references/></backmatter></tree>
