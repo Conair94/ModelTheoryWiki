@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build Forest
-        run: ./build.sh
+        run:  build.sh
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
