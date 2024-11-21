@@ -16,6 +16,11 @@ permissions:
   pages: write
   id-token: write
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./monster-main
+
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -31,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build Forest
-        run: ../monster-main/build.sh
+        run: ./build.sh
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
