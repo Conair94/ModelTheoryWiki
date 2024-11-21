@@ -7,9 +7,27 @@
 
 \p{Given a [language](BMT-d001), #{\mathcal{L}}, and an [#{\mathcal{L}}-theory](BMT-d017) #{T}, the following are equivalent:}
 
-\p{1 #{T} is #{\aleph_0}-categorical.}
-\p{For every #{n\in \omega}, there are finitely many [#{\mathcal{L}}-formulas](BMT-d009) in #{n}-variables up to [#{T}-equivalence](BMT-d018).}
-\p{For every #{n\in \omega}, the [#{n}'th Tarski-Lindenbaum algebra of #{T}](BMT-d202) is finite. 
-Every [type](BMT-d019) over #{T} is [isolated](BMT-d020). }
+\p{
+\ul{
+   \li{ 
+        #{T} is #{\aleph_0}-categorical.
+    }
+   \li{
+        For every #{n\in \omega}, there are finitely many [#{\mathcal{L}}-formulas](BMT-d009) in #{n}-variables up to [#{T}-equivalence](BMT-d018).
+   }
+    \li{
+        For every #{n\in \omega}, the [#{n}'th Tarski-Lindenbaum algebra of #{T}](BMT-d202) is finite. 
+    }
+    \li{
+        Every [type](BMT-d019) over #{T} is [isolated](BMT-d020). 
+    }
+    \li{
+        For some/any countable model #{M} of #{T}, the [automorphism](BMT-d005) group #{Aut(M)} is oligomorphic, meaning that for each #{n}, the action of #{Aut(M)} on #{M^n} has finitely mant orbits.
+    }
+    \li{
+        For all #{n}, #{S_n(T)} is finite.
+    }
+}
+}
 
 
