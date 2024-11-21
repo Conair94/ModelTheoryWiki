@@ -7,7 +7,7 @@
 
 \p{
 
-Given a cardinal #{\kappa}, the sequence of $n$-tuples of elements in a model #{M}, #{\{\overline{b_i}\}_{i<\kappa}} is an indiscernibles sequence in $M$ over $A\subseteq M$ means that: for any $k<\omega$ and indices #{i_1,...,i_k} and #{j_1,...,j_k}, and any formula #{\varphi(\overline{x_1},...,\overline{x_k},\overline{a})} where #{\overline{a}} is a tuple of parameters from #{A}, we have #{M\models \varphi(\overline{b_{i_1}},...,\overline{b_{i_k}},\overline{a})\leftrightarrow \varphi(\overline{b_{j_1}},...,\overline{b_{j_k}},\overline{a})}.
+Given a cardinal #{\kappa}, the sequence of #{n}-tuples of elements in a model #{M}, #{\{\overline{b_i}\}_{i<\kappa}} is an indiscernibles sequence in #{M} over #{A\subseteq M} means that: for any #{k<\omega} and indices #{i_1,...,i_k} and #{j_1,...,j_k}, and any formula #{\varphi(\overline{x_1},...,\overline{x_k},\overline{a})} where #{\overline{a}} is a tuple of parameters from #{A}, we have #{M\models \varphi(\overline{b_{i_1}},...,\overline{b_{i_k}},\overline{a})\leftrightarrow \varphi(\overline{b_{j_1}},...,\overline{b_{j_k}},\overline{a})}.
 
 In other words, any two finite subsequence of #{\{\overline{b_i}\}_{i<\kappa}} of the same length have the same [type](BMT-d019) over #{A}, i.e, #{tp((\overline{b_{i_1}},...,\overline{b_{i_k}})/A)=tp((\overline{b_{j_1}},...,\overline{b_{j_k}})/A)}. 
 
