@@ -1,0 +1,27 @@
+\documentclass[a4paper]{article}
+\usepackage[final]{microtype}
+\usepackage{fontspec}
+\setmonofont{inconsolata}
+\usepackage{amsmath,amsthm,amssymb,stmaryrd,mathtools,biblatex,forester}
+\addbibresource{forest.bib}
+
+\title{Indiscernible Sequence}
+
+\date{November 21, 2024}
+
+\author{Ruohan Hu}
+
+\begin{document}
+\maketitle
+\par{
+
+Given a cardinal \(\kappa\), the sequence of \(n\)-tuples of elements in a model \(M\), \(\{ \overline {b_i} \} _{i< \kappa }\) is an indiscernibles sequence in \(M\) over \(A \subseteq  M\) means that: for any \(k< \omega\) and indices \(i_1,...,i_k\) and \(j_1,...,j_k\), and any formula \(\varphi ( \overline {x_1},..., \overline {x_k}, \overline {a})\) where \(\overline {a}\) is a tuple of parameters from \(A\), we have \(M \models   \varphi ( \overline {b_{i_1}},..., \overline {b_{i_k}}, \overline {a}) \leftrightarrow   \varphi ( \overline {b_{j_1}},..., \overline {b_{j_k}}, \overline {a})\).
+
+In other words, any two finite subsequence of \(\{ \overline {b_i} \} _{i< \kappa }\) of the same length have the same \ForesterRef{BMT-d019}{type} over \(A\), i.e, \(tp(( \overline {b_{i_1}},..., \overline {b_{i_k}})/A)=tp(( \overline {b_{j_1}},..., \overline {b_{j_k}})/A)\). 
+
+Notice that the above definition, the index of the sequence, i.e. the ordinal \(\omega\), can be substituted by any other ordinal, or just any linear order. This would define another kind of "indiscernible seuqnece," but we still refer to it with the same term.
+
+A set of \(n\)-tuples is an Indiscernible set if it is an indiscernible sequence under any well-order over the set.
+}
+\printbibliography
+\end{document}
