@@ -438,8 +438,25 @@ Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{
 \end{tree}
 
 \begin{tree}{title={(Ryll-Nardjewski) Characterisations of \(\omega\)-categoricity}, taxon={theorem}, slug={BMT-t003}}
-For \(\aleph _0\)-categoricity, there are a number of useful characterisations. The following are due to Ryll-Nardjewski.\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory} \(T\), the following are equivalent:}\par{1 \(T\) is \(\aleph _0\)-categorical.}\par{For every \(n \in   \omega\), there are finitely many \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formulas} in \(n\)-variables up to \ForesterRef{BMT-d018}{\(T\)-equivalence}.}\par{For every \(n \in   \omega\), the \ForesterRef{BMT-d202}{\(n\)'th Tarski-Lindenbaum algebra of \(T\)} is finite. 
-Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated}. }
+For \(\aleph _0\)-categoricity, there are a number of useful characterisations. The following are due to Ryll-Nardjewski.\par{Given a \ForesterRef{BMT-d001}{language}, \(\mathcal {L}\), and an \ForesterRef{BMT-d017}{\(\mathcal {L}\)-theory} \(T\), the following are equivalent:}\par{\begin{enumerate}
+\item{\(T\) is \(\aleph _0\)-categorical.
+    }
+   \item{
+        For every \(n \in   \omega\), there are finitely many \ForesterRef{BMT-d009}{\(\mathcal {L}\)-formulas} in \(n\)-variables up to \ForesterRef{BMT-d018}{\(T\)-equivalence}.
+   }
+    \item{
+        For every \(n \in   \omega\), the \ForesterRef{BMT-d202}{\(n\)'th Tarski-Lindenbaum algebra of \(T\)} is finite. 
+    }
+    \item{
+        Every \ForesterRef{BMT-d019}{type} over \(T\) is \ForesterRef{BMT-d020}{isolated}. 
+    }
+    \item{
+        For some/any countable model \(M\) of \(T\), the \ForesterRef{BMT-d005}{automorphism} group \(Aut(M)\) is oligomorphic, meaning that for each \(n\), the action of \(Aut(M)\) on \(M^n\) has finitely mant orbits.
+    }
+    \item{
+        For all \(n\), \(S_n(T)\) is finite.
+    }
+\end{enumerate}}
 \end{tree}
 
 \end{tree}
@@ -701,6 +718,19 @@ Dividing lines play a fundamental role in model theory. They form the basis of S
   
 \begin{tree}{title={Stability Theory}, taxon={section}, slug={mon-s002}}
 \textbf{Stable theories}
+\begin{tree}{title={Indiscernible Sequence}, taxon={definition}, slug={mon-d014}}
+
+
+Given a cardinal \(\kappa\), the sequence of \(n\)-tuples of elements in a model \(M\), \(\{ \overline {b_i} \} _{i< \kappa }\) is an indiscernibles sequence in \(M\) over \(A \subseteq  M\) means that: for any \(k< \omega\) and indices \(i_1,...,i_k\) and \(j_1,...,j_k\), and any formula \(\varphi ( \overline {x_1},..., \overline {x_k}, \overline {a})\) where \(\overline {a}\) is a tuple of parameters from \(A\), we have \(M \models   \varphi ( \overline {b_{i_1}},..., \overline {b_{i_k}}, \overline {a}) \leftrightarrow   \varphi ( \overline {b_{j_1}},..., \overline {b_{j_k}}, \overline {a})\).
+
+In other words, any two finite subsequence of \(\{ \overline {b_i} \} _{i< \kappa }\) of the same length have the same \ForesterRef{BMT-d019}{type} over \(A\), i.e, \(tp(( \overline {b_{i_1}},..., \overline {b_{i_k}})/A)=tp(( \overline {b_{j_1}},..., \overline {b_{j_k}})/A)\). 
+
+Notice that the above definition, the index of the sequence, i.e. the ordinal \(\omega\), can be substituted by any other ordinal, or just any linear order. This would define another kind of "indiscernible seuqnece," but we still refer to it with the same term.
+
+A set of \(n\)-tuples is an Indiscernible set if it is an indiscernible sequence under any well-order over the set.
+
+\end{tree}
+
 \begin{tree}{title={Forking and Dividing}, taxon={subsection}, slug={mon-s003}}
 \textbf{Forking and Dividing}
 \begin{tree}{title={Dividing}, taxon={definition}, slug={mon-d012}}
