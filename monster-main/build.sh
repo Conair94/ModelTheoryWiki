@@ -2,5 +2,6 @@
 
 
 sudo apt install opam
-opam install forester<=3.1.0
+opam init
+opam install "forester<=3.1.0"
 opam exec -- forester build --dev --root mon-0001 trees/
