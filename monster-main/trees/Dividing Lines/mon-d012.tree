@@ -12,5 +12,5 @@ The formula #{\varphi(\overline{x},\overline{a})} (with parameter #{\overline{a}
 }
 Usually we have #{\bar{a}\not\subset A}, because obviously #{\varphi(\bar{x},\bar{a})} does not divide over #{A} if #{\bar{a}\subseteq A}.
 
-We say a type #{\mathfrak{p}} divides over #{A}, if it implies a formula dividing over #{A}.
+We say a [type](BMT-d019) #{\mathfrak{p}} divides over #{A}, if it implies a formula dividing over #{A}.
 }
