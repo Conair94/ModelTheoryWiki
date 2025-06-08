@@ -1,0 +1,14 @@
+\title{Merges of Smooth Classes}
+\taxon{definition}
+\author{mbryant}
+\date{2025-06-08}
+
+\p{Let #{(K_1,\leq_1)} and #{(K_2,\leq_2)} be two smooth classes in the disjoint, respective languages #{\mathcal{L}_1, \mathcal{L}_2}.}
+\p{Let #{\mathcal{L^*} = \mathcal{L}_1\cup \mathcal{L}_2} and set 
+    ##{K_1\circledast K_2 := \{A \text{an #{\mathcal{L}^*} structure}: A|_{\mathcal{L}_1} \in K_1 \& A|_{\mathcal{L}_2} \in K_2}}}
+
+\p{We make #{K_1\circledast K_2} into a smooth class as follows: For #{A, B \in K_1\circledast K_2} we define a smooth relation #{\leq_*} as follows:
+##{A\leq_* B \Leftrightarrow A|_{\mathcal{L}_1}\leq_1 B|_{\mathcal{L}_1} \;\& } A|_{\mathcal{L}_2}\leq_2 B|_{\mathcal{L}_2}}
+\p{We call #{K_1\circledast K_2} the merge of #{K_1, K_2}}
+
+

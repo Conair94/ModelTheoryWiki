@@ -1,7 +1,6 @@
-\title{Atomic Generic of Smooth Class (Kueker & Laskowski)}
+\title{Atomic Generic of Smooth Class (Kueker & Laskowski, Bryant)}
 \date{2024-02-17}
 \author{mbryant}
 \taxon{theorem}
-
-\p{Let #{(K,\leq)} be a smooth class with a generic #{\mathcal{A}}. If for every #{A \in K}, #{\Phi_A} (see [here](Smc-d001)) consists of a single universal formula,
-then #{\mathcal{A}} is an atomic model.}
+\p{The first direction of the following theorem first appears in [this paper](\Smc-r001) by Laskowski and Kueker, and the second direction appears in [this thesis](\smc-r003)}
+\p{Let #{(K,\leq)} be a smooth class with a generic #{\mathcal{A}}. For every #{A \in K}, there exists some formula #{\sigma(\overline{x})} such that #{\models \forall(\overline{x})(\sigma(\overline{x}) \leftrightarrow \Phi_A(\overline{x}))} (see [here](Smc-d001) for the defintion of $\Phi_A) if and only if #{M} is atomic} 

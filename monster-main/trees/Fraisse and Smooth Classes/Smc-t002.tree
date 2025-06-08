@@ -3,5 +3,5 @@
 \author{mbryant}
 \taxon{theorem}
 
-\p{The following theorem first appears in [this paper](\Smc-r001) by Laskowski and Kueker}
+\p{This theorem first appears in [this paper](Smc-r002)}
 \p{Let #{(K, \leq)} be a smooth class with a [generic](\Smc-t001) #{\mathcal{A}}. If #{\mathcal{A}} is weakly saturated, then #{\mathcal{A}} is indeed saturated}
